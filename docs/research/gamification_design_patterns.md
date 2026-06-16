@@ -2,6 +2,9 @@
 
 This document synthesizes empirical research and product case studies analyzing what makes gamification succeed or fail in modern mobile and web applications. It outlines how traditional mechanics like Points, Badges, and Leaderboards (PBL) often lead to product failure, and how to design sustainable retention systems using intrinsic psychological drives.
 
+> [!NOTE]
+> For a detailed analysis of the **Retention Architecture** (The Craving Machine, The Infinite Game, and The Invisible Scoreboard) and how these psychological mechanisms stack to achieve up to 90% retention, see the companion document: [retention_architecture_psychology.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/new_app_project/docs/research/retention_architecture_psychology.md).
+
 ---
 
 ## Executive Summary
