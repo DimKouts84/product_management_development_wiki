@@ -12,6 +12,12 @@ The wiki is structured as a progressive journey — from foundational terminolog
 
 ---
 
+## Quickstart
+
+Begin exploring here → [📘 Wiki Home](wiki/index.md)
+
+---
+
 ## Wiki Structure
 
 ```mermaid
