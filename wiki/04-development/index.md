@@ -36,9 +36,9 @@ graph TD
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [Requirements & User Stories](requirements-user-stories.md) | ⚪ | Business, functional, non-functional requirements; user story format; INVEST criteria |
-| [Estimations & Velocity](estimations-velocity.md) | ⚪ | Story points, Fibonacci estimation, velocity tracking |
-| [Acceptance Criteria](acceptance-criteria.md) | ⚪ | Given-When-Then templates, verification lists |
+| [Requirements & User Stories](requirements-user-stories.md) | 🟢 | Business, functional, non-functional requirements; user story format; INVEST criteria |
+| [Estimations & Velocity](estimations-velocity.md) | 🟢 | Story points, Fibonacci estimation, velocity tracking |
+| [Acceptance Criteria](acceptance-criteria.md) | 🟢 | Given-When-Then templates, verification lists |
 
 ---
 

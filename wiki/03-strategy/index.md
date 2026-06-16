@@ -36,9 +36,9 @@ graph TD
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [Feature Prioritization](feature-prioritization.md) | ⚪ | RICE methodology, decision matrices, cost-value analysis |
-| [Go-to-Market](go-to-market.md) | ⚪ | GTM strategy, A/B testing, launch planning |
-| [Roadmap Planning](roadmap-planning.md) | ⚪ | Product roadmaps, WBS, task dependencies, Gantt/PERT/CPM charts |
+| [Feature Prioritization](feature-prioritization.md) | 🟢 | RICE methodology, decision matrices, cost-value analysis |
+| [Go-to-Market](go-to-market.md) | 🟢 | GTM strategy, A/B testing, launch planning |
+| [Roadmap Planning](roadmap-planning.md) | 🟢 | Product roadmaps, WBS, task dependencies, Gantt/PERT/CPM charts |
 
 ---
 

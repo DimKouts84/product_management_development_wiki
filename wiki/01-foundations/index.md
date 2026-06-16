@@ -32,8 +32,8 @@ graph TD
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [Basic Terminology](basic-terminology.md) | ⚪ | Core glossary — users, stakeholders, epics, stories, estimates, commitments |
-| [Product Document Essentials](product-document-essentials.md) | ⚪ | The 14-section PRD structure and cheatsheet |
+| [Basic Terminology](basic-terminology.md) | 🟢 | Core glossary — users, stakeholders, epics, stories, estimates, commitments |
+| [Product Document Essentials](product-document-essentials.md) | 🟢 | The 14-section PRD structure and cheatsheet |
 
 ---
 

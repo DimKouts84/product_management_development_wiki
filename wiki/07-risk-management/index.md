@@ -34,8 +34,8 @@ graph TD
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [Risk Management](risk-management.md) | ⚪ | Risk matrices, likelihood vs. impact, risk management plans |
-| [Anti-Patterns](anti-patterns.md) | ⚪ | Feature Factory, HIPPO, Scope Creep, and 7 more anti-patterns |
+| [Risk Management](risk-management.md) | 🟢 | Risk matrices, likelihood vs. impact, risk management plans |
+| [Anti-Patterns](anti-patterns.md) | 🟢 | Feature Factory, HIPPO, Scope Creep, and 7 more anti-patterns |
 
 ---
 

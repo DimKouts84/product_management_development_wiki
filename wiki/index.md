@@ -40,8 +40,8 @@ Core terminology, glossary, and PRD document standards. Start here to establish 
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [Basic Terminology](01-foundations/basic-terminology.md) | ⚪ | Glossary of product management terms |
-| [Product Document Essentials](01-foundations/product-document-essentials.md) | ⚪ | PRD structure and cheatsheet |
+| [Basic Terminology](01-foundations/basic-terminology.md) | 🟢 | Glossary of product management terms |
+| [Product Document Essentials](01-foundations/product-document-essentials.md) | 🟢 | PRD structure and cheatsheet |
 
 ---
 
@@ -50,9 +50,9 @@ Understanding users, markets, and requirements before building anything.
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [User Research](02-discovery/user-research.md) | ⚪ | Personas, segmentation, and research methods |
-| [Market Analysis](02-discovery/market-analysis.md) | ⚪ | TAM/SAM/SOM, competition, and market trends |
-| [Requirements Solicitation](02-discovery/requirements-solicitation.md) | ⚪ | Elicitation techniques, backlogs, and storymaps |
+| [User Research](02-discovery/user-research.md) | 🟢 | Personas, segmentation, and research methods |
+| [Market Analysis](02-discovery/market-analysis.md) | 🟢 | TAM/SAM/SOM, competition, and market trends |
+| [Requirements Solicitation](02-discovery/requirements-solicitation.md) | 🟢 | Elicitation techniques, backlogs, and storymaps |
 
 ---
 
@@ -61,9 +61,9 @@ Deciding what to build, when, and how to bring it to market.
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [Feature Prioritization](03-strategy/feature-prioritization.md) | ⚪ | RICE, decision matrices, cost-value analysis |
-| [Go-to-Market](03-strategy/go-to-market.md) | ⚪ | GTM strategy, A/B testing, launch planning |
-| [Roadmap Planning](03-strategy/roadmap-planning.md) | ⚪ | Roadmaps, WBS, dependencies, Gantt charts |
+| [Feature Prioritization](03-strategy/feature-prioritization.md) | 🟢 | RICE, decision matrices, cost-value analysis |
+| [Go-to-Market](03-strategy/go-to-market.md) | 🟢 | GTM strategy, A/B testing, launch planning |
+| [Roadmap Planning](03-strategy/roadmap-planning.md) | 🟢 | Roadmaps, WBS, dependencies, Gantt charts |
 
 ---
 
@@ -72,9 +72,9 @@ Translating strategy into actionable development work.
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [Requirements & User Stories](04-development/requirements-user-stories.md) | ⚪ | Requirements types, user stories, INVEST |
-| [Estimations & Velocity](04-development/estimations-velocity.md) | ⚪ | Story points, velocity, Fibonacci estimation |
-| [Acceptance Criteria](04-development/acceptance-criteria.md) | ⚪ | Given-When-Then templates, verification lists |
+| [Requirements & User Stories](04-development/requirements-user-stories.md) | 🟢 | Requirements types, user stories, INVEST |
+| [Estimations & Velocity](04-development/estimations-velocity.md) | 🟢 | Story points, velocity, Fibonacci estimation |
+| [Acceptance Criteria](04-development/acceptance-criteria.md) | 🟢 | Given-When-Then templates, verification lists |
 
 ---
 
@@ -83,9 +83,9 @@ User experience, interaction design, and product design patterns.
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [User Interaction & Design](05-design/user-interaction-design.md) | ⚪ | Use cases, wireframes, storyboards |
-| [Onboarding Patterns](05-design/onboarding-patterns.md) | ⚪ | Onboarding UX strategies and case studies |
-| [Gamification Patterns](05-design/gamification-patterns.md) | ⚪ | Sustainable gamification design patterns |
+| [User Interaction & Design](05-design/user-interaction-design.md) | 🟢 | Use cases, wireframes, storyboards |
+| [Onboarding Patterns](05-design/onboarding-patterns.md) | 🟢 | Onboarding UX strategies and case studies |
+| [Gamification Patterns](05-design/gamification-patterns.md) | 🟢 | Sustainable gamification design patterns |
 
 ---
 
@@ -94,8 +94,8 @@ Measuring success and understanding user retention.
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [Success Metrics](06-metrics/success-metrics.md) | ⚪ | AARRR framework, KPIs, measurement |
-| [Retention Psychology](06-metrics/retention-psychology.md) | ⚪ | Three pillars of retention architecture |
+| [Success Metrics](06-metrics/success-metrics.md) | 🟢 | AARRR framework, KPIs, measurement |
+| [Retention Psychology](06-metrics/retention-psychology.md) | 🟢 | Three pillars of retention architecture |
 
 ---
 
@@ -104,8 +104,8 @@ Identifying, assessing, and mitigating project risks.
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [Risk Management](07-risk-management/risk-management.md) | ⚪ | Risk matrices and risk plans |
-| [Anti-Patterns](07-risk-management/anti-patterns.md) | ⚪ | Common PM anti-patterns to avoid |
+| [Risk Management](07-risk-management/risk-management.md) | 🟢 | Risk matrices and risk plans |
+| [Anti-Patterns](07-risk-management/anti-patterns.md) | 🟢 | Common PM anti-patterns to avoid |
 
 ---
 
@@ -114,7 +114,7 @@ Learning from outcomes and closing the feedback loop.
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [Retrospectives & Feedback](08-retrospectives/retrospectives-feedback.md) | ⚪ | Internal retrospectives and external feedback |
+| [Retrospectives & Feedback](08-retrospectives/retrospectives-feedback.md) | 🟢 | Internal retrospectives and external feedback |
 
 ---
 

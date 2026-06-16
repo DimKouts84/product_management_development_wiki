@@ -83,6 +83,18 @@ The percentage of users who continue using the product over time.
 
 ---
 
+### 📱 Engagement
+
+How users interact with the product or service, and how invested they are.
+
+| Metric | Definition |
+|:-------|:-----------|
+| **Session Length** | Average duration of a user session |
+| **Pages/Screens per Session** | Number of pages or screens viewed per session |
+| **Feature Adoption Rate** | % of users who actively use a specific feature |
+
+---
+
 ### 📢 Referral
 
 The number of users who recommend the product to others.

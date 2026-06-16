@@ -33,8 +33,8 @@ graph TD
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [Success Metrics](success-metrics.md) | ⚪ | AARRR pirate metrics framework, KPIs across the funnel |
-| [Retention Psychology](retention-psychology.md) | ⚪ | Three pillars: Craving Machine, Infinite Game, Invisible Scoreboard |
+| [Success Metrics](success-metrics.md) | 🟢 | AARRR pirate metrics framework, KPIs across the funnel |
+| [Retention Psychology](retention-psychology.md) | 🟢 | Three pillars: Craving Machine, Infinite Game, Invisible Scoreboard |
 
 ---
 

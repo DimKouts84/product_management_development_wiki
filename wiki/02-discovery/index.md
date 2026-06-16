@@ -36,9 +36,9 @@ graph TD
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [User Research](user-research.md) | ⚪ | Personas, segmentation, research methods, and prioritization |
-| [Market Analysis](market-analysis.md) | ⚪ | TAM/SAM/SOM, competitive analysis, market trends |
-| [Requirements Solicitation](requirements-solicitation.md) | ⚪ | Elicitation techniques, product backlog, storymaps, quality assessments |
+| [User Research](user-research.md) | 🟢 | Personas, segmentation, research methods, and prioritization |
+| [Market Analysis](market-analysis.md) | 🟢 | TAM/SAM/SOM, competitive analysis, market trends |
+| [Requirements Solicitation](requirements-solicitation.md) | 🟢 | Elicitation techniques, product backlog, storymaps, quality assessments |
 
 ---
 

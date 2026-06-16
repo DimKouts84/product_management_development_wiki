@@ -36,9 +36,9 @@ graph TD
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [User Interaction & Design](user-interaction-design.md) | ⚪ | User considerations, use cases, wireframes, storyboards |
-| [Onboarding Patterns](onboarding-patterns.md) | ⚪ | 9 research-backed onboarding UX patterns with case studies |
-| [Gamification Patterns](gamification-patterns.md) | ⚪ | 7 gamification design patterns — sustainable retention vs. engagement theater |
+| [User Interaction & Design](user-interaction-design.md) | 🟢 | User considerations, use cases, wireframes, storyboards |
+| [Onboarding Patterns](onboarding-patterns.md) | 🟢 | 9 research-backed onboarding UX patterns with case studies |
+| [Gamification Patterns](gamification-patterns.md) | 🟢 | 7 gamification design patterns — sustainable retention vs. engagement theater |
 
 ---
 

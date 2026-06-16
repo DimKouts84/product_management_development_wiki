@@ -34,7 +34,7 @@ graph TD
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [Retrospectives & Feedback](retrospectives-feedback.md) | ⚪ | Sprint retrospectives, post-mortems, user feedback collection |
+| [Retrospectives & Feedback](retrospectives-feedback.md) | 🟢 | Sprint retrospectives, post-mortems, user feedback collection |
 
 ---
 

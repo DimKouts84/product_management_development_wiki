@@ -6,7 +6,7 @@
 
 ## About This Wiki
 
-This repository is my **Personal Product Management Wiki**. Everything product. Including, the research, development, product management and strategy. It consolidates best practices, how-to's, ideas, lessons, tips and tricks learned from hands-on experience, industry research, and various certifications and courses.
+This repository is my **Everything Product** Knowledge Base. It includes research, development, product management and strategy. It consolidates best practices, how-to's, ideas, lessons, tips and tricks learned from hands-on experience, industry research, and various certifications and courses.
 
 The wiki is structured as a progressive journey — from foundational terminology through discovery, strategy, development, design, metrics, risk management, and retrospectives.
 
