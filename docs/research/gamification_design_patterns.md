@@ -4,8 +4,8 @@ This document synthesizes empirical research and product case studies analyzing 
 
 > [!NOTE]
 > For detailed companion analyses on product design and behavioral psychology, see:
-> * **Retention Architecture** (The Craving Machine, The Infinite Game, and The Invisible Scoreboard): [retention_architecture_psychology.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/new_app_project/docs/research/retention_architecture_psychology.md)
-> * **Onboarding UX Patterns** (Value Delivery, Personalization, and Conversion): [onboarding_design_patterns.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/new_app_project/docs/research/onboarding_design_patterns.md)
+> * **Retention Architecture** (The Craving Machine, The Infinite Game, and The Invisible Scoreboard): [retention_architecture_psychology.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/product_management_development_wiki/docs/research/retention_architecture_psychology.md)
+> * **Onboarding UX Patterns** (Value Delivery, Personalization, and Conversion): [onboarding_design_patterns.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/product_management_development_wiki/docs/research/onboarding_design_patterns.md)
 
 ---
 

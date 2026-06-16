@@ -6,8 +6,8 @@ This framework, popularized by product strategist Tim (SIPs App), relies on thre
 
 > [!NOTE]
 > For detailed companion analyses on product design and behavioral psychology, see:
-> * **Gamification Design Patterns** (Sustainable Retention vs. PBL Fallacies): [gamification_design_patterns.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/new_app_project/docs/research/gamification_design_patterns.md)
-> * **Onboarding UX Patterns** (Value Delivery, Personalization, and Conversion): [onboarding_design_patterns.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/new_app_project/docs/research/onboarding_design_patterns.md)
+> * **Gamification Design Patterns** (Sustainable Retention vs. PBL Fallacies): [gamification_design_patterns.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/product_management_development_wiki/docs/research/gamification_design_patterns.md)
+> * **Onboarding UX Patterns** (Value Delivery, Personalization, and Conversion): [onboarding_design_patterns.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/product_management_development_wiki/docs/research/onboarding_design_patterns.md)
 
 ---
 

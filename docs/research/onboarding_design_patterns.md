@@ -4,8 +4,8 @@ This research document analyzes the UX design principles and behavioral patterns
 
 > [!NOTE]
 > For a detailed analysis of how to stack long-term engagement using variable rewards and identity loops, see the companion documents:
-> * [gamification_design_patterns.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/new_app_project/docs/research/gamification_design_patterns.md)
-> * [retention_architecture_psychology.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/new_app_project/docs/research/retention_architecture_psychology.md)
+> * [gamification_design_patterns.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/product_management_development_wiki/docs/research/gamification_design_patterns.md)
+> * [retention_architecture_psychology.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/product_management_development_wiki/docs/research/retention_architecture_psychology.md)
 
 ---
 
