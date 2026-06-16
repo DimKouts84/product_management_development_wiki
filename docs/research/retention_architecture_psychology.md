@@ -4,6 +4,11 @@ This research document analyzes the behavioral psychology frameworks driving hig
 
 This framework, popularized by product strategist Tim (SIPs App), relies on three stacked psychological mechanisms that turn app interaction into a core user identity.
 
+> [!NOTE]
+> For detailed companion analyses on product design and behavioral psychology, see:
+> * **Gamification Design Patterns** (Sustainable Retention vs. PBL Fallacies): [gamification_design_patterns.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/new_app_project/docs/research/gamification_design_patterns.md)
+> * **Onboarding UX Patterns** (Value Delivery, Personalization, and Conversion): [onboarding_design_patterns.md](file:///c:/Users/Mitsos_PC/Desktop/The%20One%20Folder/Programming/Projects/new_app_project/docs/research/onboarding_design_patterns.md)
+
 ---
 
 ## The Stacking Effect: How Retention Architecture Works
