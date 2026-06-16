@@ -60,6 +60,11 @@ The game utilizes a hidden Matchmaking Rating (MMR) system.
 #### 3. Duolingo — 🟡 Predictable/Basic
 Duolingo awards a flat, predictable amount of XP after each lesson. While satisfying, it lacks the dopaminergic pull of variable ratio reinforcement. It acts more like a vending machine than a craving machine.
 
+#### 4. Pokémon Go — 🟢 Good (Unexpected Variable Rewards)
+Pokémon Go keeps users hooked by avoiding predictable reward loops.
+* **The Variable Loop**: Tapping wild encounters or opening "Mystery Boxes" rewards users with randomized spawns, item quantities, and item rarities.
+* **The Chase**: Because outcomes are completely variable, users experience anticipation before every action. However, surprise rewards are metered carefully (using daily limits and timers) so that they remain unexpected rather than becoming routine expectations.
+
 ---
 
 ## Pillar 2: The Infinite Game (Loss Aversion & Compounding Value)
@@ -105,6 +110,11 @@ At the end of each season, players' ranks are reset (e.g., dropping Platinum pla
 #### 4. Duolingo — 🟡 Predictable/Basic
 Duolingo streaks are a single, fragile thread. If a user breaks a 100-day streak, the number simply resets to 0. Although streak freezes exist, losing the streak entirely often triggers the **abstinence violation effect**, causing users to abandon the app in frustration rather than restart.
 
+#### 5. Roblox (Virtual Currency & Economic Sunk Cost) — 🟢 Good (Compounding Value)
+Roblox has built an inescapable retention moat through its virtual currency ecosystem, Robux.
+* **Compounding Economic Value**: Users earn or purchase Robux and spend it on virtual items, custom games, and avatars. The currency turns the platform into a persistent ecosystem that users are highly disincentivized to leave.
+* **The Sunk Cost Loop**: The more currency, referrals, and virtual assets a user accumulates through check-ins and platform actions, the more heavily invested they feel. Leaving the platform means abandoning a personal, functioning economic portfolio.
+
 ---
 
 ## Pillar 3: The Invisible Scoreboard (Social Comparison & Identity)
@@ -142,6 +152,8 @@ Peloton pairs automated gamification with authentic human connection.
 | **Strava** | 🟡 **Medium** (Random kudos & routes) | 🟢 **High** (Accumulated lifetime miles) | 🟢 **High** (Segment leaderboards / Club feeds) | High long-term retention | Social comparison is so powerful that users resort to cheating (e.g., e-bike uploads) to maintain status. |
 | **Freecash** | 🟢 **High** (Variable offer payouts) | 🟢 **High** (Escalating Diamond Streaks) | 🟡 **Medium** (Earnings leaderboard) | High Day 30+ retention | Diamond streaks convert loss aversion from an abstract number to a high-stakes asset. |
 | **Duolingo** | 🔴 **Low** (Predictable XP gains) | 🟡 **Medium** (Single-thread streak + freeze) | 🟡 **Medium** (Passive global league cohorts) | Moderate (~5-7% after 30 days for typical gamified apps) | Represents "PBL Decoration." Predictable rewards and brittle streaks fail to maximize long-term psychological lock-in. |
+| **Pokémon Go** | 🟢 **High** (Random encounters & mystery boxes) | 🟡 **Medium** (Standard leveling & dex completion) | 🟡 **Medium** (Gym control & local raids) | High long-term retention | High-impact use of unexpected rewards to drive urgency and checking behavior. |
+| **Roblox** | 🟡 **Medium** (Game-specific drop rates) | 🟢 **High** (Virtual currency / Robux ecosystem) | 🟢 **High** (Avatar status & community presence) | Elite retention | The Robux currency creates a compounding, user-owned economy that functions as a powerful sunk cost. |
 
 ---
 
@@ -150,11 +162,13 @@ Peloton pairs automated gamification with authentic human connection.
 ### 1. Architecting the Craving Machine
 * **The 80/20 Rule of Rewards**: Keep 80% of your progression system predictable and transparent (e.g., complete a lesson, get 10 points). Make 20% highly variable and unexpected (e.g., random double-point chests, mystery rewards, surprise milestones).
 * **Track a Singular Complex Metric**: Instead of scattering 20 different badges, track one centralized profile system that users obsess over (e.g., a "Personality Profile" that evolves based on behavior, or a dynamic "Skill Index").
+* **Unexpected Surprise Rewards**: Inject unexpected rewards (like mystery boxes) to drive checking behaviors and curiosity. Keep these surprise rewards metered (using daily or weekly limits) so they remain truly unexpected.
 
 ### 2. Structuring the Infinite Game
 * **Kill the "Done" State**: Audit your application for terminal points. If a user can reach a state of "100% completion," they will immediately look to exit. Ensure milestones always expand (e.g., "100 Club," "500 Club," "1000 Club").
 * **Transition to Compounding Streaks**: Replace simple daily counters with tiered progression streaks. Let streaks unlock specific resources (like diamonds, tokens, or profile modifiers) that users accumulate. Make the penalty of breaking the streak a loss of these accumulated resources, forcing users to earn freezes through high engagement.
 * **Use Soft Resets**: If your system has levels, reset ranks periodically (monthly or seasonally) to clean the competitive slate, but always allow users to retain cosmetic rewards, lifetime stats, and badges as proof of their historical status.
+* **Build a Currency Ecosystem**: Establish virtual currencies that can be earned through everyday actions, check-ins, referrals, or achievements, and spent on meaningful assets. This creates an economic ecosystem that acts as a compounding sunk cost.
 
 ### 3. Activating the Invisible Scoreboard
 * **Elevate Personal Metrics into Status Indicators**: Enable users to showcase their milestones in public spaces (public profiles, community feeds, or shared links).
@@ -167,4 +181,7 @@ Peloton pairs automated gamification with authentic human connection.
 * **Video Title**: *How To Scientifically Design Addictive Apps*
 * **Channel/Host**: Tim (SIPs App)
 * **URL**: [YouTube Video Link](https://www.youtube.com/watch?v=yBpv5rZoBjA&t=118s)
+* **Video Title**: *7 App Gamification Strategies To Boost Retention & Revenue 🎮*
+* **Channel/Host**: Zoe (AppsFlyer)
+* **URL**: [YouTube Video Link](https://www.youtube.com/watch?v=BJEHnGYj_8E)
 * **Date of Analysis**: June 16, 2026

@@ -86,15 +86,17 @@ If the setup phase is dry, long, or confusing, users will churn before reaching 
   * **Headspace**: Discovered users came with multiple goals (e.g., sleep, anxiety, focus). By allowing users to select multiple pain points instead of a single goal, they saw a **10% increase in free trial conversions**.
   * **Focus Flight**: Lets users choose their preferred map style during onboarding, making the app feel customized to their taste before they start using it.
   * **Dollar Shave Club**: Rewrote their quiz copy to sound like a conversation with a human. This copy tweak alone led to a **5% increase in paid subscriptions**.
+  * **Retail / Shopping Style Quizzes (E-commerce)**: Shopping apps use interactive style quizzes to understand user preferences and recommend products. This conversational engagement matches users with the right catalog items immediately, boosting conversions and sales.
 
 ### 5. Visualizing Personalized Outcomes
 * **The Concept**: Presenting the user with a customized plan, schedule, or projection based on their quiz answers prior to the paywall or home screen.
-* **Why it Works**: Proves that the app actively listened to the user's input. It builds anticipation by showing a tangible roadmap to success.
+* **Why it Works**: Proves that the app actively listened to the user's input. It builds anticipation by showing a tangible roadmap to success and involves the user in the experience.
 * **Case Studies**:
   * **Endel**: Gathers quiz answers and immediately renders a personalized soundscape graph. Even before playing the audio, the user feels the system is customized and ready to work.
   * **Bitepal**: Builds a personalized plan and highlights the exact date the user will hit their weight target, creating a concrete milestone.
   * **Speak (Language Learning)**: Asks goals and language choice, then shows a screen stating: *"In 2 months, you'll be able to communicate while traveling in France,"* backed by a simple graph showing why speaking (the app's primary method) beats reading.
   * **Brilliant**: Populates the user's dashboard only with courses recommended from their quiz answers immediately upon completing onboarding.
+  * **Health & Fitness App Quizzes**: Ask questions about daily habits, body metrics, and training goals to build and visualize a personalized workout and recovery plan. Involving the user dynamically yields higher engagement and lower churn than pushing a static home screen immediately.
 
 ### 6. Conversational & Tailored Paywalls
 * **The Concept**: Aligning paywalls directly with the user's stated goals and personalizing the offer to match their profile.
@@ -153,6 +155,8 @@ If the setup phase is dry, long, or confusing, users will churn before reaching 
 | **Focus Flight** | Gamified/Haptic ticket paywall | 🟢 **Good (Delight)** | High checkout delight | Turn the transaction screen into a sensory experience (vibration, ticket print-out). |
 | **AI Apps (e.g. Claude)** | Zero-friction entry / Prompt field | 🟢 **Good (Speed)** | Direct value delivery | Bypasses all setup to let the user get value in a single action. |
 | **Typical AI Apps (7%)** | Private/No-quiz entry | 🔴 **Bad (Missed Personalization)** | Lower personalization value | AI tools often fail to ask user context upfront, missing opportunities to customize the early workspace. |
+| **Fitness Apps** | Habit/Goal Custom Quiz | 🟢 **Good (Interactive Quiz)** | High setup retention | Personalizes workouts based on user inputs, keeping users engaged through customized roadmaps. |
+| **Shopping Apps** | Style/Preference Quiz | 🟢 **Good (E-commerce Quiz)** | 📈 Higher conversion rate | Conversational style matches users with products they want, driving immediate purchases. |
 
 ---
 
@@ -180,13 +184,16 @@ If the setup phase is dry, long, or confusing, users will churn before reaching 
   2. The specific benefit the user gets by allowing it.
   3. A preview of the value (e.g., a mockup notification).
 
-### 5. Personalize the Paywall
-* If your app includes a quiz, pass those variables to your paywall screen.
-* Recommend a specific plan based on their answers, and explicitly state *why* it matches their goals (e.g., *"Recommended for Professional Writers"*).
+### 5. Personalize the Paywall & Experience (Quizzes)
+* If your app includes a quiz, pass those variables to your paywall and initial workspace screens.
+* **Make it Interactive**: Instead of just delivering static text/onboarding content, involve the user directly with conversational quizzes.
+* Recommend a specific plan or customize their early dashboard based on their answers, and explicitly state *why* it matches their goals (e.g., *"Recommended for Professional Writers"*).
 
 ---
 
 ## Sources & Context
 * **Video Title**: *I Studied 1,460 Onboarding Flows. Here's What I Found.*
 * **URL**: [YouTube Video Link](https://www.youtube.com/watch?v=Qsq-Sj_rojU)
+* **Video Title**: *7 App Gamification Strategies To Boost Retention & Revenue 🎮*
+* **URL**: [YouTube Video Link](https://www.youtube.com/watch?v=BJEHnGYj_8E)
 * **Date of Analysis**: June 16, 2026
