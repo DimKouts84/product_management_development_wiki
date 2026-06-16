@@ -6,7 +6,7 @@
 
 ## About This Wiki
 
-This repository is a **Personal Product Management Wiki** maintained by Dimitris. It consolidates best practices, how-to's, ideas, lessons, tips and tricks learned from hands-on experience, industry research, and various certifications and courses.
+This repository is my **Personal Product Management Wiki**. Everything product. Including, the research, development, product management and strategy. It consolidates best practices, how-to's, ideas, lessons, tips and tricks learned from hands-on experience, industry research, and various certifications and courses.
 
 The wiki is structured as a progressive journey — from foundational terminology through discovery, strategy, development, design, metrics, risk management, and retrospectives.
 
@@ -67,16 +67,16 @@ graph LR
 
 ## Quick Navigation
 
-| # | Section | Description | Pages |
-|:-:|:--------|:------------|:------|
-| 01 | [**Foundations**](wiki/01-foundations/index.md) | Core terminology and document standards | 2 |
-| 02 | [**Discovery**](wiki/02-discovery/index.md) | User research, market analysis, requirements | 3 |
-| 03 | [**Strategy**](wiki/03-strategy/index.md) | Prioritization, GTM, roadmaps | 3 |
-| 04 | [**Development**](wiki/04-development/index.md) | Requirements, estimations, acceptance criteria | 3 |
-| 05 | [**Design**](wiki/05-design/index.md) | UX/UI, onboarding, gamification patterns | 3 |
-| 06 | [**Metrics**](wiki/06-metrics/index.md) | Success metrics, retention psychology | 2 |
-| 07 | [**Risk Management**](wiki/07-risk-management/index.md) | Risk frameworks and anti-patterns | 2 |
-| 08 | [**Retrospectives**](wiki/08-retrospectives/index.md) | Feedback loops and retrospectives | 1 |
+|   #   | Section                                                 | Description                                    | Pages |
+| :---: | :------------------------------------------------------ | :--------------------------------------------- | :---- |
+|  01   | [**Foundations**](wiki/01-foundations/index.md)         | Core terminology and document standards        | 2     |
+|  02   | [**Discovery**](wiki/02-discovery/index.md)             | User research, market analysis, requirements   | 3     |
+|  03   | [**Strategy**](wiki/03-strategy/index.md)               | Prioritization, GTM, roadmaps                  | 3     |
+|  04   | [**Development**](wiki/04-development/index.md)         | Requirements, estimations, acceptance criteria | 3     |
+|  05   | [**Design**](wiki/05-design/index.md)                   | UX/UI, onboarding, gamification patterns       | 3     |
+|  06   | [**Metrics**](wiki/06-metrics/index.md)                 | Success metrics, retention psychology          | 2     |
+|  07   | [**Risk Management**](wiki/07-risk-management/index.md) | Risk frameworks and anti-patterns              | 2     |
+|  08   | [**Retrospectives**](wiki/08-retrospectives/index.md)   | Feedback loops and retrospectives              | 1     |
 
 ---
 
@@ -97,11 +97,11 @@ product_management_development_wiki/
 
 ## Content Maturity Legend
 
-| Icon | Status | Description |
-|:----:|:-------|:------------|
-| 🟢 | **Complete** | Fully written and reviewed |
-| 🟡 | **In Progress** | Content present but needs enhancement |
-| ⚪ | **Scaffold** | Structure created, content pending |
+| Icon  | Status          | Description                           |
+| :---: | :-------------- | :------------------------------------ |
+|   🟢   | **Complete**    | Fully written and reviewed            |
+|   🟡   | **In Progress** | Content present but needs enhancement |
+|   ⚪   | **Scaffold**    | Structure created, content pending    |
 
 ---
 
@@ -112,5 +112,5 @@ product_management_development_wiki/
 - Personal experience and professional practice
 
 ---
-
-*Maintained by Dimitris · Last updated: June 2026*
+  
+Curated with love for building stuff - DimKouts ;)
