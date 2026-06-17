@@ -14,25 +14,28 @@ graph TD
     S --> GTM["Go-to-Market"]
     S --> RP["Roadmap Planning"]
     S --> ASO["App Store Optimization"]
+    S --> ALC["App Launch Checklist"]
 
     FP -->|"Ranked features feed"| RP
     RP -->|"Timeline drives"| GTM
-    GTM -.->|"Informed by"| ASO
-    GTM -->|"Launch validates"| MET["06 · Metrics"]
+    GTM -->|"Executed via"| ALC
+    ASO -->|"Optimizes listing for"| ALC
+    ALC -->|"Launch validates"| MET["06 · Metrics"]
 
     FP -.->|"Uses data from"| DISC["02 · Discovery"]
     RP -.->|"Produces work for"| DEV["04 · Development"]
     ASO -.->|"Acquisition feeds"| ONB["05 · Design"]
 
-    style S fill:#d97706,stroke:#b45309,color:#fff
-    style FP fill:#fbbf24,stroke:#d97706,color:#000
-    style GTM fill:#fbbf24,stroke:#d97706,color:#000
-    style RP fill:#fbbf24,stroke:#d97706,color:#000
-    style ASO fill:#fbbf24,stroke:#d97706,color:#000
-    style MET fill:#0891b2,stroke:#0e7490,color:#fff
-    style DISC fill:#059669,stroke:#047857,color:#fff
-    style DEV fill:#dc2626,stroke:#b91c1c,color:#fff
-    style ONB fill:#ec4899,stroke:#db2777,color:#fff
+    style S fill:#334155,stroke:#1e293b,color:#fff
+    style FP fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style GTM fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style RP fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style ASO fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style ALC fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style MET fill:#e2e8f0,stroke:#94a3b8,color:#334155
+    style DISC fill:#e2e8f0,stroke:#94a3b8,color:#334155
+    style DEV fill:#e2e8f0,stroke:#94a3b8,color:#334155
+    style ONB fill:#e2e8f0,stroke:#94a3b8,color:#334155
 ```
 
 ---
@@ -45,6 +48,7 @@ graph TD
 | [Go-to-Market](go-to-market.md) | 🟢 | GTM strategy, A/B testing, launch planning |
 | [App Store Optimization](app-store-optimization.md) | 🟢 | Keyword strategy, screenshot conversion, review loops |
 | [Roadmap Planning](roadmap-planning.md) | 🟢 | Product roadmaps, WBS, task dependencies, Gantt/PERT/CPM charts |
+| [App Launch Checklist](app-launch-checklist.md) | 🟢 | Tactical launch checklist: analytics, waitlists, feedback boards, and emails |
 
 ---
 
@@ -54,6 +58,8 @@ graph TD
 - **Cost-Value Matrix**: Plotting features by development cost vs. business value
 - **Go-to-Market**: Who, how, where, and when to launch
 - **ASO Pillars**: Keyword optimization, CVR screenshot hooks, and review prompts
+- **Launch Telemetry**: Early post-launch analytics (PostHog) to track churn
+- **Feedback Boards**: Crowd-sourced request upvoting (Canny) to prioritize roadmaps
 - **Work Breakdown Structure**: Hierarchical decomposition of deliverables
 - **Critical Path Method**: Identifying the longest dependency chain
 

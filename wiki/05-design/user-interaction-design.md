@@ -139,7 +139,9 @@ A storyboard:
 ## Related Pages
 
 - ← [User Research](../02-discovery/user-research.md) — User insights that inform design decisions
+- → [UI Design Foundations](ui-design-foundations.md) — Visual design language: hierarchy, color, typography, and states
 - → [Onboarding Patterns](onboarding-patterns.md) — Designing the first user experience
+- → [Mobile UI Design Foundations](mobile-ui-design-foundations.md) — Designing for mobile layout and interaction constraints
 - → [Gamification Patterns](gamification-patterns.md) — Engagement-driven design patterns
 - → [Acceptance Criteria](../04-development/acceptance-criteria.md) — Testing design implementations
 

@@ -65,6 +65,7 @@ Deciding what to build, when, and how to bring it to market.
 | [Go-to-Market](03-strategy/go-to-market.md) | 🟢 | GTM strategy, A/B testing, launch planning |
 | [App Store Optimization](03-strategy/app-store-optimization.md) | 🟢 | Keyword metadata, screenshot CVR, review loops |
 | [Roadmap Planning](03-strategy/roadmap-planning.md) | 🟢 | Roadmaps, WBS, dependencies, Gantt charts |
+| [App Launch Checklist](03-strategy/app-launch-checklist.md) | 🟢 | Tactical launch checklist: analytics, waitlists, feedback boards, and emails |
 
 ---
 
@@ -84,7 +85,9 @@ User experience, interaction design, and product design patterns.
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
+| [UI Design Foundations](05-design/ui-design-foundations.md) | 🟢 | Affordances, hierarchy, typography, color, shadows, states, and overlays |
 | [User Interaction & Design](05-design/user-interaction-design.md) | 🟢 | Use cases, wireframes, storyboards |
+| [Mobile UI Design Foundations](05-design/mobile-ui-design-foundations.md) | 🟢 | Layout constraints, navigation architectures, and gestural interactions |
 | [Onboarding Patterns](05-design/onboarding-patterns.md) | 🟢 | Onboarding UX strategies and case studies |
 | [Gamification Patterns](05-design/gamification-patterns.md) | 🟢 | Sustainable gamification design patterns |
 

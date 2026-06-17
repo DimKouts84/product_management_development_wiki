@@ -115,6 +115,7 @@ graph TD
 - ← [Feature Prioritization](feature-prioritization.md) — What to bring to market
 - ← [User Research](../02-discovery/user-research.md) — Who the GTM targets
 - → [App Store Optimization](app-store-optimization.md) — Mobile organic acquisition channel
+- → [App Launch Checklist](app-launch-checklist.md) — Tactical launch preparation checklist
 - → [Roadmap Planning](roadmap-planning.md) — When it's scheduled
 - → [Success Metrics](../06-metrics/success-metrics.md) — How to measure GTM outcomes
 - → [Onboarding Patterns](../05-design/onboarding-patterns.md) — First user experience after launch

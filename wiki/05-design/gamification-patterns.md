@@ -157,6 +157,7 @@ If your app uses streaks:
 ## Related Pages
 
 - ← [Onboarding Patterns](onboarding-patterns.md) — First experience design
+- ← [Mobile UI Design Foundations](mobile-ui-design-foundations.md) — Mobile layout and interaction constraints
 - ← [User Interaction & Design](user-interaction-design.md) — Core design principles
 - → [Retention Psychology](../06-metrics/retention-psychology.md) — Deep psychology of retention
 - → [Success Metrics](../06-metrics/success-metrics.md) — Measuring gamification impact

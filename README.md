@@ -40,15 +40,19 @@ graph LR
 
     S --> S1["Feature Prioritization"]
     S --> S2["Go-to-Market"]
-    S --> S3["Roadmap Planning"]
+    S --> S3["App Store Optimization"]
+    S --> S4["Roadmap Planning"]
+    S --> S5["App Launch Checklist"]
 
     DEV --> DEV1["Requirements & User Stories"]
     DEV --> DEV2["Estimations & Velocity"]
     DEV --> DEV3["Acceptance Criteria"]
 
-    DES --> DES1["User Interaction & Design"]
-    DES --> DES2["Onboarding Patterns"]
-    DES --> DES3["Gamification Patterns"]
+    DES --> DES1["UI Design Foundations"]
+    DES --> DES2["User Interaction & Design"]
+    DES --> DES3["Mobile UI Design Foundations"]
+    DES --> DES4["Onboarding Patterns"]
+    DES --> DES5["Gamification Patterns"]
 
     M --> M1["Success Metrics"]
     M --> M2["Retention Psychology"]
@@ -61,9 +65,9 @@ graph LR
     style HOME fill:#2563eb,stroke:#1e40af,color:#fff
     style F fill:#7c3aed,stroke:#6d28d9,color:#fff
     style D fill:#059669,stroke:#047857,color:#fff
-    style S fill:#d97706,stroke:#b45309,color:#fff
+    style S fill:#334155,stroke:#1e293b,color:#fff
     style DEV fill:#dc2626,stroke:#b91c1c,color:#fff
-    style DES fill:#ec4899,stroke:#db2777,color:#fff
+    style DES fill:#334155,stroke:#1e293b,color:#fff
     style M fill:#0891b2,stroke:#0e7490,color:#fff
     style R fill:#ea580c,stroke:#c2410c,color:#fff
     style RET fill:#4f46e5,stroke:#4338ca,color:#fff
@@ -77,9 +81,9 @@ graph LR
 | :---: | :------------------------------------------------------ | :--------------------------------------------- | :---- |
 |  01   | [**Foundations**](wiki/01-foundations/index.md)         | Core terminology and document standards        | 2     |
 |  02   | [**Discovery**](wiki/02-discovery/index.md)             | User research, market analysis, requirements   | 3     |
-|  03   | [**Strategy**](wiki/03-strategy/index.md)               | Prioritization, GTM, roadmaps                  | 3     |
+|  03   | [**Strategy**](wiki/03-strategy/index.md)               | Prioritization, GTM, roadmaps, ASO, launches   | 5     |
 |  04   | [**Development**](wiki/04-development/index.md)         | Requirements, estimations, acceptance criteria | 3     |
-|  05   | [**Design**](wiki/05-design/index.md)                   | UX/UI, onboarding, gamification patterns       | 3     |
+|  05   | [**Design**](wiki/05-design/index.md)                   | UX/UI, onboarding, gamification patterns       | 5     |
 |  06   | [**Metrics**](wiki/06-metrics/index.md)                 | Success metrics, retention psychology          | 2     |
 |  07   | [**Risk Management**](wiki/07-risk-management/index.md) | Risk frameworks and anti-patterns              | 2     |
 |  08   | [**Retrospectives**](wiki/08-retrospectives/index.md)   | Feedback loops and retrospectives              | 1     |
@@ -91,7 +95,7 @@ graph LR
 ```
 product_management_development_wiki/
 ├── README.md                    # This file
-├── wiki/                        # 📘 Primary wiki content (8 sections, 19 pages)
+├── wiki/                        # 📘 Primary wiki content (8 sections, 22 pages)
 ├── docs/                        # 📂 Source materials (gitignored)
 │   ├── legacy_notion_files/     #    Original Notion exports
 │   └── research/                #    Deep research documents

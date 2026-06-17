@@ -267,6 +267,7 @@ graph TD
 ## Related Pages
 
 - ← [User Interaction & Design](user-interaction-design.md) — Foundational design principles
+- → [Mobile UI Design Foundations](mobile-ui-design-foundations.md) — Mobile interaction and layout patterns
 - → [Gamification Patterns](gamification-patterns.md) — Long-term engagement after onboarding
 - → [Retention Psychology](../06-metrics/retention-psychology.md) — Psychological retention architecture
 - → [Success Metrics](../06-metrics/success-metrics.md) — Measuring onboarding effectiveness
