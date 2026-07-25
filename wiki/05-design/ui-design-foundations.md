@@ -8,13 +8,16 @@
 
 - [Affordances & Signifiers](#affordances--signifiers)
 - [Visual Hierarchy](#visual-hierarchy)
+- [The Intentionality Paradox: Less vs. Utility](#the-intentionality-paradox-less-vs-utility)
 - [Grids, Layouts & Spacing](#grids-layouts--spacing)
 - [Typography Rules](#typography-rules)
+- [Information Refactoring: "Wall of Text" Protocol](#information-refactoring-wall-of-text-protocol)
 - [Color Theory & Semantics](#color-theory--semantics)
 - [Dark Mode Design Principles](#dark-mode-design-principles)
 - [Shadow Mechanics](#shadow-mechanics)
 - [Buttons & Icons](#buttons--icons)
 - [State Feedback & Micro-Interactions](#state-feedback--micro-interactions)
+- [Context Preservation & Actionable States](#context-preservation--actionable-states)
 - [Gradient Overlays](#gradient-overlays)
 - [UI Design Pipeline](#ui-design-pipeline)
 
@@ -65,6 +68,24 @@ graph TD
 
 > [!TIP]
 > **Hierarchy is contrast.** The bigger the difference between small and large, colorful and muted — the stronger the visual priority signal. Avoid making all elements the same size; it creates a spreadsheet, not a design.
+
+---
+
+## The Intentionality Paradox: Less vs. Utility
+
+A common trap in modern design is treating **"Less is More"** as an absolute aesthetic law rather than a functional tool. Removing borders, text context, colors, and controls in pursuit of visual minimalism often creates "soulless" interfaces that increase cognitive load.
+
+### Visual Minimalism vs. Intentional UX
+
+| Visual Minimalism (Design for Aesthetic) | Intentional UX (Design for User Utility) |
+| :--- | :--- |
+| **Strips context** (removes borders, badges, subtext) to look clean | **Retains signifiers** (containers, status badges, icons) for visual clarity |
+| **Forces guessing**: bare icon buttons without tooltips or labels | **Provides clarity**: clear labels, tooltips, and grouped action zones |
+| **Treats empty screens as blank canvas** ("No Data") | **Transforms empty states** into actionable onboarding prompts |
+| **Hides information** behind extra clicks or modal popups | **Preserves context** using inline previews, breadcrumbs, and snippets |
+
+> [!IMPORTANT]
+> **Simplicity is not element reduction.** Removing UI elements does not automatically make an interface simpler; it often hides essential context. True simplicity means reducing cognitive effort—even if that requires adding icons, badges, progress steps, or muted secondary copy.
 
 ---
 
@@ -121,6 +142,34 @@ For large display headings, apply these adjustments to instantly elevate the pro
 | :--- | :--- |
 | **Landing pages / Websites** | Up to **6 distinct sizes**, wide range permitted |
 | **Dashboards / Tools** | Max ~**24px** for headings (compressed range due to information density) |
+
+---
+
+## Information Refactoring: "Wall of Text" Protocol
+
+When designing data-heavy views (e.g., flight boarding passes, transaction histories, complex metrics cards), designers often face a wall of text. Rather than leaving the screen visually cluttered or blindly deleting necessary data, follow the **5-Step Information Refactoring Protocol**:
+
+```mermaid
+graph TD
+    Step1["1️⃣ Baseline Normalization\n(Mute all font styles & weights to clean slate)"] --> Step2["2️⃣ Hierarchy Anchoring\n(Identify & amplify top primary key indicators)"]
+    Step2 --> Step3["3️⃣ Label Stripping & Iconography\n(Replace redundant labels with familiar icons/logos)"]
+    Step3 --> Step4["4️⃣ Spatial Pocketing\n(Group related fields into visual pockets using proximity)"]
+    Step4 --> Step5["5️⃣ Elevation, Color & Depth\n(Apply status color-coding, shadows & subtle gradients)"]
+
+    style Step1 fill:#334155,stroke:#1e293b,color:#fff
+    style Step2 fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style Step3 fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style Step4 fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style Step5 fill:#475569,stroke:#1e293b,color:#fff
+```
+
+### The 5 Refactoring Steps Explained
+
+1. **Baseline Normalization**: Strip all inconsistent font weights, colors, and font sizes. Reset text to a uniform, muted baseline style to eliminate visual noise before reorganizing.
+2. **Hierarchy Anchoring**: Pinpoint the top 2–3 pieces of information the user needs first (e.g., Airline, Passenger Name, Flight Number). Un-mute these using higher font weight and contrast.
+3. **Label Stripping & Iconography**: Remove repetitive text labels where context or standard visual signifiers convey the same meaning (e.g., replace the text label `Airline: Delta` with the Delta logo; replace `Departure -> Arrival` text with `JFK ✈️ LAX`).
+4. **Spatial Pocketing**: Group remaining key-value pairs into distinct visual pockets using proximity and container bounds rather than letting text flow continuously.
+5. **Elevation, Color & Depth**: Apply semantic color coding for real-time status (e.g., green for "On Time", amber for "Boarding"). Add subtle depth via containers, light drop shadows, or background gradients to make the card feel elevated and alive.
 
 ---
 
@@ -230,6 +279,28 @@ Micro-interactions go beyond state changes — they **confirm** that an action w
 
 ---
 
+## Context Preservation & Actionable States
+
+Designing for user needs requires eliminating friction at critical transition states.
+
+### 1. Context Preservation in Search & Navigation
+- **Snippet Previews**: Avoid bare search result titles. Include 1–2 lines of contextual body snippet and highlighted search keywords so users pick the correct page without opening multiple tabs.
+- **Breadcrumb Context**: Show visual breadcrumb paths in search overlays (`Docs > API > Rate Limiting`) to clarify page location.
+- **Typo Tolerance**: Never return a dead-end "0 results found" for minor typos. Offer suggested queries (`Did you mean: rate limiting?`) or fuzzy matching.
+
+### 2. Actionable Empty States
+A blank screen stating "No data available" may be technically accurate, but it is UX anti-pattern. Actionable empty states:
+- Explain *why* there is no data (e.g., brand new account).
+- Provide a clear, high-contrast primary CTA (`Create Your First Invoice`).
+- Offer secondary guidance or starter templates to kickstart user activity.
+
+### 3. Stepped Async Progress (Progress Momentum)
+A generic spinning loader during long operations (e.g., account syncing or data exports) causes user anxiety:
+- **Stepped Status**: Replace static spinners with dynamic multi-step text updates (e.g., `Step 1/3: Connecting to server...` → `Step 2/3: Fetching records...` → `Step 3/3: Finalizing sync...`).
+- **Progress Momentum**: Explicitly naming the active sub-process builds trust and user patience.
+
+---
+
 ## Gradient Overlays
 
 When placing text over imagery, always use an overlay to maintain legibility:
@@ -250,12 +321,15 @@ This diagram shows how the core UI design principles stack and relate to each ot
 graph LR
     Start(["🎨 UI Design Process"])
 
+    Start --> INT["Intentionality Check\n(User utility over minimalist trend)"]
     Start --> SIG["Affordances & Signifiers\n(Communicating behavior)"]
     Start --> HIE["Visual Hierarchy\n(Size, Position, Color)"]
 
+    INT --> REF["Dense Info Refactoring\n(5-step wall-of-text protocol)"]
     SIG --> GRID["Grids & Spacing\n(4pt system, whitespace)"]
     HIE --> GRID
 
+    REF --> GRID
     GRID --> TYP["Typography\n(1 font, -2% tracking, size limits)"]
     GRID --> COL["Color & Semantics\n(Brand ramp, semantic mapping)"]
 
@@ -264,14 +338,17 @@ graph LR
     COL --> DARK["Dark Mode\n(Elevation via backgrounds)"]
 
     COMP --> SHADOW["Shadows\n(Low opacity, high blur)"]
-    COMP --> STATE["States & Feedback\n(4 button states, focus, error)"]
+    COMP --> STATE["States & Feedback\n(Actionable empty, stepped progress)"]
 
-    STATE --> MICRO["Micro-Interactions\n(Confirming user actions)"]
+    STATE --> CTX["Context Preservation\n(Snippets, breadcrumbs, typo recovery)"]
+    CTX --> MICRO["Micro-Interactions\n(Confirming user actions)"]
     SHADOW --> OVL["Overlays\n(Gradient + progressive blur)"]
 
     style Start fill:#334155,stroke:#1e293b,color:#fff
+    style INT fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style SIG fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style HIE fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style REF fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style GRID fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style TYP fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style COL fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
@@ -279,6 +356,7 @@ graph LR
     style DARK fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style SHADOW fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style STATE fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style CTX fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style MICRO fill:#475569,stroke:#1e293b,color:#fff
     style OVL fill:#475569,stroke:#1e293b,color:#fff
 ```
@@ -298,7 +376,8 @@ graph LR
 
 - Research Document: [UI Design Foundations Research](../../docs/research/ui_design_foundations.md)
 - Video Source: *10 UI Design Concepts in 10 Minutes* (2026)
+- Video Source: *Less is More vs. Intentional UI Design* (2026)
 
 ---
 
-*[← Back to Section Index](index.md) · [← Back to Wiki Home](../index.md)*
+* [← Back to Section Index](index.md) · [← Back to Wiki Home](../index.md) *

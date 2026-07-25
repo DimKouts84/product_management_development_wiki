@@ -43,7 +43,7 @@ graph TD
 
 | Page | Status | Description |
 |:-----|:------:|:------------|
-| [UI Design Foundations](ui-design-foundations.md) | 🟢 | Affordances, visual hierarchy, typography, color, shadows, and feedback states |
+| [UI Design Foundations](ui-design-foundations.md) | 🟢 | Intentional UX, visual hierarchy, wall-of-text refactoring, typography, color, and context preservation |
 | [User Interaction & Design](user-interaction-design.md) | 🟢 | User considerations, use cases, wireframes, storyboards |
 | [Mobile UI Design Foundations](mobile-ui-design-foundations.md) | 🟢 | Layout constraints, navigation architectures, and gestural interactions |
 | [Onboarding Patterns](onboarding-patterns.md) | 🟢 | 9 research-backed onboarding UX patterns with case studies |
@@ -54,8 +54,11 @@ graph TD
 ## Key Concepts at a Glance
 
 - **Affordances & Signifiers**: Communicating UI behavior without written instructions
+- **Intentional UX Paradigm**: Designing for contextual user utility rather than visual minimalism
 - **Visual Hierarchy**: Size, position, and color to direct user attention
+- **Information Refactoring Protocol**: 5-step workflow for structuring dense data into scannable visual pockets
 - **4-Point Grid**: All spacing as multiples of 4 for system-wide consistency
+- **Context Preservation**: Retaining user context via search snippets, breadcrumbs, and stepped async progress
 - **Semantic Colors**: Blue = trust, Red = danger, Yellow = warning, Green = success
 - **Use Cases**: Structured scenarios defining user-system interactions
 - **Wireframes & Storyboards**: Visual prototyping pipeline
