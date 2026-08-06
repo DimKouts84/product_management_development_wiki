@@ -108,6 +108,7 @@ Ratings and review volume act as major algorithmic indicators for search ranking
 ## Related Pages
 
 - ← [Go-to-Market](go-to-market.md) — Broader launch and channel acquisition strategy
+- ↔ [Search Engine Optimization](search-engine-optimization.md) — Organic search for the web vs. app stores
 - → [App Launch Checklist](app-launch-checklist.md) — Setup and systems preparation prior to launching
 - → [Success Metrics](../06-metrics/success-metrics.md) — Tracking acquisition, conversion, and retention
 - → [Onboarding Patterns](../05-design/onboarding-patterns.md) — Converting app store installs into activated users

@@ -63,6 +63,7 @@ Deciding what to build, when, and how to bring it to market.
 |:-----|:------:|:------------|
 | [Feature Prioritization](03-strategy/feature-prioritization.md) | 🟢 | RICE, decision matrices, cost-value analysis |
 | [Go-to-Market](03-strategy/go-to-market.md) | 🟢 | GTM strategy, A/B testing, launch planning |
+| [Search Engine Optimization](03-strategy/search-engine-optimization.md) | 🟢 | Modern SEO: stratified index, AI search, query fan-outs |
 | [App Store Optimization](03-strategy/app-store-optimization.md) | 🟢 | Keyword metadata, screenshot CVR, review loops |
 | [Roadmap Planning](03-strategy/roadmap-planning.md) | 🟢 | Roadmaps, WBS, dependencies, Gantt charts |
 | [App Launch Checklist](03-strategy/app-launch-checklist.md) | 🟢 | Tactical launch checklist: analytics, waitlists, feedback boards, and emails |

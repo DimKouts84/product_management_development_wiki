@@ -114,6 +114,7 @@ graph TD
 
 - ← [Feature Prioritization](feature-prioritization.md) — What to bring to market
 - ← [User Research](../02-discovery/user-research.md) — Who the GTM targets
+- → [Search Engine Optimization](search-engine-optimization.md) — Web organic acquisition channel
 - → [App Store Optimization](app-store-optimization.md) — Mobile organic acquisition channel
 - → [App Launch Checklist](app-launch-checklist.md) — Tactical launch preparation checklist
 - → [Roadmap Planning](roadmap-planning.md) — When it's scheduled
