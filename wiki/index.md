@@ -67,6 +67,7 @@ Deciding what to build, when, and how to bring it to market.
 | [App Store Optimization](03-strategy/app-store-optimization.md) | 🟢 | Keyword metadata, screenshot CVR, review loops |
 | [Roadmap Planning](03-strategy/roadmap-planning.md) | 🟢 | Roadmaps, WBS, dependencies, Gantt charts |
 | [App Launch Checklist](03-strategy/app-launch-checklist.md) | 🟢 | Tactical launch checklist: analytics, waitlists, feedback boards, and emails |
+| [Content Engagement](03-strategy/content-engagement-strategy.md) | 🟢 | Misconception hooks, curiosity gaps, A/B-plot pacing formula |
 
 ---
 

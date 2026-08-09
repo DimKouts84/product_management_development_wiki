@@ -44,6 +44,7 @@ graph LR
     S --> S4["Roadmap Planning"]
     S --> S5["App Launch Checklist"]
     S --> S6["Search Engine Optimization"]
+    S --> S7["Content Engagement"]
 
     DEV --> DEV1["Requirements & User Stories"]
     DEV --> DEV2["Estimations & Velocity"]
@@ -82,7 +83,7 @@ graph LR
 | :---: | :------------------------------------------------------ | :--------------------------------------------- | :---- |
 |  01   | [**Foundations**](wiki/01-foundations/index.md)         | Core terminology and document standards        | 2     |
 |  02   | [**Discovery**](wiki/02-discovery/index.md)             | User research, market analysis, requirements   | 3     |
-|  03   | [**Strategy**](wiki/03-strategy/index.md)               | Prioritization, GTM, SEO, ASO, roadmaps, launches | 6     |
+|  03   | [**Strategy**](wiki/03-strategy/index.md)               | Prioritization, GTM, SEO, ASO, roadmaps, launches | 7     |
 |  04   | [**Development**](wiki/04-development/index.md)         | Requirements, estimations, acceptance criteria | 3     |
 |  05   | [**Design**](wiki/05-design/index.md)                   | UX/UI, onboarding, gamification patterns       | 5     |
 |  06   | [**Metrics**](wiki/06-metrics/index.md)                 | Success metrics, retention psychology          | 2     |
@@ -96,7 +97,7 @@ graph LR
 ```
 product_management_development_wiki/
 ├── README.md                    # This file
-├── wiki/                        # 📘 Primary wiki content (8 sections, 23 pages)
+├── wiki/                        # 📘 Primary wiki content (8 sections, 24 pages)
 ├── docs/                        # 📂 Source materials (gitignored)
 │   ├── legacy_notion_files/     #    Original Notion exports
 │   └── research/                #    Deep research documents

@@ -251,6 +251,7 @@ Visibility alone is an incomplete KPI. Measure **three buckets**:
 - → [Success Metrics](../06-metrics/success-metrics.md) — Measuring acquisition and conversion outcomes
 - → [App Launch Checklist](app-launch-checklist.md) — Launch-day organic visibility tasks
 - → [User Research](../02-discovery/user-research.md) — Audience-driven keyword and prompt research
+- → [Content Engagement](content-engagement-strategy.md) — Standout content that earns mentions and holds attention
 
 ---
 

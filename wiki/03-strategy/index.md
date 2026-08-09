@@ -16,12 +16,15 @@ graph TD
     S --> ASO["App Store Optimization"]
     S --> SEO["Search Engine Optimization"]
     S --> ALC["App Launch Checklist"]
+    S --> CEA["Content Engagement"]
 
     FP -->|"Ranked features feed"| RP
     RP -->|"Timeline drives"| GTM
     GTM -->|"Executed via"| ALC
     ASO -->|"Optimizes listing for"| ALC
     SEO -->|"Feeds organic visibility into"| ALC
+    SEO -->|"Standout content feeds"| CEA
+    CEA -->|"Messaging supports"| GTM
     ALC -->|"Launch validates"| MET["06 · Metrics"]
 
     FP -.->|"Uses data from"| DISC["02 · Discovery"]
@@ -36,6 +39,7 @@ graph TD
     style ASO fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style SEO fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style ALC fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style CEA fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style MET fill:#e2e8f0,stroke:#94a3b8,color:#334155
     style DISC fill:#e2e8f0,stroke:#94a3b8,color:#334155
     style DEV fill:#e2e8f0,stroke:#94a3b8,color:#334155
@@ -54,6 +58,7 @@ graph TD
 | [App Store Optimization](app-store-optimization.md) | 🟢 | Keyword strategy, screenshot conversion, review loops |
 | [Roadmap Planning](roadmap-planning.md) | 🟢 | Product roadmaps, WBS, task dependencies, Gantt/PERT/CPM charts |
 | [App Launch Checklist](app-launch-checklist.md) | 🟢 | Tactical launch checklist: analytics, waitlists, feedback boards, and emails |
+| [Content Engagement](content-engagement-strategy.md) | 🟢 | Engagement formula: misconception hooks, curiosity gaps, A/B-plot pacing |
 
 ---
 
@@ -68,6 +73,9 @@ graph TD
 - **Feedback Boards**: Crowd-sourced request upvoting (Canny) to prioritize roadmaps
 - **Work Breakdown Structure**: Hierarchical decomposition of deliverables
 - **Critical Path Method**: Identifying the longest dependency chain
+- **Misconception Hook**: Shatter the audience's wrong assumptions before explaining
+- **Curiosity Gap**: Pose the question before revealing the answer
+- **A-Plot / B-Plot Pacing**: Interleave narrative and technical threads to prevent fatigue
 
 ---
 

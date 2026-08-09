@@ -116,6 +116,7 @@ graph TD
 - ← [User Research](../02-discovery/user-research.md) — Who the GTM targets
 - → [Search Engine Optimization](search-engine-optimization.md) — Web organic acquisition channel
 - → [App Store Optimization](app-store-optimization.md) — Mobile organic acquisition channel
+- → [Content Engagement](content-engagement-strategy.md) — Engaging messaging that holds attention
 - → [App Launch Checklist](app-launch-checklist.md) — Tactical launch preparation checklist
 - → [Roadmap Planning](roadmap-planning.md) — When it's scheduled
 - → [Success Metrics](../06-metrics/success-metrics.md) — How to measure GTM outcomes

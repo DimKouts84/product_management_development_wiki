@@ -207,6 +207,7 @@ Peloton pairs automated gamification with authentic human connection.
 - ← [Gamification Patterns](../05-design/gamification-patterns.md) — Design patterns for engagement
 - → [Onboarding Patterns](../05-design/onboarding-patterns.md) — First experience before retention
 - → [Anti-Patterns](../07-risk-management/anti-patterns.md) — Dark patterns in retention design
+- → [Content Engagement](../03-strategy/content-engagement-strategy.md) — Curiosity-gap mechanics for content engagement
 
 ---
 
