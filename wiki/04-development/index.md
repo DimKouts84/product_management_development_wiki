@@ -13,9 +13,11 @@ graph TD
     DEV["⚙️ Development"] --> RUS["Requirements & User Stories"]
     DEV --> EV["Estimations & Velocity"]
     DEV --> AC["Acceptance Criteria"]
+    DEV --> ARAG["Agentic RAG & Data Arch"]
 
     RUS -->|"Stories are estimated by"| EV
     EV -->|"Sprint capacity drives"| AC
+    ARAG -->|"Technical specs for"| RUS
     AC -->|"Validates delivery for"| RETRO["08 · Retrospectives"]
 
     RUS -.->|"Sourced from"| DISC["02 · Discovery"]
@@ -25,6 +27,7 @@ graph TD
     style RUS fill:#f87171,stroke:#dc2626,color:#fff
     style EV fill:#f87171,stroke:#dc2626,color:#fff
     style AC fill:#f87171,stroke:#dc2626,color:#fff
+    style ARAG fill:#f87171,stroke:#dc2626,color:#fff
     style RETRO fill:#4f46e5,stroke:#4338ca,color:#fff
     style DISC fill:#059669,stroke:#047857,color:#fff
     style RISK fill:#ea580c,stroke:#c2410c,color:#fff
@@ -39,6 +42,8 @@ graph TD
 | [Requirements & User Stories](requirements-user-stories.md) | 🟢 | Business, functional, non-functional requirements; user story format; INVEST criteria |
 | [Estimations & Velocity](estimations-velocity.md) | 🟢 | Story points, Fibonacci estimation, velocity tracking |
 | [Acceptance Criteria](acceptance-criteria.md) | 🟢 | Given-When-Then templates, verification lists |
+| [Agentic RAG & Data Architecture](agentic-rag-data-architecture.md) | 🟢 | Enterprise RAG, Knowledge Runtimes, agentic data layers, and bot protocols |
+
 
 ---
 

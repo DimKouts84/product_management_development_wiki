@@ -24,8 +24,9 @@ graph TD
     ASO -->|"Optimizes listing for"| ALC
     SEO -->|"Feeds organic visibility into"| ALC
     SEO -->|"Standout content feeds"| CEA
+    SEO -.->|"AI search KPIs feed"| MET["06 · Metrics"]
     CEA -->|"Messaging supports"| GTM
-    ALC -->|"Launch validates"| MET["06 · Metrics"]
+    ALC -->|"Launch validates"| MET
 
     FP -.->|"Uses data from"| DISC["02 · Discovery"]
     RP -.->|"Produces work for"| DEV["04 · Development"]
@@ -54,7 +55,7 @@ graph TD
 |:-----|:------:|:------------|
 | [Feature Prioritization](feature-prioritization.md) | 🟢 | RICE methodology, decision matrices, cost-value analysis |
 | [Go-to-Market](go-to-market.md) | 🟢 | GTM strategy, A/B testing, launch planning |
-| [Search Engine Optimization](search-engine-optimization.md) | 🟢 | Modern SEO: stratified index, AI search, query fan-outs, relevance engineering |
+| [Search Engine Optimization](search-engine-optimization.md) | 🟢 | Modern SEO: stratified index, AI search, situation matching, trust content, relevance engineering |
 | [App Store Optimization](app-store-optimization.md) | 🟢 | Keyword strategy, screenshot conversion, review loops |
 | [Roadmap Planning](roadmap-planning.md) | 🟢 | Product roadmaps, WBS, task dependencies, Gantt/PERT/CPM charts |
 | [App Launch Checklist](app-launch-checklist.md) | 🟢 | Tactical launch checklist: analytics, waitlists, feedback boards, and emails |
@@ -67,7 +68,10 @@ graph TD
 - **RICE Scoring**: Reach × Impact × Confidence ÷ Effort
 - **Cost-Value Matrix**: Plotting features by development cost vs. business value
 - **Go-to-Market**: Who, how, where, and when to launch
-- **SEO Pillars**: Stratified index, vector embeddings, entity mentions, query fan-outs
+- **SEO Pillars**: Stratified index, vector embeddings, entity mentions, query fan-outs, situation matching
+- **Micro-Moments**: I Want to Know / Go / Do / Buy — the four intents AI search serves
+- **Trust Content**: Pricing transparency, disqualification, decision frameworks, localized edge cases
+- **Barbell Model**: Mass authority or hyper-niche ownership; avoid the squeezed middle
 - **ASO Pillars**: Keyword optimization, CVR screenshot hooks, and review prompts
 - **Launch Telemetry**: Early post-launch analytics (PostHog) to track churn
 - **Feedback Boards**: Crowd-sourced request upvoting (Canny) to prioritize roadmaps

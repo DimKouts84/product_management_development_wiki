@@ -49,6 +49,7 @@ graph LR
     DEV --> DEV1["Requirements & User Stories"]
     DEV --> DEV2["Estimations & Velocity"]
     DEV --> DEV3["Acceptance Criteria"]
+    DEV --> DEV4["Agentic RAG & Data Arch"]
 
     DES --> DES1["UI Design Foundations"]
     DES --> DES2["User Interaction & Design"]
@@ -84,7 +85,7 @@ graph LR
 |  01   | [**Foundations**](wiki/01-foundations/index.md)         | Core terminology and document standards        | 2     |
 |  02   | [**Discovery**](wiki/02-discovery/index.md)             | User research, market analysis, requirements   | 3     |
 |  03   | [**Strategy**](wiki/03-strategy/index.md)               | Prioritization, GTM, SEO, ASO, roadmaps, launches | 7     |
-|  04   | [**Development**](wiki/04-development/index.md)         | Requirements, estimations, acceptance criteria | 3     |
+|  04   | [**Development**](wiki/04-development/index.md)         | Requirements, estimations, acceptance criteria, RAG arch | 4     |
 |  05   | [**Design**](wiki/05-design/index.md)                   | UX/UI, onboarding, gamification patterns       | 5     |
 |  06   | [**Metrics**](wiki/06-metrics/index.md)                 | Success metrics, retention psychology          | 2     |
 |  07   | [**Risk Management**](wiki/07-risk-management/index.md) | Risk frameworks and anti-patterns              | 2     |
@@ -97,7 +98,8 @@ graph LR
 ```
 product_management_development_wiki/
 ├── README.md                    # This file
-├── wiki/                        # 📘 Primary wiki content (8 sections, 24 pages)
+├── wiki/                        # 📘 Primary wiki content (8 sections, 26 pages)
+
 ├── docs/                        # 📂 Source materials (gitignored)
 │   ├── legacy_notion_files/     #    Original Notion exports
 │   └── research/                #    Deep research documents

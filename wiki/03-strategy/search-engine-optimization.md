@@ -9,12 +9,20 @@
 - [How Google Ranks Today](#how-google-ranks-today)
 - [Vector Embeddings & Entities](#vector-embeddings--entities)
 - [Mentions vs. Links](#mentions-vs-links)
-- [AI Search & Query Fan-outs](#ai-search--query-fan-outs)
+- [AI Search, Query Fan-outs & Platform Sourcing](#ai-search-query-fan-outs--platform-sourcing)
+- [The B2B Validation Loop](#the-b2b-validation-loop)
+- [Situation & Attribute Matching](#situation--attribute-matching)
+- [The 4 Micro-Moments & Trust Content](#the-4-micro-moments--trust-content)
+- [The Barbell Model & Brand Fingerprinting](#the-barbell-model--brand-fingerprinting)
+- [On-Page vs Off-Page: The 25/75 Split](#on-page-vs-off-page-the-2575-split)
+- [Princeton GEO Writing Rules](#princeton-geo-writing-rules)
 - [Optimizations That Work Now](#optimizations-that-work-now)
 - [Relevance Engineering](#relevance-engineering)
 - [Measurement](#measurement)
+- [30-Day Execution Roadmap](#30-day-execution-roadmap)
 
 ---
+
 
 ## How Google Ranks Today
 
@@ -125,7 +133,7 @@ graph TD
 
 ---
 
-## AI Search & Query Fan-outs
+## AI Search, Query Fan-outs & Platform Sourcing
 
 AI platforms do **not** use a single index. ChatGPT queries Bing, Google, Exa, SER APIs, and more (Claude relies on Brave). Prompts are broken into a **query fan-out** — a series of synthetic queries — and content is retrieved, ranked, and synthesized through an **agentic RAG pipeline**.
 
@@ -150,16 +158,193 @@ graph TD
 > [!WARNING]
 > At each stage an **agentic critic** makes judgments you have no visibility into and no control over. Content that is discarded early never reaches the language model — you simply don't rank in the answer.
 
-### Strategy for AI Search
+### Platform-Aware AI Sourcing
 
-- **Optimize for the query fan-outs, not the prompt.** Users don't search the prompt; the system does.
-- **Be comprehensive.** Fan-outs shift slightly between runs, but they don't introduce dramatically new ideas. Ultimate-guide-level comprehensiveness covers the variations.
-- **Let your audience drive research.** These systems are reactive to audiences — keyword and prompt research should be audience-driven.
-- **Map content to format expectations.** Each synthetic query can expect a specific format (e.g., video). If you provide the expected format, the system pulls you over generic alternatives.
-- **Maximize surface area.** Spread content across your ecosystem — website, YouTube, LinkedIn, earned media, owned communities — so it performs across every engine.
+Different AI platforms rely on distinct index sources and evaluation criteria:
+
+| AI Platform | Sourcing Bias & Primary Citation Outlets | Key Optimization Focus |
+|:------------|:----------------------------------------|:-----------------------|
+| **Google AI Overviews (AIO)** | **YouTube** (transcripts & tutorials) and **Reddit** | High-velocity video transcripts, structured how-tos, community discussion |
+| **ChatGPT (OpenAI)** | Tier-1 news publishers (**Reuters, AP**), Wikipedia, high-authority web indexes | Fresh press releases, entity authority, high Common Crawl presence |
+| **Perplexity AI** | **Niche specialist sites**, deep technical research, fresh feeds | Real-time citations, expert blogs, numerical claims & verifiable statistics |
+
+---
+
+## The B2B Validation Loop
+
+In conversational search, buyers do not follow a simple linear funnel (`Search → Click → Convert`). Instead, they navigate an iterative **validation loop**:
+
+```mermaid
+sequenceDiagram
+    participant User as 👤 Buyer / Searcher
+    participant Search as 🔍 Google / Search
+    participant LLM as 🤖 ChatGPT / Perplexity
+    participant Peers as 💬 Slack / LinkedIn / Reddit
+    participant Site as 🌐 Vendor Website
+
+    User->>Search: 1. Broad research prompt
+    User->>LLM: 2. Structure options & feature matrices
+    User->>Peers: 3. Peer validation & review check
+    User->>Site: 4. Verify specific pricing, docs & integrations
+    User->>Peers: 5. Final sanity check with community
+    User->>Site: 6. Decision & conversion
+```
+
+> [!NOTE]
+> AI search gets a brand into the **initial consideration set**, but off-site peer trust and clear **pricing/integration transparency** on your own website are what close the transaction.
+
+---
+
+## Situation & Attribute Matching
+
+Traditional keyword-based SEO is being replaced by **Attribute & Situation Matching**. Users no longer search with short, 1–3 word terms; AI models process long-tail, conversational queries that describe complete scenarios, then match content against the *situation* and *attributes* embedded in the query.
+
+| Dimension | Old Model: Keyword Matching | New Model: Situation & Attribute Matching |
+|:----------|:----------------------------|:------------------------------------------|
+| **Query shape** | 1–3 word terms (*"running shoes"*, *"plumber near me"*) | Full-context scenarios (*"My 7-year-old gets headaches every afternoon after using her tablet"*) |
+| **Matching basis** | Exact/close keyword overlap | Entity, attribute, and intent distance in embedding space |
+| **Intent source** | Assumed from keyword | Inferred from the complete user situation |
+| **Content strategy** | Keyword repetition | Complete situations, objections, and exact attributes |
+
+> [!WARNING]
+> Search intent can no longer be "faked" with keyword repetition. Content must be designed around complete customer situations, objections, and exact attributes — or AI will never retrieve it.
+
+### The Data Behind the Shift
+
+| Metric / Finding | Data Point | Strategic Implication |
+|:-----------------|:-----------|:----------------------|
+| **Zero-Click Searches** | **57%+ → 68%** of searches end without a website click | Informational queries yield fewer clicks as Google and AI summaries answer directly on the SERP |
+| **CTR Collapse at Rank #1** | Rank #1 CTR dropped from **1.76% → 0.61%** on AI Overview SERPs (~60% drop) | Holding Rank #1 on a standard SERP no longer guarantees click volume |
+| **Rank vs. AI Citation Disconnect** | Rank #1 gives only **31.4%** chance of AI citation; **90%** of AI-cited pages rank **#21 or lower** | Traditional SERP rank and AI visibility are two distinct, decoupled scores |
+| **Citation Source Shift** | Only **38%** of AI citations come from Google's Top 10 (down from 76%) | ~75% of AI visibility depends on external web mentions, not your own site |
+| **Branded Search Benchmark** | Top performers drive **~10%** of search traffic via brand name (vs. 2.4% average) | Defensibility relies on searchers explicitly querying your brand |
+
+---
+
+## The 4 Micro-Moments & Trust Content
+
+Google's original **4 Micro-Moments** remain the foundation, but AI search changes how each moment must be served. Each maps to a distinct content type that must be engineered deliberately.
+
+| Micro-Moment | Intent | Example Query |
+|:-------------|:-------|:--------------|
+| **I Want to Know** | Informational research | "How does a tankless water heater work?" |
+| **I Want to Go** | Local & service discovery (high-revenue moment) | "Plumber in Minneapolis" |
+| **I Want to Do** | Problem-solving / troubleshooting | "How to fix knee pain when running" |
+| **I Want to Buy** | Transactional / evaluation | "Best running shoes for flat feet under $100" |
+
+```mermaid
+graph LR
+    KNOW["📚 I Want to Know\nInformational"] --> TRUST["🤝 Trust Content"]
+    GO["📍 I Want to Go\nLocal & Service"] --> TRUST
+    DO["🛠️ I Want to Do\nProblem-Solving"] --> TRUST
+    BUY["🛒 I Want to Buy\nEvaluation"] --> TRUST
+    TRUST --> CITE["✅ AI Recommendation"]
+
+    style KNOW fill:#fbbf24,stroke:#d97706,color:#000
+    style GO fill:#fbbf24,stroke:#d97706,color:#000
+    style DO fill:#fbbf24,stroke:#d97706,color:#000
+    style BUY fill:#fbbf24,stroke:#d97706,color:#000
+    style TRUST fill:#d97706,stroke:#b45309,color:#fff
+    style CITE fill:#2563eb,stroke:#1e40af,color:#fff
+```
+
+### Product Directive: Build "Trust Content"
+
+AI search engines prioritize content that directly addresses user doubts and friction points before conversion:
+
+1. **Pricing Transparency:** Detailed breakdowns of costs and the factors that influence price.
+2. **Fit / Disqualification:** Clear explanations of who the product/service is **NOT** a good fit for.
+3. **Decision Frameworks:** "Repair vs. Replace" or "Option A vs. Option B" comparison guides.
+4. **Localized Edge Cases:** Context specific to geographic regions, climates, or niches.
 
 > [!TIP]
-> **Inspect AI responses directly:** right-click → Inspect → Network tab → `conversation` endpoint to see the live query fan-out — the terms, sources, and query types used. Tools like Profound capture how fan-outs change across multiple runs per day.
+> Trust content is the differentiator AI cannot synthesize from generic sources. A page that answers doubts honestly and specifically is far more likely to be cited than a page that merely repeats what 100 others say.
+
+---
+
+## The Barbell Model & Brand Fingerprinting
+
+As search engines absorb generic informational content, market positioning collapses in the middle.
+
+```mermaid
+graph TD
+    MASS["🏛️ Mass Category Authority\nHubSpot · CNN · New Yorker"] -->|"Trusted at scale"| WIN["✅ Both Ends Win"]
+    MID["⚠️ The Squeezed Middle\nGeneric How-Tos · Me-Too Blogs · Directory Lists"] -->|"Easily absorbed by AI"| NO1["❌ Synthesized without link-out"]
+    NICH["🔬 Hyper-Niche Ownership\nFocused audience · deep trust · community"] -->|"Owned territory"| WIN
+
+    style MASS fill:#fbbf24,stroke:#d97706,color:#000
+    style MID fill:#dc2626,stroke:#b91c1c,color:#fff
+    style NICH fill:#fbbf24,stroke:#d97706,color:#000
+    style WIN fill:#2563eb,stroke:#1e40af,color:#fff
+    style NO1 fill:#dc2626,stroke:#b91c1c,color:#fff
+```
+
+- **The Danger Zone (The Middle):** Brands that are not authoritative enough to be trusted category leaders, yet not specialized enough to own a tight niche community.
+- **The "Sameness" Elimination Rule:** If 100 websites answer a question identically, AI condenses all 100 into a single paragraph without linking out.
+- **Brand Fingerprinting:** Pages must contain proprietary data, original testing, distinct opinions, or verified local case studies that AI cannot synthesize from open training data.
+
+> [!WARNING]
+> Generic Q&A pages, basic how-tos, and synthesized reviews are the most vulnerable — they are easily absorbed into a single AI summary paragraph with no citation at all.
+
+---
+
+## On-Page vs Off-Page: The 25/75 Split
+
+AI search visibility is driven roughly **25% by on-page structure** and **75% by your external ecosystem**. Both must be engineered deliberately — this split is the operational backbone of AI search strategy.
+
+```mermaid
+graph TD
+    GEO["🤖 AI Search Visibility"] --> ON["📄 On-Page Structure (25%)"]
+    GEO --> OFF["🌐 External Ecosystem (75%)"]
+
+    ON --> O1["🎯 Goal Completion in Line 1"]
+    ON --> O2["❓ Headings as Natural Prompts"]
+    ON --> O3["🙋 Situation-Based FAQs"]
+
+    OFF --> F1["⭐ Attribute-Rich Reviews"]
+    OFF --> F2["🏷️ Directory & Entity Parity"]
+    OFF --> F3["🏘️ Multi-Platform Presence"]
+
+    style GEO fill:#d97706,stroke:#b45309,color:#fff
+    style ON fill:#fbbf24,stroke:#d97706,color:#000
+    style OFF fill:#fbbf24,stroke:#d97706,color:#000
+    style O1 fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style O2 fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style O3 fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style F1 fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style F2 fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style F3 fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+```
+
+### On-Page Structure (25% Weight)
+
+1. **Lead with Goal Completion:** AI models chunk content and scan for immediate, confident answers. Put the direct answer in **line 1** of the page or section — never bury it under introductory history or boilerplate.
+2. **Headings as Natural Language Prompts:** Write `H2` and `H3` headers as full, conversational questions matching exact user prompts (e.g., `### What is the best moisturizer for acne-prone skin under $100?`).
+3. **Situation-Based FAQs:** Extract top question clusters (Reddit, People Also Ask, Answer the Public) and convert them into structured FAQ sections at the bottom of core pages.
+
+### Off-Page Ecosystem (75% Weight)
+
+1. **Attribute-Rich Reviews:** AI engines (e.g., Gemini's Ask Maps) parse customer review *text* to match query attributes — not just star counts.
+2. **Review Prompting:** Shift review requests from generic "leave us 5 stars" to context-driven prompts: *"Would you mind sharing what specific issue you had and how we resolved it?"*
+3. **Directory Synchronization:** Mirror Google Business Profile data across Bing for Business, Yelp, Angi, G2, Trustpilot, and niche industry platforms.
+4. **Local SEO Paradigm Shift:** In map packs and local AI search, **relevance & attribute matching** are replacing geographic **proximity** as the primary ranking signal.
+
+---
+
+## Princeton GEO Writing Rules
+
+Research from Princeton Generative Engine Optimization (GEO) identifies **4 writing patterns** that maximize the probability of an LLM citing your content in an answer synthesis:
+
+| GEO Writing Pattern | Description & Implementation | Impact |
+|:-------------------|:-----------------------------|:-------|
+| **1. Front-Load Answers** | Place the direct, complete core answer in the **first 40–60 words** of each section. | Immediate passage relevance match during chunking |
+| **2. Self-Contained Paragraphs** | Ensure each paragraph stands alone as an independent unit of information without requiring prior context. | Higher passage retrieval score during RAG ranking |
+| **3. Inline Third-Party Citations** | Attribute facts and data to credible third-party institutions directly in the text. | **+30% to +40%** increase in citation probability |
+| **4. Specific Statistics over Claims** | Replace qualitative descriptions with named subjects, numerical claims, timeframes, and verifiable sources. | Enables precise entity-attribute extraction |
+
+> [!EXAMPLE]
+> **Weak (Qualitative):** *"Our software significantly improves team productivity and reduces costs."*  
+> **Strong (GEO-Optimized):** *"In a 2025 benchmark study by Gartner, enterprises implementing agentic RAG workflows reduced operational spending by 24% over 12 months."*
 
 ---
 
@@ -242,12 +427,51 @@ Visibility alone is an incomplete KPI. Measure **three buckets**:
 > [!TIP]
 > Input metrics are the actionable levers — they're what you can actually change to move performance. Single-bucket measurement misses the picture, and this typically spans a **tiger team** (PR, content, marketing) rather than SEO alone.
 
+### AI Search Measurement Cautions
+
+- **Avoid early "AI Rank Tracking" SaaS tools:** AI recommendations are non-deterministic, highly customized to user chat histories, and yield **zero prompt-to-prompt overlap**. Rank scores from these tools are noise, not signal.
+- **Primary Metric:** Monitor **AI referral traffic** in Google Analytics (ChatGPT, Gemini, Claude, Perplexity), alongside brand search volume and attribute-rich review velocity.
+
+### AI Search Visibility KPIs
+
+| Metric Category | Primary KPI | Purpose / Evaluation Method |
+|:----------------|:------------|:----------------------------|
+| **Brand Equity** | **Branded Search Share %** | Share of search traffic from brand-name terms (target **8–10%**) |
+| **AI Visibility** | **LLM Citation Rate & Sentiment** | Frequency and sentiment of brand mentions across ChatGPT, Gemini, and Claude |
+| **Business Impact** | **Direct Channel Revenue** | Revenue conversion relative to organic traffic volume to monitor demand health |
+| **Customer Validation** | **Attribute Review Velocity** | Monthly count of reviews mentioning specific features, services, or technical resolutions |
+
+> [!NOTE]
+> Traditional SERP rank trackers are insufficient for non-deterministic AI recommendations. See [Success Metrics → AI Search Visibility KPIs](../06-metrics/success-metrics.md) for the full metric framework.
+
+---
+
+## 30-Day Execution Roadmap
+
+```mermaid
+graph LR
+    W1["📋 Week 1 · Content Audit\nTop pages · 'Sameness' · buried answers"] --> W2["🛠️ Week 2 · On-Page Restructure\nLine-1 answers · prompt headings · trust content"]
+    W2 --> W3["🔗 Week 3 · Off-Page Sync\nGBP/Bing parity · Yelp/G2 audit · LLM tracking"]
+    W3 --> W4["⭐ Week 4 · Review Pipeline\nReview prompting template · FAQ updates"]
+
+    style W1 fill:#fbbf24,stroke:#d97706,color:#000
+    style W2 fill:#fbbf24,stroke:#d97706,color:#000
+    style W3 fill:#fbbf24,stroke:#d97706,color:#000
+    style W4 fill:#d97706,stroke:#b45309,color:#fff
+```
+
+1. **Week 1 (Content Audit):** Audit the top 10 traffic pages for "sameness". Flag buried answers and ensure every page carries a distinct brand fingerprint or proprietary data point.
+2. **Week 2 (On-Page Execution):** Refactor headers into conversational prompts; place direct answers in the opening sentence of each section; add Trust Content (pricing transparency, disqualification).
+3. **Week 3 (Entity Parity):** Synchronize Google Business Profile attributes across Bing for Business and third-party review networks; set up LLM citation tracking.
+4. **Week 4 (Review Strategy):** Update post-purchase automated communications to solicit attribute-rich customer feedback; ship FAQ updates.
+
 ---
 
 ## Related Pages
 
 - ← [Go-to-Market](go-to-market.md) — SEO as an organic discovery channel in GTM
 - ← [App Store Optimization](app-store-optimization.md) — Organic search in app stores vs. web
+- → [Agentic RAG & Data Architecture](../04-development/agentic-rag-data-architecture.md) — Technical architecture for enterprise RAG, agentic data layers, and Knowledge Runtimes
 - → [Success Metrics](../06-metrics/success-metrics.md) — Measuring acquisition and conversion outcomes
 - → [App Launch Checklist](app-launch-checklist.md) — Launch-day organic visibility tasks
 - → [User Research](../02-discovery/user-research.md) — Audience-driven keyword and prompt research
@@ -257,12 +481,16 @@ Visibility alone is an incomplete KPI. Measure **three buckets**:
 
 ## Sources & References
 
+- Research Blueprint: `docs/research/Agentic-First Blueprint for Online.md` — Princeton GEO principles, LLM sourcing metrics, Agentic RAG, and zero-click impact
 - Podcast interview: Mike King, "Google Leak Takeaways" (iPullRank), chapters 2–30
 - Google API content leak analysis and DOJ antitrust trial testimony
 - Yandex source-code leak (cross-verified concepts: boosts, Twiddlers, index stratification)
+- Caleb Ulku, ["Keywords Are Dead, Do THIS Instead"](https://youtu.be/WZrSlgdm5GQ) — situation & attribute matching, 4 micro-moments, trust content, 25/75 split
+- Neil Patel, ["The New Rules of Google (Most Businesses Won't Survive)"](https://youtu.be/KeT5oSgo-Ko) — barbell model, branded search benchmark, Search Everywhere Optimization
 - Related external course: Software Product Management Specialization (Coursera)
-- Original file reference: `docs/research/` (SEO/AI-search research notes)
+- Original file reference: `docs/research/ai-search-strategy.md` (SEO/AI-search research notes)
 
 ---
 
 *[← Back to Section Index](index.md) · [← Back to Wiki Home](../index.md)*
+
