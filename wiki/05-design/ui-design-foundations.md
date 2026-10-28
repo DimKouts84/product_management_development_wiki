@@ -367,6 +367,7 @@ graph LR
 
 - ← [User Interaction & Design](user-interaction-design.md) — Use cases, wireframes, and storyboards
 - ← [Mobile UI Design Foundations](mobile-ui-design-foundations.md) — Mobile-specific layout and interaction constraints
+- ← [Dashboard Design Playbook](dashboard-design-playbook.md) — These foundations applied to data-dense analytics screens
 - → [Onboarding Patterns](onboarding-patterns.md) — Applying design principles to first-run experiences
 - → [Gamification Patterns](gamification-patterns.md) — Engagement-driven design patterns
 

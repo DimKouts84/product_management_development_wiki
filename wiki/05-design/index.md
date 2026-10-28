@@ -2,7 +2,7 @@
 
 > **Design is the fundamental soul of a man-made creation.** — Steve Jobs
 
-This section covers the full spectrum of product design — from foundational UX principles and wireframing through research-backed onboarding and gamification patterns that drive engagement and retention.
+This section covers the full spectrum of product design — from foundational UX principles and wireframing through dashboard design, research-backed onboarding, and gamification patterns that drive engagement and retention.
 
 ---
 
@@ -15,8 +15,10 @@ graph TD
     DES --> MUI["Mobile UI Foundations"]
     DES --> OB["Onboarding Patterns"]
     DES --> GP["Gamification Patterns"]
+    DES --> DDP["Dashboard Design Playbook"]
 
     UIDF -->|"Informs visual language"| UID
+    UIDF -->|"Extends to data-dense screens"| DDP
     UIDF -->|"Applied to mobile"| MUI
     UID -->|"Informs layout rules"| MUI
     MUI -->|"Applied in first views"| OB
@@ -25,6 +27,7 @@ graph TD
 
     UID -.->|"Based on"| DISC["02 · User Research"]
     GP -.->|"Impacts"| RET["06 · Retention Psychology"]
+    DDP -.->|"KPIs defined in"| MET
 
     style DES fill:#334155,stroke:#1e293b,color:#fff
     style UIDF fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
@@ -32,6 +35,7 @@ graph TD
     style MUI fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style OB fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style GP fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style DDP fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style MET fill:#e2e8f0,stroke:#94a3b8,color:#334155
     style DISC fill:#e2e8f0,stroke:#94a3b8,color:#334155
     style RET fill:#e2e8f0,stroke:#94a3b8,color:#334155
@@ -44,6 +48,7 @@ graph TD
 | Page | Status | Description |
 |:-----|:------:|:------------|
 | [UI Design Foundations](ui-design-foundations.md) | 🟢 | Intentional UX, visual hierarchy, wall-of-text refactoring, typography, color, and context preservation |
+| [Dashboard Design Playbook](dashboard-design-playbook.md) | 🟢 | 6-rule problem-driven redesign: layout, gray-first color, KPI context, chart clarity, control reduction, product polish |
 | [User Interaction & Design](user-interaction-design.md) | 🟢 | User considerations, use cases, wireframes, storyboards |
 | [Mobile UI Design Foundations](mobile-ui-design-foundations.md) | 🟢 | Layout constraints, navigation architectures, and gestural interactions |
 | [Onboarding Patterns](onboarding-patterns.md) | 🟢 | 9 research-backed onboarding UX patterns with case studies |
@@ -55,6 +60,9 @@ graph TD
 
 - **Affordances & Signifiers**: Communicating UI behavior without written instructions
 - **Intentional UX Paradigm**: Designing for contextual user utility rather than visual minimalism
+- **Problem-Driven Redesign Loop**: Fix the worst UX pain first, one problem at a time
+- **Gray-First Design**: Consistent grays; accent color reserved for data and switched-on states
+- **Comparison Encoding**: Arrow shows direction, shade shows good/bad — no red/green for deltas
 - **Visual Hierarchy**: Size, position, and color to direct user attention
 - **Information Refactoring Protocol**: 5-step workflow for structuring dense data into scannable visual pockets
 - **4-Point Grid**: All spacing as multiples of 4 for system-wide consistency
