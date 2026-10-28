@@ -69,6 +69,19 @@ graph TD
 > [!TIP]
 > **Hierarchy is contrast.** The bigger the difference between small and large, colorful and muted — the stronger the visual priority signal. Avoid making all elements the same size; it creates a spreadsheet, not a design.
 
+### Start From the Key Functionality
+
+When designing a page, resist the pull of structural questions — *"how many sections do I need? how wide should the buttons be?"* These **hows** stall progress and drain creative energy. Start from the **key functionality or main selling point**: for many pages, that is a heading, an input field, and a button. Design that core well — chances are it is most of what the page needed anyway — and only then expand to secondary sections.
+
+> [!TIP]
+> The *whats* come before the *hows*. A page designed from its core function outward is simpler and sharper than one assembled from the header downward.
+
+### Emphasize by De-emphasizing
+
+To make an element stand out, start by **lowering the contrast of competing elements** rather than amplifying the primary one — secondary information fades so the key element can breathe. Then climb the emphasis ladder on the target: contrast first, then font weight, then size.
+
+Finish every emphasis pass with the **zoom-out scannability test**: view the design small (or at a glance) and confirm the key element still separates from secondary information. Users scan for key information before they read anything — if nothing pops at thumbnail distance, adjust contrast, weight, size, or spacing. What to emphasize depends on context: sometimes it is a label, sometimes a value, sometimes an icon.
+
 ---
 
 ## The Intentionality Paradox: Less vs. Utility
@@ -104,6 +117,8 @@ Grids are **guidelines**, not rigid rules. Custom landing pages often ignore the
 ### Whitespace
 
 More important than any grid is **whitespace** — letting content breathe. Tight, cramped spacing increases cognitive load. A generous 32px gap between major sections reads as clean and intentional.
+
+Spacing also reads differently **in context vs. in isolation**: when you focus on a single element, generous spacing feels excessive — but users scan the whole view before focusing on details. The working method: start with *more* spacing than feels necessary, evaluate the design as a whole, then remove gradually until it feels right. Because that manual tuning gets tedious, anchor it in a system (below) and pick values from the scale rather than at random.
 
 ### 4-Point Grid System
 
@@ -142,6 +157,10 @@ For large display headings, apply these adjustments to instantly elevate the pro
 | :--- | :--- |
 | **Landing pages / Websites** | Up to **6 distinct sizes**, wide range permitted |
 | **Dashboards / Tools** | Max ~**24px** for headings (compressed range due to information density) |
+
+### Context-Dependent Heading Sizes
+
+Heading tags are document semantics, not fixed visual sizes. An `H3` can legitimately render *larger* than an `H2` when the content demands it — a product name inside a card, a key metric label, a CTA line. Size follows **emphasis context**, not tag order: keep the semantic heading order for accessibility and structure, then let the visual system assign sizes per context. The same applies to margins — not all `H1`s share the same spacing.
 
 ---
 
@@ -368,6 +387,8 @@ graph LR
 - ← [User Interaction & Design](user-interaction-design.md) — Use cases, wireframes, and storyboards
 - ← [Mobile UI Design Foundations](mobile-ui-design-foundations.md) — Mobile-specific layout and interaction constraints
 - ← [Dashboard Design Playbook](dashboard-design-playbook.md) — These foundations applied to data-dense analytics screens
+- → [Landing Page Design](landing-page-design.md) — These foundations applied to marketing and acquisition pages
+- → [Motion Design](motion-design.md) — Purposeful movement for state feedback and attention
 - → [Onboarding Patterns](onboarding-patterns.md) — Applying design principles to first-run experiences
 - → [Gamification Patterns](gamification-patterns.md) — Engagement-driven design patterns
 
@@ -378,6 +399,7 @@ graph LR
 - Research Document: [UI Design Foundations Research](../../docs/research/ui_design_foundations.md)
 - Video Source: *10 UI Design Concepts in 10 Minutes* (2026)
 - Video Source: *Less is More vs. Intentional UI Design* (2026)
+- Video Source: *The Easy Way to Design Top Tier Websites* — Sajid ([YouTube](https://www.youtube.com/watch?v=qyomWr_C_jA), 2024) — key-functionality-first workflow, de-emphasis, spacing method, and context-dependent heading sizes
 
 ---
 

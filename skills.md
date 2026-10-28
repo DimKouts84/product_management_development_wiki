@@ -118,6 +118,16 @@ When consuming raw documentation from `docs/`:
 5. Generate a Mermaid diagram summarizing any process or hierarchy mentioned in the text.
 6. Verify and compile the "Sources & References" footer, pointing to the original files.
 
+### 4. Synthesizing External Content (Videos, Papers, Talks)
+When integrating external material, produce **generic PM-style topic pages** — not source summaries:
+1. **Digest fully first**: transcript + visual review of key frames/screens before writing.
+2. **Map domains, not sources**: find which existing page already owns each knowledge domain (scan its headings).
+3. **Extend or create**: extend the page that owns the domain when content would otherwise duplicate it; create a new page only for an uncovered domain.
+4. **Merge same-domain sources** into one page, reorganized by topic — never one page per video by default.
+5. **Generic voice**: no source rule numbering ("Rule 3"), no "in the video…" phrasing; state principles and PM trade-offs directly.
+6. **No promotions**: sponsor/ad segments are excluded entirely; free tools central to the content may be referenced generically.
+7. **Cite the originals** in Sources & References (title, author, link, year), then verify links and run the graphify semantic update.
+
 ---
 
 ## Mermaid Diagram Best Practices
@@ -155,4 +165,6 @@ Before completing any wiki update, verify the following:
 - [ ] **Back-navigation**: The page ends with back-links to both the section index and the wiki home.
 - [ ] **Aesthetics**: Markdown contains clear sections, lists/tables, and at least one styled Mermaid diagram (if applicable).
 - [ ] **Source Integrity**: References to `docs/` or external courses are documented in the footer.
+- [ ] **Synthesis, Not Summary**: External content is reorganized by domain into generic topic pages — no source rule numbering or "in the video…" phrasing in titles/body.
+- [ ] **No Promotions**: Sponsor/ad segments from external material are excluded entirely.
 - [ ] **No Placeholders**: There are no empty `TBD` pages; at a minimum, they contain structured outlines and guidelines for future expansion.

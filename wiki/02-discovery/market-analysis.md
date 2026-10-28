@@ -7,7 +7,7 @@
 ## Table of Contents
 
 - [Market Analysis Framework](#market-analysis-framework)
-- [Market Segmentation (TAM/SAM/SOM)](#market-segmentation-tamsam-som)
+- [Market Segmentation (TAM/SAM/SOM)](#market-segmentation-tamsamsom)
 - [Competitive Analysis](#competitive-analysis)
 - [Market Differentiation](#market-differentiation)
 

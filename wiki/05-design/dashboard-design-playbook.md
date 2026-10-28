@@ -302,6 +302,7 @@ It works now and looks decent, but it doesn't feel like a real product: hovering
 - ← [UI Design Foundations](ui-design-foundations.md) — Affordances, hierarchy, typography, color, dark-mode depth, and states
 - ← [Mobile UI Design Foundations](mobile-ui-design-foundations.md) — Layout and navigation constraints on smaller screens
 - → [User Interaction & Design](user-interaction-design.md) — Use cases and wireframing before visual design
+- → [Landing Page Design](landing-page-design.md) — Gray-first color discipline and product polish applied to marketing pages
 - → [Success Metrics](../06-metrics/success-metrics.md) — The KPIs these dashboards are built to communicate
 
 ---

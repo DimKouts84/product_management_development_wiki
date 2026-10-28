@@ -11,6 +11,7 @@
 - [Wireframes](#wireframes)
 - [Storyboards](#storyboards)
 - [The Design Pipeline](#the-design-pipeline)
+- [The Creative Process](#the-creative-process)
 
 ---
 
@@ -136,6 +137,36 @@ A storyboard:
 
 ---
 
+## The Creative Process
+
+Creativity is a **process, not a moment**. Being creative is not about being the first person to think of an idea — it is about *connecting existing ideas*. Top designers rarely start from a blank slate: they take what already works and recombine it deliberately. But you can only recombine rules you know, so the process starts with fundamentals:
+
+```mermaid
+graph LR
+    S1["1️⃣ Learn the Basics"] --> S2["2️⃣ Gather References"]
+    S2 --> S3["3️⃣ Study as a User\nform explicit opinions"]
+    S3 --> S4["4️⃣ Step Away\nincubation"]
+    S4 --> S5["5️⃣ Test & Iterate\ndon't fall in love"]
+    S5 -.->|"new ideas surface\nnaturally"| S3
+
+    style S1 fill:#ec4899,stroke:#db2777,color:#fff
+    style S2 fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style S3 fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style S4 fill:#475569,stroke:#1e293b,color:#fff
+    style S5 fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+```
+
+1. **Learn the basics** — the fundamentals covered in this section and [UI Design Foundations](ui-design-foundations.md); creativity recombines known rules.
+2. **Gather proven references** — study well-executed designs in your problem space (top products, design communities). Good sources are *proven real-world designs* and *quick to search* by pattern and domain.
+3. **Study them as a user** — ask what you like and *why*, and convert observations into explicit requirements ("two or three strong quotes with real images, big bold text"). Generic review sections with no emotion are a clear anti-pattern to avoid.
+4. **Step away** — incubation is part of the work. Form ideas, then deliberately do something else; when you revisit the problem, new combinations surface naturally. (If they never do, the bottleneck is usually stress or sleep, not talent.)
+5. **Don't fall in love** — show the design to colleagues first, then test with users, and stay open to adjusting from feedback. Finishing something — *anything* — proves the capability; sometimes several full designs get made just to discover the one good section in the third.
+
+> [!TIP]
+> "Stop planning and just design" is a process step, not a slogan. First versions are the raw material of iteration — teams that wait for the perfect idea produce nothing to test.
+
+---
+
 ## Related Pages
 
 - ← [User Research](../02-discovery/user-research.md) — User insights that inform design decisions
@@ -143,6 +174,7 @@ A storyboard:
 - → [Onboarding Patterns](onboarding-patterns.md) — Designing the first user experience
 - → [Mobile UI Design Foundations](mobile-ui-design-foundations.md) — Designing for mobile layout and interaction constraints
 - → [Gamification Patterns](gamification-patterns.md) — Engagement-driven design patterns
+- → [Landing Page Design](landing-page-design.md) — The creative process and design levers applied to acquisition surfaces
 - → [Acceptance Criteria](../04-development/acceptance-criteria.md) — Testing design implementations
 
 ---
@@ -151,6 +183,7 @@ A storyboard:
 
 - Software Product Management Specialization — Coursera
 - Legacy notes: `docs/legacy_notion_files/User Interaction & Design`
+- Video Source: *The Easy Way to Design Top Tier Websites* — Sajid ([YouTube](https://www.youtube.com/watch?v=qyomWr_C_jA), 2024) — the five-step creative process
 
 ---
 

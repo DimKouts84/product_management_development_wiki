@@ -2,7 +2,7 @@
 
 > **Design is the fundamental soul of a man-made creation.** — Steve Jobs
 
-This section covers the full spectrum of product design — from foundational UX principles and wireframing through dashboard design, research-backed onboarding, and gamification patterns that drive engagement and retention.
+This section covers the full spectrum of product design — from foundational UX principles and wireframing through dashboard design, landing pages, motion, and platform-native implementation, to research-backed onboarding and gamification patterns that drive engagement and retention.
 
 ---
 
@@ -16,10 +16,17 @@ graph TD
     DES --> OB["Onboarding Patterns"]
     DES --> GP["Gamification Patterns"]
     DES --> DDP["Dashboard Design Playbook"]
+    DES --> LPD["Landing Page Design"]
+    DES --> MOT["Motion Design"]
+    DES --> PNE["Platform-Native Elements"]
 
     UIDF -->|"Informs visual language"| UID
     UIDF -->|"Extends to data-dense screens"| DDP
     UIDF -->|"Applied to mobile"| MUI
+    UIDF -->|"Foundations on marketing pages"| LPD
+    LPD -->|"Signature & craft need"| MOT
+    MOT -.->|"Built on platform features"| PNE
+    PNE -.->|"Touch-safe & input UX"| MUI
     UID -->|"Informs layout rules"| MUI
     MUI -->|"Applied in first views"| OB
     OB -->|"Drives long-term via"| GP
@@ -36,6 +43,9 @@ graph TD
     style OB fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style GP fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style DDP fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style LPD fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style MOT fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style PNE fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style MET fill:#e2e8f0,stroke:#94a3b8,color:#334155
     style DISC fill:#e2e8f0,stroke:#94a3b8,color:#334155
     style RET fill:#e2e8f0,stroke:#94a3b8,color:#334155
@@ -49,6 +59,9 @@ graph TD
 |:-----|:------:|:------------|
 | [UI Design Foundations](ui-design-foundations.md) | 🟢 | Intentional UX, visual hierarchy, wall-of-text refactoring, typography, color, and context preservation |
 | [Dashboard Design Playbook](dashboard-design-playbook.md) | 🟢 | 6-rule problem-driven redesign: layout, gray-first color, KPI context, chart clarity, control reduction, product polish |
+| [Landing Page Design](landing-page-design.md) | 🟢 | Decisions-over-defaults method for marketing pages: six levers, specificity ladder, signature, craft |
+| [Motion Design](motion-design.md) | 🟢 | Motion with a job: fundamentals, easing, pattern catalog, technique decision flow, accessibility |
+| [Platform-Native Elements](platform-native-elements.md) | 🟢 | Native HTML/CSS capability map; when to go custom; platform-first scope strategy |
 | [User Interaction & Design](user-interaction-design.md) | 🟢 | User considerations, use cases, wireframes, storyboards |
 | [Mobile UI Design Foundations](mobile-ui-design-foundations.md) | 🟢 | Layout constraints, navigation architectures, and gestural interactions |
 | [Onboarding Patterns](onboarding-patterns.md) | 🟢 | 9 research-backed onboarding UX patterns with case studies |
@@ -74,6 +87,13 @@ graph TD
 - **1D Content Flow**: Structuring mobile views in one direction per section
 - **Aha Moment**: The precise instant a user experiences core product value
 - **Intrinsic vs. Extrinsic Motivation**: Why badges fail and mastery succeeds
+- **Decisions Over Defaults**: Premium = every element chosen; generic = built entirely from defaults
+- **Specificity Ladder**: Claim → statement → proof; interchangeable copy communicates nothing
+- **Signature Centerpiece**: The hero must demonstrate the product, not illustrate it
+- **Motion Has a Job**: Feedback, causality, continuity, progress, attention — otherwise it is decoration
+- **Ghost Element Pattern**: JS measures, CSS animates — the division of labor behind sliding active states
+- **Platform-First**: Native elements before custom components — cost, accessibility, and maintenance for free
+- **Incubation**: Stepping away from a formed idea is part of the creative process, not procrastination
 
 ---
 

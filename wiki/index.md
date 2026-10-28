@@ -90,6 +90,9 @@ User experience, interaction design, and product design patterns.
 |:-----|:------:|:------------|
 | [UI Design Foundations](05-design/ui-design-foundations.md) | 🟢 | Affordances, hierarchy, typography, color, shadows, states, and overlays |
 | [Dashboard Design Playbook](05-design/dashboard-design-playbook.md) | 🟢 | 6-rule problem-driven dashboard redesign: layout, gray-first color, KPI context, chart clarity, control reduction |
+| [Landing Page Design](05-design/landing-page-design.md) | 🟢 | Decisions-over-defaults method: six levers, specificity ladder, signature, craft |
+| [Motion Design](05-design/motion-design.md) | 🟢 | Motion with a job: fundamentals, easing, pattern catalog, accessibility |
+| [Platform-Native Elements](05-design/platform-native-elements.md) | 🟢 | Native HTML/CSS capability map; when to go custom |
 | [User Interaction & Design](05-design/user-interaction-design.md) | 🟢 | Use cases, wireframes, storyboards |
 | [Mobile UI Design Foundations](05-design/mobile-ui-design-foundations.md) | 🟢 | Layout constraints, navigation architectures, and gestural interactions |
 | [Onboarding Patterns](05-design/onboarding-patterns.md) | 🟢 | Onboarding UX strategies and case studies |

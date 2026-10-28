@@ -135,6 +135,17 @@ When modifying any folder structure or adding/removing pages:
 1. Re-render the section's index Mermaid diagram to accurately reflect the changes.
 2. Verify all relative links remain correct.
 
+### Synthesizing External Content
+When integrating external material (videos, research papers, talks, course lessons) into the wiki, produce **generic PM-style knowledge pages** — not source summaries:
+1. **Digest fully first**: read the transcript and review the visuals (frames/screenshots) before writing anything.
+2. **Map domains, not sources**: identify the knowledge domains the material covers, then scan existing page headings to find the page that already owns each domain.
+3. **Create vs. extend**: extend the page that already owns the domain when a significant share of the content would duplicate it; create a new page only when no existing page covers the domain.
+4. **Merge same-domain sources**: multiple sources covering one domain go into one page, reorganized by topic — never one page per video/talk by default.
+5. **Generic voice**: no source-specific rule numbering ("Rule 3") and no "in the video…" phrasing in titles or body. State principles and PM trade-offs (cost, quality, accessibility, risk) directly.
+6. **Exclude promotions**: sponsor/ad segments are omitted entirely; free tools that are central to the content may appear as generic references.
+7. **Cite the originals** in Sources & References with title, author, link, and year.
+8. Follow the standard page template, then verify links and run the graphify doc-level semantic update (see graphify section below).
+
 ---
 
 *For detailed templates and Mermaid syntax guides, see [skills.md](skills.md).*
@@ -151,3 +162,5 @@ Rules:
 - If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
 - Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
 - After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+- After modifying **docs** (wiki pages, README, docs/, research notes), run `/graphify . --update` in OpenCode so the changed docs get the incremental semantic pass. This dispatches extraction subagents that run on the session model (the "OpenCode LLM") — no API key needed; the CLI-only `graphify update .` does NOT cover docs.
+- After the semantic update, keep the pipeline complete: re-label communities if the count changed (Step 5), regenerate `graph.html` (`graphify export html`), and show the graph diff before cleaning up temp artifacts.

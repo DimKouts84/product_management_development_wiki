@@ -172,6 +172,8 @@ graph TD
 - ← [UI Design Foundations](ui-design-foundations.md) — Visual design language: hierarchy, color, typography, and states
 - → [Onboarding Patterns](onboarding-patterns.md) — First experience design
 - → [Gamification Patterns](gamification-patterns.md) — Engagement architecture for mobile/web
+- → [Motion Design](motion-design.md) — Motion principles behind transitions and gestural feedback
+- → [Platform-Native Elements](platform-native-elements.md) — Touch-safe hover, input UX, and native primitives
 
 ---
 
