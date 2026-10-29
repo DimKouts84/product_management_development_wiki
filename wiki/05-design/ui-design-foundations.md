@@ -86,7 +86,7 @@ Finish every emphasis pass with the **zoom-out scannability test**: view the des
 
 ## The Intentionality Paradox: Less vs. Utility
 
-A common trap in modern design is treating **"Less is More"** as an absolute aesthetic law rather than a functional tool. Removing borders, text context, colors, and controls in pursuit of visual minimalism often creates "soulless" interfaces that increase cognitive load.
+A common trap in modern design is treating **"Less is More"** as an absolute aesthetic law rather than a functional tool. Removing borders, text context, colors, and controls in pursuit of visual minimalism often creates "soulless" interfaces that increase cognitive load. This page covers the craft mechanics; the psychology of *why* effortless interfaces read as higher quality — cognitive fluency — lives in [Design Psychology](design-psychology.md#cognitive-fluency-easy-to-process-reads-as-premium).
 
 ### Visual Minimalism vs. Intentional UX
 
@@ -116,7 +116,7 @@ Grids are **guidelines**, not rigid rules. Custom landing pages often ignore the
 
 ### Whitespace
 
-More important than any grid is **whitespace** — letting content breathe. Tight, cramped spacing increases cognitive load. A generous 32px gap between major sections reads as clean and intentional.
+More important than any grid is **whitespace** — letting content breathe. Tight, cramped spacing increases cognitive load. A generous 32px gap between major sections reads as clean and intentional. It also reads as *confidence*: whitespace is a psychological cue that the brand does not need to shout (see [Design Psychology](design-psychology.md#how-leading-brands-apply-the-psychology)).
 
 Spacing also reads differently **in context vs. in isolation**: when you focus on a single element, generous spacing feels excessive — but users scan the whole view before focusing on details. The working method: start with *more* spacing than feels necessary, evaluate the design as a whole, then remove gradually until it feels right. Because that manual tuning gets tedious, anchor it in a system (below) and pick values from the scale rather than at random.
 
@@ -384,6 +384,7 @@ graph LR
 
 ## Related Pages
 
+- ← [Design Psychology](design-psychology.md) — The psychology behind why these mechanics register as premium (halo effect, fluency, peak-end)
 - ← [User Interaction & Design](user-interaction-design.md) — Use cases, wireframes, and storyboards
 - ← [Mobile UI Design Foundations](mobile-ui-design-foundations.md) — Mobile-specific layout and interaction constraints
 - ← [Dashboard Design Playbook](dashboard-design-playbook.md) — These foundations applied to data-dense analytics screens

@@ -20,7 +20,7 @@
 
 ## The Method: One Problem at a Time
 
-A basic analytics dashboard "works" — but it is ugly and hard to use, which makes users distrust the numbers on it. The easy way to level it up is **not** a big-bang visual overhaul. It is a disciplined loop:
+A basic analytics dashboard "works" — but it is ugly and hard to use, which makes users distrust the numbers on it. That distrust is not vanity — it is the **halo effect** applied to data products: polish quality is re-attributed to the data itself (see [Design Psychology](design-psychology.md#the-first-vote-first-impressions-and-the-halo-effect)). The easy way to level it up is **not** a big-bang visual overhaul. It is a disciplined loop:
 
 1. **Identify** the problem that hurts the user experience the most *right now*.
 2. **Fix only that problem.**
@@ -301,6 +301,7 @@ It works now and looks decent, but it doesn't feel like a real product: hovering
 
 - ← [UI Design Foundations](ui-design-foundations.md) — Affordances, hierarchy, typography, color, dark-mode depth, and states
 - ← [Mobile UI Design Foundations](mobile-ui-design-foundations.md) — Layout and navigation constraints on smaller screens
+- → [Design Psychology](design-psychology.md) — The halo effect and fluency principles behind "polish = trust in numbers"
 - → [User Interaction & Design](user-interaction-design.md) — Use cases and wireframing before visual design
 - → [Landing Page Design](landing-page-design.md) — Gray-first color discipline and product polish applied to marketing pages
 - → [Success Metrics](../06-metrics/success-metrics.md) — The KPIs these dashboards are built to communicate

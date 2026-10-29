@@ -215,6 +215,7 @@ graph TD
 
 - ← [UI Design Foundations](ui-design-foundations.md) — State feedback requirements and micro-interaction philosophy
 - → [Landing Page Design](landing-page-design.md) — Motion powering the Signature and Craft levers
+- → [Design Psychology](design-psychology.md) — Why micro-interactions create memorable peaks (peak-end rule) and balance safety with novelty
 - → [Mobile UI Design Foundations](mobile-ui-design-foundations.md) — Gestural transitions on touch surfaces
 - → [Platform-Native Elements](platform-native-elements.md) — Native primitives that carry motion (SVG, hover queries, media elements)
 

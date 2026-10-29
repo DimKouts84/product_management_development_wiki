@@ -144,7 +144,8 @@ When integrating external material (videos, research papers, talks, course lesso
 5. **Generic voice**: no source-specific rule numbering ("Rule 3") and no "in the video…" phrasing in titles or body. State principles and PM trade-offs (cost, quality, accessibility, risk) directly.
 6. **Exclude promotions**: sponsor/ad segments are omitted entirely; free tools that are central to the content may appear as generic references.
 7. **Cite the originals** in Sources & References with title, author, link, and year.
-8. Follow the standard page template, then verify links and run the graphify doc-level semantic update (see graphify section below).
+8. **Propose restructured content first**: when updating any existing .md page, propose a restructured version of the whole page that makes sense for a product manager — never append a raw summary of the video or article.
+9. Follow the standard page template, then verify links and run the graphify doc-level semantic update (see graphify section below).
 
 ---
 

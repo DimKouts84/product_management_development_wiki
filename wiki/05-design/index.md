@@ -17,6 +17,7 @@ graph TD
     DES --> GP["Gamification Patterns"]
     DES --> DDP["Dashboard Design Playbook"]
     DES --> LPD["Landing Page Design"]
+    DES --> DPS["Design Psychology"]
     DES --> MOT["Motion Design"]
     DES --> PNE["Platform-Native Elements"]
 
@@ -32,6 +33,10 @@ graph TD
     OB -->|"Drives long-term via"| GP
     GP -->|"Measured by"| MET["06 · Metrics"]
 
+    DPS -->|"Explains why craft reads premium"| UIDF
+    DPS -->|"Higher-level ground of"| LPD
+    DDP -.->|"Trust via polish = halo effect"| DPS
+
     UID -.->|"Based on"| DISC["02 · User Research"]
     GP -.->|"Impacts"| RET["06 · Retention Psychology"]
     DDP -.->|"KPIs defined in"| MET
@@ -44,6 +49,7 @@ graph TD
     style GP fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style DDP fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style LPD fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
+    style DPS fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style MOT fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style PNE fill:#f1f5f9,stroke:#cbd5e1,color:#1e293b
     style MET fill:#e2e8f0,stroke:#94a3b8,color:#334155
@@ -58,8 +64,9 @@ graph TD
 | Page | Status | Description |
 |:-----|:------:|:------------|
 | [UI Design Foundations](ui-design-foundations.md) | 🟢 | Intentional UX, visual hierarchy, wall-of-text refactoring, typography, color, and context preservation |
+| [Design Psychology](design-psychology.md) | 🟢 | Why pages feel premium: 50ms halo effect, cognitive fluency, mental models, three judgment systems, peak-end micro-interactions — plus the premium-perception framework and audit |
 | [Dashboard Design Playbook](dashboard-design-playbook.md) | 🟢 | 6-rule problem-driven redesign: layout, gray-first color, KPI context, chart clarity, control reduction, product polish |
-| [Landing Page Design](landing-page-design.md) | 🟢 | Decisions-over-defaults method for marketing pages: six levers, specificity ladder, signature, craft |
+| [Landing Page Design](landing-page-design.md) | 🟢 | Six visual style families with signal matching, then the decisions-over-defaults execution method: six levers, specificity ladder, signature, craft |
 | [Motion Design](motion-design.md) | 🟢 | Motion with a job: fundamentals, easing, pattern catalog, technique decision flow, accessibility |
 | [Platform-Native Elements](platform-native-elements.md) | 🟢 | Native HTML/CSS capability map; when to go custom; platform-first scope strategy |
 | [User Interaction & Design](user-interaction-design.md) | 🟢 | User considerations, use cases, wireframes, storyboards |
@@ -81,6 +88,12 @@ graph TD
 - **4-Point Grid**: All spacing as multiples of 4 for system-wide consistency
 - **Context Preservation**: Retaining user context via search snippets, breadcrumbs, and stepped async progress
 - **Semantic Colors**: Blue = trust, Red = danger, Yellow = warning, Green = success
+- **50-Millisecond Vote**: The halo effect forms the judgment of the whole site in the first fraction of a second
+- **Cognitive Fluency**: Easy-to-process reads as better, more trustworthy, higher quality — subtraction is a trust strategy
+- **Three Judgment Systems**: Safety votes first, novelty second, proof justifies last — supply all three, in order
+- **Mental Model Blueprint**: Visitors arrive with a layout blueprint; accidental breaks read as broken
+- **Safety-Novelty Balance**: Predictable structure with tiny deliberate pattern breaks — both systems get their vote
+- **Peak-End Micro-Interactions**: Pages are remembered by peaks and endings; smooth feedback moments are both
 - **Use Cases**: Structured scenarios defining user-system interactions
 - **Wireframes & Storyboards**: Visual prototyping pipeline
 - **Bottom Sheet Context**: Preserving user context for secondary workflows
@@ -94,6 +107,10 @@ graph TD
 - **Ghost Element Pattern**: JS measures, CSS animates — the division of labor behind sliding active states
 - **Platform-First**: Native elements before custom components — cost, accessibility, and maintenance for free
 - **Incubation**: Stepping away from a formed idea is part of the creative process, not procrastination
+- **Six Style Families**: Nearly every client site resolves to one of six recurring visual styles — minimal, corporate, warm, editorial, signature, or spectacle
+- **Signal-to-Style Matching**: The phrase a client repeats ("clean", "reliable", "human", "taste", "remember", "wow") names the style
+- **Contrast Not Bigness**: A signature element stands out because it differs, not because it is large
+- **Direction + Execution**: The chosen style sets the destination; decisions-over-defaults levers are the vehicle
 
 ---
 
