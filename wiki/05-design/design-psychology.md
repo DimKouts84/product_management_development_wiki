@@ -6,27 +6,22 @@
 
 ## Table of Contents
 
-- [Design Psychology](#design-psychology)
-  - [Table of Contents](#table-of-contents)
-  - [Why Design Is Psychology First](#why-design-is-psychology-first)
-  - [The Visitor's Judgment Pipeline](#the-visitors-judgment-pipeline)
-  - [Unconscious Processing: Decisions Below Awareness](#unconscious-processing-decisions-below-awareness)
-  - [The First Vote: First Impressions and the Halo Effect](#the-first-vote-first-impressions-and-the-halo-effect)
-  - [Cognitive Fluency: Easy-to-Process Reads as Premium](#cognitive-fluency-easy-to-process-reads-as-premium)
-  - [Working Memory: Three or Four Things at Once](#working-memory-three-or-four-things-at-once)
-  - [One Visitor, Three Judgment Systems](#one-visitor-three-judgment-systems)
-  - [Mental Models: The Visitor's Layout Blueprint](#mental-models-the-visitors-layout-blueprint)
-  - [Balancing Safety and Novelty](#balancing-safety-and-novelty)
-  - [Moments That Stick: Micro-Interactions and the Peak-End Rule](#moments-that-stick-micro-interactions-and-the-peak-end-rule)
-  - [Decision Architecture: Defaults, Anchors \& Frames](#decision-architecture-defaults-anchors--frames)
-    - [1. Smart Defaults: Shifting from Generation to Verification](#1-smart-defaults-shifting-from-generation-to-verification)
-    - [2. Price Anchoring \& The Contrast Effect: Relative Evaluation](#2-price-anchoring--the-contrast-effect-relative-evaluation)
-    - [3. Loss Framing vs. Gain Framing: Prospect Theory in Copy](#3-loss-framing-vs-gain-framing-prospect-theory-in-copy)
-  - [How Leading Brands Apply the Psychology](#how-leading-brands-apply-the-psychology)
-  - [The Premium-Perception Framework](#the-premium-perception-framework)
-  - [A PM Audit for Psychology Gaps](#a-pm-audit-for-psychology-gaps)
-  - [Related Pages](#related-pages)
-  - [Sources \& References](#sources--references)
+- [Why Design Is Psychology First](#why-design-is-psychology-first)
+- [The Visitor's Judgment Pipeline](#the-visitors-judgment-pipeline)
+- [Unconscious Processing: Decisions Below Awareness](#unconscious-processing-decisions-below-awareness)
+- [The First Vote: First Impressions and the Halo Effect](#the-first-vote-first-impressions-and-the-halo-effect)
+- [Cognitive Fluency: Easy-to-Process Reads as Premium](#cognitive-fluency-easy-to-process-reads-as-premium)
+- [Working Memory: Three or Four Things at Once](#working-memory-three-or-four-things-at-once)
+- [One Visitor, Three Judgment Systems](#one-visitor-three-judgment-systems)
+- [Mental Models: The Visitor's Layout Blueprint](#mental-models-the-visitors-layout-blueprint)
+- [Balancing Safety and Novelty](#balancing-safety-and-novelty)
+- [Moments That Stick: Micro-Interactions and the Peak-End Rule](#moments-that-stick-micro-interactions-and-the-peak-end-rule)
+- [Decision Architecture: Defaults, Anchors & Frames](#decision-architecture-defaults-anchors--frames)
+- [How Leading Brands Apply the Psychology](#how-leading-brands-apply-the-psychology)
+- [The Premium-Perception Framework](#the-premium-perception-framework)
+- [A PM Audit for Psychology Gaps](#a-pm-audit-for-psychology-gaps)
+- [Related Pages](#related-pages)
+- [Sources & References](#sources--references)
 
 ---
 
@@ -120,13 +115,13 @@ The inverse is **cognitive fluency**: when something is simple, clear, and intui
 
 Two experiences demonstrate the difference:
 
-|                       | Cheap-feeling page                                                | Premium-feeling page                                       |
-| :-------------------- | :---------------------------------------------------------------- | :--------------------------------------------------------- |
-| **Element structure** | A chaotic mix of competing elements — the eye has nowhere to land | One clear path — the eye goes exactly where it is guided   |
-| **Whitespace**        | Squeezed, cramped; content fights for room                        | Generous; content can breathe                              |
-| **Hierarchy**         | Implied at best                                                   | Explicit: the most important thing is unmistakably first   |
-| **Navigation**        | Creative, unpredictable positions                                 | Simple, predictable, conventional                          |
-| **Resulting feeling** | Overwhelmed → skeptical                                           | Calm, in control, confident in the brand's professionalism |
+| | Cheap-feeling page | Premium-feeling page |
+| :--- | :--- | :--- |
+| **Element structure** | A chaotic mix of competing elements — the eye has nowhere to land | One clear path — the eye goes exactly where it is guided |
+| **Whitespace** | Squeezed, cramped; content fights for room | Generous; content can breathe |
+| **Hierarchy** | Implied at best | Explicit: the most important thing is unmistakably first |
+| **Navigation** | Creative, unpredictable positions | Simple, predictable, conventional |
+| **Resulting feeling** | Overwhelmed → skeptical | Calm, in control, confident in the brand's professionalism |
 
 That last row is the business logic: brands that reduce the mental effort required to use their site make visitors *feel* a certain way — calm and in control — and that feeling is re-attributed as trust in the brand itself.
 
@@ -155,13 +150,13 @@ The fix is structural, not rhetorical — **group**:
 
 Common practice designs for "the user" as if users were a single mind. In practice, every visitor brings **three evaluation systems** to the page, each wanting something different — and none of them can be left out. Crucially, **they fire in a fixed order**: safety votes first, novelty votes second, and justification votes last.
 
-|                     | 1 · The Safety Vote                         | 2 · The Novelty Vote                           | 3 · The Proof Vote                           |
-| :------------------ | :------------------------------------------ | :--------------------------------------------- | :------------------------------------------- |
-| **Fires**           | First — before anything else                | Second — during interaction                    | Last — after the decision is already made    |
-| **Wants**           | Familiar structure, zero surprise           | Pleasant unpredictability, small dopamine hits | Reasons the decision feels smart             |
-| **Bounces when**    | The page doesn't match expected patterns    | Everything is so safe it's boring              | Claims are unsupported or overwhelming       |
-| **What to supply**  | Conventional layout, predictable navigation | Tiny deliberate pattern breaks                 | Reviews, guarantees, grouped value story     |
-| **Risk if ignored** | "This is different" → leaves immediately    | Boredom → leaves anyway                        | Decision made but unjustifiable → hesitation |
+| | 1 · The Safety Vote | 2 · The Novelty Vote | 3 · The Proof Vote |
+| :--- | :--- | :--- | :--- |
+| **Fires** | First — before anything else | Second — during interaction | Last — after the decision is already made |
+| **Wants** | Familiar structure, zero surprise | Pleasant unpredictability, small dopamine hits | Reasons the decision feels smart |
+| **Bounces when** | The page doesn't match expected patterns | Everything is so safe it's boring | Claims are unsupported or overwhelming |
+| **What to supply** | Conventional layout, predictable navigation | Tiny deliberate pattern breaks | Reviews, guarantees, grouped value story |
+| **Risk if ignored** | "This is different" → leaves immediately | Boredom → leaves anyway | Decision made but unjustifiable → hesitation |
 
 Three consequences of the ordering deserve emphasis:
 
@@ -294,11 +289,11 @@ In behavioral economics, **Prospect Theory** (*Kahneman & Tversky, 1979*) demons
 
 The principles are direction-agnostic: brands with completely different visual styles run on the same three mechanisms.
 
-| Brand example                                     | What they do                                                                                               | Psychology at work                                                                                          | Nearest style family   |
-| :------------------------------------------------ | :--------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :--------------------- |
-| **Apple**                                         | Full-screen product shot, one bold headline; near-zero cognitive load; famously smooth scrolling and menus | Halo mastery + fluency: impossible to be confused, so the first feeling is pure confidence                  | Clean Minimalism       |
-| **Luxury fashion (e.g., Hermes, Bottega Veneta)** | Extreme whitespace, few elements                                                                           | Whitespace as a cue: *"we are so confident, we don't need to shout"* — exclusivity and calm                 | High-Fashion Editorial |
-| **Stripe, Figma**                                 | Clear, logical layouts for genuinely complex products                                                      | Fluency for complexity: the site's simplicity makes the *product* feel simple; an innovation-and-trust halo | Structured Corporate   |
+| Brand example | What they do | Psychology at work | Nearest style family |
+| :--- | :--- | :--- | :--- |
+| **Apple** | Full-screen product shot, one bold headline; near-zero cognitive load; famously smooth scrolling and menus | Halo mastery + fluency: impossible to be confused, so the first feeling is pure confidence | Clean Minimalism |
+| **Luxury fashion (e.g., Hermes, Bottega Veneta)** | Extreme whitespace, few elements | Whitespace as a cue: *"we are so confident, we don't need to shout"* — exclusivity and calm | High-Fashion Editorial |
+| **Stripe, Figma** | Clear, logical layouts for genuinely complex products | Fluency for complexity: the site's simplicity makes the *product* feel simple; an innovation-and-trust halo | Structured Corporate |
 
 Note what the luxury example really says: whitespace on these sites is not empty space, and not minimalism-for-its-own-sake — it is a **psychological signal of confidence** that lowers cognitive load to the absolute minimum and puts the visitor's attention exactly on the product.
 
@@ -329,37 +324,37 @@ graph LR
 
 **Step 3 · Seed moments of delight.** Hunt for every place a small moment of positive feedback can live: how buttons respond on hover, what happens when a page loads, how the site responds while scrolling. On their own these are trivia; stacked through a journey, they are the essence of the premium experience — and the visible proof that someone cared.
 
+---
 
 ## A PM Audit for Psychology Gaps
 
-When reviewing any page — competitor benchmark, AI-generated draft, or an agency deliverable — run these eight questions in pipeline order:
 When reviewing any page — competitor benchmark, AI-generated draft, or an agency deliverable — run these eleven questions in pipeline order:
 
-| #    | Audit question                                                                       | Mechanism                   | Fails when it surfaces                         |
-| :--- | :----------------------------------------------------------------------------------- | :-------------------------- | :--------------------------------------------- |
-| 1    | What single feeling does the hero produce in the first 50 ms — and is it deliberate? | Halo effect                 | "Whatever" — the vote happens without a choice |
-| 2    | Which elements compete without hierarchy?                                            | Cognitive fluency           | Overwhelm re-attributed to the product         |
-| 3    | Where does the page break the visitor's mental model — and is each break deliberate? | Mental models               | Accidental breaks read as broken               |
-| 4    | Is the value story grouped into 3–4 items — or stacked past memory?                  | Working memory              | Half the reasons dropped before the fold       |
-| 5    | Is there proof for every claim someone might need to justify the decision later?     | Proof vote                  | Decision made, but hesitation follows          |
-| 6    | Is the structure safe and the *surface* surprising — or wholly one or the other?     | Safety/novelty balance      | Boring or alarming — never premium             |
-| 7    | What will the visitor remember: peaks and endings, or a flat middle?                 | Peak-end rule               | Effort concentrated in the hero only           |
-| 8    | Wo                                                                                   |
-| 10   | Are pricing tiers anchored against a credible, high-value reference point?           | Anchoring / Contrast effect | Price judged in isolation feels expensive      |
-| 11   | Is loss-framed messaging strictly honest, or does it rely on manufactured urgency?   | Loss aversion / Reactance   | Fake countdowns → brand skepticism and churn   |
+| # | Audit question | Mechanism | Fails when it surfaces |
+| :-- | :--- | :--- | :--- |
+| 1 | What single feeling does the hero produce in the first 50 ms — and is it deliberate? | Halo effect | "Whatever" — the vote happens without a choice |
+| 2 | Which elements compete without hierarchy? | Cognitive fluency | Overwhelm re-attributed to the product |
+| 3 | Where does the page break the visitor's mental model — and is each break deliberate? | Mental models | Accidental breaks read as broken |
+| 4 | Is the value story grouped into 3–4 items — or stacked past memory? | Working memory | Half the reasons dropped before the fold |
+| 5 | Is there proof for every claim someone might need to justify the decision later? | Proof vote | Decision made, but hesitation follows |
+| 6 | Is the structure safe and the *surface* surprising — or wholly one or the other? | Safety/novelty balance | Boring or alarming — never premium |
+| 7 | What will the visitor remember: peaks and endings, or a flat middle? | Peak-end rule | Effort concentrated in the hero only |
+| 8 | Would moving a familiar control break discoverability — even if the new position is "better UX"? | Mental models (regression) | On-paper wins that users can't find |
+| 9 | Do forms employ smart defaults to shift user work from generation to verification? | Default effect | Blank form fatigue → early drop-off |
+| 10 | Are pricing tiers anchored against a credible, high-value reference point? | Anchoring / Contrast effect | Price judged in isolation feels expensive |
+| 11 | Is loss-framed messaging strictly honest, or does it rely on manufactured urgency? | Loss aversion / Reactance | Fake countdowns → brand skepticism and churn |
 
 > [!NOTE]
-> Two of these audits connect directly to findings logged on other pages: item 2 is the reason unstyled native controls and mismatched polish make a dashboard's numbers feel untrustworthy (halo effect applied to data products — see the [Dashboard Design Playbook](dashboard-design-playbook.md#the-3-level-loop-level-up-a-dashboard-product-polish)), and items 1 and 7 are why a generic hero and a weak ending cost the same credibility a strong one could have earned.
 > Several of these audits connect directly to findings logged on other pages: item 2 is the reason unstyled native controls and mismatched polish make a dashboard's numbers feel untrustworthy (halo effect applied to data products — see the [Dashboard Design Playbook](dashboard-design-playbook.md#the-3-level-loop-level-up-a-dashboard-product-polish)), items 1 and 7 are why a generic hero and a weak ending cost the same credibility a strong one could have earned, and items 9-11 guard against dark patterns documented in [Anti-Patterns](../07-risk-management/anti-patterns.md#behavioral--ux-anti-patterns-dark-patterns).
 
 ---
 
 ## Related Pages
+
 - ← [UI Design Foundations](ui-design-foundations.md) — the craft mechanics (hierarchy, whitespace, states) that execute every principle here
 - ← [Landing Page Design](landing-page-design.md) — the directions and levers that operationalize premium perception
 - ← [Dashboard Design Playbook](dashboard-design-playbook.md) — the halo effect applied to data products: polish builds trust in numbers
 - → [Motion Design](motion-design.md) — the practice layer for micro-interactions and state feedback
-- → [Onboarding Patterns](onboarding-patterns.md) — working-memory and momentum principles applied to first-run flows
 - → [Onboarding Patterns](onboarding-patterns.md) — working-memory, endowed progress, and momentum principles applied to first-run flows
 - → [Anti-Patterns](../07-risk-management/anti-patterns.md) — ethical boundaries: distinguishing behavioral nudges from deceptive dark patterns
 

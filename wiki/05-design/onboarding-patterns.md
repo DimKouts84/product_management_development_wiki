@@ -192,10 +192,10 @@ graph TD
     style StrategyLong fill:#3b82f6,stroke:#1d4ed8,color:#fff
 ```
 
-| Strategy                 | Primary Goal                        | Ideal For                           | Onboarding Length                | Core Value / Exception                                                   | Examples                                          |
-| :----------------------- | :---------------------------------- | :---------------------------------- | :------------------------------- | :----------------------------------------------------------------------- | :------------------------------------------------ |
-| **Frictionless Path**    | Deliver instant gratification       | Media, AI, Entertainment, Utilities | Zero / Ultra-Short (1-3 screens) | Surfacing tangible value instantly; onboarding does work *for* the user. | **Granola** (2 screens), **ChatGPT** (1 prompt)   |
-| **Personalization Path** | Align expectations & qualify buyers | Finance, Health, Education, SaaS    | Long (20-110+ screens)           | Earning custom experiences & filtering for deep-pain buyers.             | **Cali** (20+ quiz steps), **Noom** (113 screens) |
+| Strategy | Primary Goal | Ideal For | Onboarding Length | Core Value / Exception | Examples |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Frictionless Path** | Deliver instant gratification | Media, AI, Entertainment, Utilities | Zero / Ultra-Short (1-3 screens) | Surfacing tangible value instantly; onboarding does work *for* the user. | **Granola** (2 screens), **ChatGPT** (1 prompt) |
+| **Personalization Path** | Align expectations & qualify buyers | Finance, Health, Education, SaaS | Long (20-110+ screens) | Earning custom experiences & filtering for deep-pain buyers. | **Cali** (20+ quiz steps), **Noom** (113 screens) |
 
 ---
 
@@ -226,26 +226,26 @@ graph TD
 
 ## Onboarding Case Studies: Good vs. Bad Examples
 
-| App / Product                  | Primary Onboarding Strategy                    | Classification                     | Impact & Metric                                | Why it Works / Fails                                                                                               |
-| :----------------------------- | :--------------------------------------------- | :--------------------------------- | :--------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
-| **Duolingo**                   | Try-before-buy / Long gamified lesson          | 🟢 **Good (Value-First)**           | 60+ screens prior to signup                    | Users experience the feeling of success (winning a lesson) before being forced to create an account.               |
-| **Mural**                      | Persistent contextual dashboard checklists     | 🟢 **Good (Contextual)**            | 📈 **10% increase in 1-week retention**         | Replaced annoying welcome pop-ups with an actionable, dismissible checklist.                                       |
-| **Headspace**                  | Multi-intent selection quiz                    | 🟢 **Good (Flexible)**              | 📈 **10% increase in free trial conversion**    | Let users select multiple goals, matching their actual multi-dimensional mental wellness needs.                    |
-| **Grammarly**                  | Quiz-based tailored pricing packages           | 🟢 **Good (Personalized)**          | 📈 **~20% increase in premium upgrades**        | Connected pricing options directly to the user's specific goals.                                                   |
-| **Houzz**                      | Multi-page form chunking                       | 🟢 **Good (Psychological)**         | 📈 **15% increase in signups**                  | Split a single dense signup sheet into bite-sized single-question screens to build momentum.                       |
-| **Dollar Shave Club**          | Conversational copy quiz                       | 🟢 **Good (Copywriting)**           | 📈 **5% increase in subscriptions**             | Rewrote standard quiz inputs into a friendly, conversational dialog.                                               |
-| **Focus Flight**               | Gamified/Haptic ticket paywall                 | 🟢 **Good (Delight)**               | High checkout delight                          | Turn the transaction screen into a sensory experience (vibration, ticket print-out).                               |
-| **Granola**                    | Two-screen Google Sign-In & mic permission ask | 🟢 **Good (Value-First)**           | 📈 Raised $125M in March 2026 ($1.5B valuation) | Surfaces value in the user's very next meeting; onboarding does work *for* the user.                               |
-| **AI Apps (e.g. Claude)**      | Zero-friction entry / Prompt field             | 🟢 **Good (Speed)**                 | Direct value delivery                          | Bypasses all setup to let the user get value in a single action.                                                   |
-| **Typical AI Apps (7%)**       | Private/No-quiz entry                          | 🔴 **Bad (Missed Personalization)** | Lower personalization value                    | AI tools often fail to ask user context upfront, missing opportunities to customize the early workspace.           |
-| **Cali / Calai**               | 20+ step quiz before dashboard access          | 🟢 **Good (Personalized Quiz)**     | 📈 $35M revenue in its first year               | Earns a highly custom first screen (avoiding generic template). Qualifies high-intent buyers in a deep-pain niche. |
-| **Noom**                       | 113-screen onboarding questionnaire            | 🟢 **Good (Personalized Quiz)**     | 📈 Valuation worth billions                     | Drives deep commitment and extensive personalization for high-ticket weight loss programs.                         |
-| **Fitness Apps**               | Habit/Goal Custom Quiz                         | 🟢 **Good (Interactive Quiz)**      | High setup retention                           | Personalizes workouts based on user inputs, keeping users engaged through customized roadmaps.                     |
-| **Shopping Apps**              | Style/Preference Quiz                          | 🟢 **Good (E-commerce Quiz)**       | 📈 Higher conversion rate                       | Conversational style matches users with products they want, driving immediate purchases.                           |
-| **Real Short**                 | Zero onboarding / Graduated Gates              | 🟢 **Good (Frictionless)**          | High Day-1 Retention                           | Open-to-play eliminates exit ramps; graduated friction converts attention to dollars.                              |
-| **LinkedIn**                   | Endowed progress profile meter                 | 🟢 **Good (Momentum)**              | 📈 Increased completion rate                    | Pre-fills meter to 15–20% on launch, leveraging the goal gradient effect.                                          |
-| **Notion**                     | Co-creation workspace assembly                 | 🟢 **Good (IKEA Effect)**           | High setup retention                           | Users assemble pages and templates prior to registration, building psychological ownership.                        |
-| **SEO & Audit SaaS (Generic)** | Hard blurred gate (No preview value)           | 🔴 **Bad (Broken Reciprocity)**     | High bounce rate (~65%)                        | Violates reciprocity by locking entire report without a free standalone score.                                     |
+| App / Product | Primary Onboarding Strategy | Classification | Impact & Metric | Why it Works / Fails |
+| :--- | :--- | :--- | :--- | :--- |
+| **Duolingo** | Try-before-buy / Long gamified lesson | 🟢 **Good (Value-First)** | 60+ screens prior to signup | Users experience the feeling of success (winning a lesson) before being forced to create an account. |
+| **Mural** | Persistent contextual dashboard checklists | 🟢 **Good (Contextual)** | 📈 **10% increase in 1-week retention** | Replaced annoying welcome pop-ups with an actionable, dismissible checklist. |
+| **Headspace** | Multi-intent selection quiz | 🟢 **Good (Flexible)** | 📈 **10% increase in free trial conversion** | Let users select multiple goals, matching their actual multi-dimensional mental wellness needs. |
+| **Grammarly** | Quiz-based tailored pricing packages | 🟢 **Good (Personalized)** | 📈 **~20% increase in premium upgrades** | Connected pricing options directly to the user's specific goals. |
+| **Houzz** | Multi-page form chunking | 🟢 **Good (Psychological)** | 📈 **15% increase in signups** | Split a single dense signup sheet into bite-sized single-question screens to build momentum. |
+| **Dollar Shave Club** | Conversational copy quiz | 🟢 **Good (Copywriting)** | 📈 **5% increase in subscriptions** | Rewrote standard quiz inputs into a friendly, conversational dialog. |
+| **Focus Flight** | Gamified/Haptic ticket paywall | 🟢 **Good (Delight)** | High checkout delight | Turn the transaction screen into a sensory experience (vibration, ticket print-out). |
+| **Granola** | Two-screen Google Sign-In & mic permission ask | 🟢 **Good (Value-First)** | 📈 Raised $125M in March 2026 ($1.5B valuation) | Surfaces value in the user's very next meeting; onboarding does work *for* the user. |
+| **AI Apps (e.g. Claude)** | Zero-friction entry / Prompt field | 🟢 **Good (Speed)** | Direct value delivery | Bypasses all setup to let the user get value in a single action. |
+| **Typical AI Apps (7%)** | Private/No-quiz entry | 🔴 **Bad (Missed Personalization)** | Lower personalization value | AI tools often fail to ask user context upfront, missing opportunities to customize the early workspace. |
+| **Cali / Calai** | 20+ step quiz before dashboard access | 🟢 **Good (Personalized Quiz)** | 📈 $35M revenue in its first year | Earns a highly custom first screen (avoiding generic template). Qualifies high-intent buyers in a deep-pain niche. |
+| **Noom** | 113-screen onboarding questionnaire | 🟢 **Good (Personalized Quiz)** | 📈 Valuation worth billions | Drives deep commitment and extensive personalization for high-ticket weight loss programs. |
+| **Fitness Apps** | Habit/Goal Custom Quiz | 🟢 **Good (Interactive Quiz)** | High setup retention | Personalizes workouts based on user inputs, keeping users engaged through customized roadmaps. |
+| **Shopping Apps** | Style/Preference Quiz | 🟢 **Good (E-commerce Quiz)** | 📈 Higher conversion rate | Conversational style matches users with products they want, driving immediate purchases. |
+| **Real Short** | Zero onboarding / Graduated Gates | 🟢 **Good (Frictionless)** | High Day-1 Retention | Open-to-play eliminates exit ramps; graduated friction converts attention to dollars. |
+| **LinkedIn** | Endowed progress profile meter | 🟢 **Good (Momentum)** | 📈 Increased completion rate | Pre-fills meter to 15–20% on launch, leveraging the goal gradient effect. |
+| **Notion** | Co-creation workspace assembly | 🟢 **Good (IKEA Effect)** | High setup retention | Users assemble pages and templates prior to registration, building psychological ownership. |
+| **SEO & Audit SaaS (Generic)** | Hard blurred gate (No preview value) | 🔴 **Bad (Broken Reciprocity)** | High bounce rate (~65%) | Violates reciprocity by locking entire report without a free standalone score. |
 
 ---
 

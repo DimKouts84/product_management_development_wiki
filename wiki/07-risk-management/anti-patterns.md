@@ -179,28 +179,28 @@ graph LR
 ### Process & Management Audit
 Use this checklist to audit your team for operational anti-patterns:
 
-|   ✅   | Check                                                             | Related Anti-Pattern            |
-| :---: | :---------------------------------------------------------------- | :------------------------------ |
-|   ☐   | Do we validate features with user data before building?           | Lack of Customer Validation     |
-|   ☐   | Can anyone on the team push back on executive opinions with data? | HIPPO                           |
-|   ☐   | Is our roadmap stable for at least one quarter?                   | Shiny Object Syndrome           |
-|   ☐   | Do we measure outcomes, not just outputs?                         | Feature Factory, Vanity Metrics |
-|   ☐   | Can more than one person handle critical tasks?                   | Hero Culture                    |
-|   ☐   | Do we have clear scope boundaries with a change request process?  | Scope Creep                     |
-|   ☐   | Can we make decisions within a time-boxed window?                 | Analysis Paralysis              |
-|   ☐   | Do we evaluate build-vs-buy options fairly?                       | Not Invented Here               |
-|   ☐   | Do we allocate time for strategic work alongside reactive work?   | Firefighting Mode               |
+| ✅ | Check | Related Anti-Pattern |
+|:--:|:------|:-------------------|
+| ☐ | Do we validate features with user data before building? | Lack of Customer Validation |
+| ☐ | Can anyone on the team push back on executive opinions with data? | HIPPO |
+| ☐ | Is our roadmap stable for at least one quarter? | Shiny Object Syndrome |
+| ☐ | Do we measure outcomes, not just outputs? | Feature Factory, Vanity Metrics |
+| ☐ | Can more than one person handle critical tasks? | Hero Culture |
+| ☐ | Do we have clear scope boundaries with a change request process? | Scope Creep |
+| ☐ | Can we make decisions within a time-boxed window? | Analysis Paralysis |
+| ☐ | Do we evaluate build-vs-buy options fairly? | Not Invented Here |
+| ☐ | Do we allocate time for strategic work alongside reactive work? | Firefighting Mode |
 
 ### Behavioral & UX Dark Pattern Audit
 Use this checklist to audit your customer-facing flows for deceptive psychology traps:
 
-|   ✅   | Check                                                                                         | Related Dark Pattern                |
-| :---: | :-------------------------------------------------------------------------------------------- | :---------------------------------- |
-|   ☐   | Can a user cancel their subscription in the exact same number of clicks it took to subscribe? | Roach Motel                         |
-|   ☐   | Are all loss-framed warnings (countdowns, expiry, stock limits) strictly factual?             | Deceptive Scarcity / Confirmshaming |
-|   ☐   | Do pre-selected defaults strictly protect user interests (security, baseline utility)?        | Hostile Defaults                    |
-|   ☐   | Does the progress bar advance proportionally and monotonically without sudden stalls?         | Expectation Debt Trap               |
-|   ☐   | Does the decline/close option use neutral, respectful copy without emotional coercion?        | Confirmshaming                      |
+| ✅ | Check | Related Dark Pattern |
+|:--:|:------|:-------------------|
+| ☐ | Can a user cancel their subscription in the exact same number of clicks it took to subscribe? | Roach Motel |
+| ☐ | Are all loss-framed warnings (countdowns, expiry, stock limits) strictly factual? | Deceptive Scarcity / Confirmshaming |
+| ☐ | Do pre-selected defaults strictly protect user interests (security, baseline utility)? | Hostile Defaults |
+| ☐ | Does the progress bar advance proportionally and monotonically without sudden stalls? | Expectation Debt Trap |
+| ☐ | Does the decline/close option use neutral, respectful copy without emotional coercion? | Confirmshaming |
 
 ---
 

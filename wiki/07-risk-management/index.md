@@ -32,10 +32,10 @@ graph TD
 
 ## Pages in This Section
 
-| Page                                  | Status | Description                                                                  |
-| :------------------------------------ | :----: | :--------------------------------------------------------------------------- |
-| [Risk Management](risk-management.md) |   🟢    | Risk matrices, likelihood vs. impact, risk management plans                  |
-| [Anti-Patterns](anti-patterns.md)     |   🟢    | 10 process anti-patterns and 5 behavioral dark patterns (deceptive UX traps) |
+| Page | Status | Description |
+|:-----|:------:|:------------|
+| [Risk Management](risk-management.md) | 🟢 | Risk matrices, likelihood vs. impact, risk management plans |
+| [Anti-Patterns](anti-patterns.md) | 🟢 | 10 process anti-patterns and 5 behavioral dark patterns (deceptive UX traps) |
 
 ---
 
