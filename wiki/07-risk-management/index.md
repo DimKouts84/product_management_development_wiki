@@ -32,10 +32,10 @@ graph TD
 
 ## Pages in This Section
 
-| Page | Status | Description |
-|:-----|:------:|:------------|
-| [Risk Management](risk-management.md) | 🟢 | Risk matrices, likelihood vs. impact, risk management plans |
-| [Anti-Patterns](anti-patterns.md) | 🟢 | Feature Factory, HIPPO, Scope Creep, and 7 more anti-patterns |
+| Page                                  | Status | Description                                                                  |
+| :------------------------------------ | :----: | :--------------------------------------------------------------------------- |
+| [Risk Management](risk-management.md) |   🟢    | Risk matrices, likelihood vs. impact, risk management plans                  |
+| [Anti-Patterns](anti-patterns.md)     |   🟢    | 10 process anti-patterns and 5 behavioral dark patterns (deceptive UX traps) |
 
 ---
 
@@ -44,6 +44,7 @@ graph TD
 - **Risk Matrix**: Plotting likelihood × impact to categorize risks
 - **Risk Management Plan**: Structured documentation of risks with indicators and action plans
 - **Anti-Pattern**: A commonly occurring situation with negative consequences
+- **Behavioral Dark Patterns**: Deceptive psychological nudges (confirmshaming, hostile defaults, fake scarcity, expectation debt, roach motel)
 - **Root Cause Analysis**: Going beyond symptoms to identify underlying problems
 
 ---

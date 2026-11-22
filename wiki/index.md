@@ -38,95 +38,95 @@ graph TD
 ### 🔤 [01 · Foundations](01-foundations/index.md)
 Core terminology, glossary, and PRD document standards. Start here to establish a common language.
 
-| Page | Status | Description |
-|:-----|:------:|:------------|
-| [Basic Terminology](01-foundations/basic-terminology.md) | 🟢 | Glossary of product management terms |
-| [Product Document Essentials](01-foundations/product-document-essentials.md) | 🟢 | PRD structure and cheatsheet |
+| Page                                                                         | Status | Description                          |
+| :--------------------------------------------------------------------------- | :----: | :----------------------------------- |
+| [Basic Terminology](01-foundations/basic-terminology.md)                     |   🟢    | Glossary of product management terms |
+| [Product Document Essentials](01-foundations/product-document-essentials.md) |   🟢    | PRD structure and cheatsheet         |
 
 ---
 
 ### 🔍 [02 · Discovery](02-discovery/index.md)
 Understanding users, markets, and requirements before building anything.
 
-| Page | Status | Description |
-|:-----|:------:|:------------|
-| [User Research](02-discovery/user-research.md) | 🟢 | Personas, segmentation, and research methods |
-| [Market Analysis](02-discovery/market-analysis.md) | 🟢 | TAM/SAM/SOM, competition, and market trends |
-| [Requirements Solicitation](02-discovery/requirements-solicitation.md) | 🟢 | Elicitation techniques, backlogs, and storymaps |
+| Page                                                                   | Status | Description                                     |
+| :--------------------------------------------------------------------- | :----: | :---------------------------------------------- |
+| [User Research](02-discovery/user-research.md)                         |   🟢    | Personas, segmentation, and research methods    |
+| [Market Analysis](02-discovery/market-analysis.md)                     |   🟢    | TAM/SAM/SOM, competition, and market trends     |
+| [Requirements Solicitation](02-discovery/requirements-solicitation.md) |   🟢    | Elicitation techniques, backlogs, and storymaps |
 
 ---
 
 ### 🎯 [03 · Strategy](03-strategy/index.md)
 Deciding what to build, when, and how to bring it to market.
 
-| Page | Status | Description |
-|:-----|:------:|:------------|
-| [Feature Prioritization](03-strategy/feature-prioritization.md) | 🟢 | RICE, decision matrices, cost-value analysis |
-| [Go-to-Market](03-strategy/go-to-market.md) | 🟢 | GTM strategy, A/B testing, launch planning |
-| [Search Engine Optimization](03-strategy/search-engine-optimization.md) | 🟢 | Modern SEO: stratified index, AI search, situation matching, trust content |
-| [App Store Optimization](03-strategy/app-store-optimization.md) | 🟢 | Keyword metadata, screenshot CVR, review loops |
-| [Roadmap Planning](03-strategy/roadmap-planning.md) | 🟢 | Roadmaps, WBS, dependencies, Gantt charts |
-| [App Launch Checklist](03-strategy/app-launch-checklist.md) | 🟢 | Tactical launch checklist: analytics, waitlists, feedback boards, and emails |
-| [Content Engagement](03-strategy/content-engagement-strategy.md) | 🟢 | Misconception hooks, curiosity gaps, A/B-plot pacing formula |
+| Page                                                                    | Status | Description                                                                  |
+| :---------------------------------------------------------------------- | :----: | :--------------------------------------------------------------------------- |
+| [Feature Prioritization](03-strategy/feature-prioritization.md)         |   🟢    | RICE, decision matrices, cost-value analysis                                 |
+| [Go-to-Market](03-strategy/go-to-market.md)                             |   🟢    | GTM strategy, A/B testing, launch planning                                   |
+| [Search Engine Optimization](03-strategy/search-engine-optimization.md) |   🟢    | Modern SEO: stratified index, AI search, situation matching, trust content   |
+| [App Store Optimization](03-strategy/app-store-optimization.md)         |   🟢    | Keyword metadata, screenshot CVR, review loops                               |
+| [Roadmap Planning](03-strategy/roadmap-planning.md)                     |   🟢    | Roadmaps, WBS, dependencies, Gantt charts                                    |
+| [App Launch Checklist](03-strategy/app-launch-checklist.md)             |   🟢    | Tactical launch checklist: analytics, waitlists, feedback boards, and emails |
+| [Content Engagement](03-strategy/content-engagement-strategy.md)        |   🟢    | Misconception hooks, curiosity gaps, A/B-plot pacing formula                 |
 
 ---
 
 ### ⚙️ [04 · Development](04-development/index.md)
 Translating strategy into actionable development work.
 
-| Page | Status | Description |
-|:-----|:------:|:------------|
-| [Requirements & User Stories](04-development/requirements-user-stories.md) | 🟢 | Requirements types, user stories, INVEST |
-| [Estimations & Velocity](04-development/estimations-velocity.md) | 🟢 | Story points, velocity, Fibonacci estimation |
-| [Acceptance Criteria](04-development/acceptance-criteria.md) | 🟢 | Given-When-Then templates, verification lists |
-| [Agentic RAG & Data Architecture](04-development/agentic-rag-data-architecture.md) | 🟢 | Enterprise RAG, Knowledge Runtimes, agentic data layers |
+| Page                                                                               | Status | Description                                             |
+| :--------------------------------------------------------------------------------- | :----: | :------------------------------------------------------ |
+| [Requirements & User Stories](04-development/requirements-user-stories.md)         |   🟢    | Requirements types, user stories, INVEST                |
+| [Estimations & Velocity](04-development/estimations-velocity.md)                   |   🟢    | Story points, velocity, Fibonacci estimation            |
+| [Acceptance Criteria](04-development/acceptance-criteria.md)                       |   🟢    | Given-When-Then templates, verification lists           |
+| [Agentic RAG & Data Architecture](04-development/agentic-rag-data-architecture.md) |   🟢    | Enterprise RAG, Knowledge Runtimes, agentic data layers |
 
 ---
 
 ### 🎨 [05 · Design](05-design/index.md)
 User experience, interaction design, and product design patterns.
 
-| Page | Status | Description |
-|:-----|:------:|:------------|
-| [UI Design Foundations](05-design/ui-design-foundations.md) | 🟢 | Affordances, hierarchy, typography, color, shadows, states, and overlays |
-| [Design Psychology](05-design/design-psychology.md) | 🟢 | Why pages feel premium: 50ms halo effect, cognitive fluency, mental models, three judgment systems, peak-end micro-interactions |
-| [Dashboard Design Playbook](05-design/dashboard-design-playbook.md) | 🟢 | 6-rule problem-driven dashboard redesign: layout, gray-first color, KPI context, chart clarity, control reduction |
-| [Landing Page Design](05-design/landing-page-design.md) | 🟢 | Six visual style families + signal matching; decisions-over-defaults method: six levers, specificity ladder, signature, craft |
-| [Motion Design](05-design/motion-design.md) | 🟢 | Motion with a job: fundamentals, easing, pattern catalog, accessibility |
-| [Platform-Native Elements](05-design/platform-native-elements.md) | 🟢 | Native HTML/CSS capability map; when to go custom |
-| [User Interaction & Design](05-design/user-interaction-design.md) | 🟢 | Use cases, wireframes, storyboards |
-| [Mobile UI Design Foundations](05-design/mobile-ui-design-foundations.md) | 🟢 | Layout constraints, navigation architectures, and gestural interactions |
-| [Onboarding Patterns](05-design/onboarding-patterns.md) | 🟢 | Onboarding UX strategies and case studies |
-| [Gamification Patterns](05-design/gamification-patterns.md) | 🟢 | Sustainable gamification design patterns |
+| Page                                                                      | Status | Description                                                                                                                                                |
+| :------------------------------------------------------------------------ | :----: | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [UI Design Foundations](05-design/ui-design-foundations.md)               |   🟢    | Affordances, hierarchy, typography, color, shadows, states, and overlays                                                                                   |
+| [Design Psychology](05-design/design-psychology.md)                       |   🟢    | Why pages feel premium: 50ms halo effect, cognitive fluency, mental models, three judgment systems, peak-end micro-interactions, and decision architecture |
+| [Dashboard Design Playbook](05-design/dashboard-design-playbook.md)       |   🟢    | 6-rule problem-driven dashboard redesign: layout, gray-first color, KPI context, chart clarity, control reduction                                          |
+| [Landing Page Design](05-design/landing-page-design.md)                   |   🟢    | Six visual style families + signal matching; decisions-over-defaults method: six levers, specificity ladder, signature, craft                              |
+| [Motion Design](05-design/motion-design.md)                               |   🟢    | Motion with a job: fundamentals, easing, pattern catalog, accessibility                                                                                    |
+| [Platform-Native Elements](05-design/platform-native-elements.md)         |   🟢    | Native HTML/CSS capability map; when to go custom                                                                                                          |
+| [User Interaction & Design](05-design/user-interaction-design.md)         |   🟢    | Use cases, wireframes, storyboards                                                                                                                         |
+| [Mobile UI Design Foundations](05-design/mobile-ui-design-foundations.md) |   🟢    | Layout constraints, navigation architectures, and gestural interactions                                                                                    |
+| [Onboarding Patterns](05-design/onboarding-patterns.md)                   |   🟢    | 11 research-backed onboarding UX patterns with case studies                                                                                                |
+| [Gamification Patterns](05-design/gamification-patterns.md)               |   🟢    | Sustainable gamification design patterns                                                                                                                   |
 
 ---
 
 ### 📊 [06 · Metrics](06-metrics/index.md)
 Measuring success and understanding user retention.
 
-| Page | Status | Description |
-|:-----|:------:|:------------|
-| [Success Metrics](06-metrics/success-metrics.md) | 🟢 | AARRR framework, KPIs, measurement |
-| [Retention Psychology](06-metrics/retention-psychology.md) | 🟢 | Three pillars of retention architecture |
+| Page                                                       | Status | Description                             |
+| :--------------------------------------------------------- | :----: | :-------------------------------------- |
+| [Success Metrics](06-metrics/success-metrics.md)           |   🟢    | AARRR framework, KPIs, measurement      |
+| [Retention Psychology](06-metrics/retention-psychology.md) |   🟢    | Three pillars of retention architecture |
 
 ---
 
 ### ⚠️ [07 · Risk Management](07-risk-management/index.md)
 Identifying, assessing, and mitigating project risks.
 
-| Page | Status | Description |
-|:-----|:------:|:------------|
-| [Risk Management](07-risk-management/risk-management.md) | 🟢 | Risk matrices and risk plans |
-| [Anti-Patterns](07-risk-management/anti-patterns.md) | 🟢 | Common PM anti-patterns to avoid |
+| Page                                                     | Status | Description                                                             |
+| :------------------------------------------------------- | :----: | :---------------------------------------------------------------------- |
+| [Risk Management](07-risk-management/risk-management.md) |   🟢    | Risk matrices and risk plans                                            |
+| [Anti-Patterns](07-risk-management/anti-patterns.md)     |   🟢    | Process anti-patterns and behavioral dark patterns (deceptive UX traps) |
 
 ---
 
 ### 🔁 [08 · Retrospectives](08-retrospectives/index.md)
 Learning from outcomes and closing the feedback loop.
 
-| Page | Status | Description |
-|:-----|:------:|:------------|
-| [Retrospectives & Feedback](08-retrospectives/retrospectives-feedback.md) | 🟢 | Internal retrospectives and external feedback |
+| Page                                                                      | Status | Description                                   |
+| :------------------------------------------------------------------------ | :----: | :-------------------------------------------- |
+| [Retrospectives & Feedback](08-retrospectives/retrospectives-feedback.md) |   🟢    | Internal retrospectives and external feedback |
 
 ---
 

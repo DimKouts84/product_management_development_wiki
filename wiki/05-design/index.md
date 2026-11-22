@@ -61,18 +61,18 @@ graph TD
 
 ## Pages in This Section
 
-| Page | Status | Description |
-|:-----|:------:|:------------|
-| [UI Design Foundations](ui-design-foundations.md) | 🟢 | Intentional UX, visual hierarchy, wall-of-text refactoring, typography, color, and context preservation |
-| [Design Psychology](design-psychology.md) | 🟢 | Why pages feel premium: 50ms halo effect, cognitive fluency, mental models, three judgment systems, peak-end micro-interactions — plus the premium-perception framework and audit |
-| [Dashboard Design Playbook](dashboard-design-playbook.md) | 🟢 | 6-rule problem-driven redesign: layout, gray-first color, KPI context, chart clarity, control reduction, product polish |
-| [Landing Page Design](landing-page-design.md) | 🟢 | Six visual style families with signal matching, then the decisions-over-defaults execution method: six levers, specificity ladder, signature, craft |
-| [Motion Design](motion-design.md) | 🟢 | Motion with a job: fundamentals, easing, pattern catalog, technique decision flow, accessibility |
-| [Platform-Native Elements](platform-native-elements.md) | 🟢 | Native HTML/CSS capability map; when to go custom; platform-first scope strategy |
-| [User Interaction & Design](user-interaction-design.md) | 🟢 | User considerations, use cases, wireframes, storyboards |
-| [Mobile UI Design Foundations](mobile-ui-design-foundations.md) | 🟢 | Layout constraints, navigation architectures, and gestural interactions |
-| [Onboarding Patterns](onboarding-patterns.md) | 🟢 | 9 research-backed onboarding UX patterns with case studies |
-| [Gamification Patterns](gamification-patterns.md) | 🟢 | 7 gamification design patterns — sustainable retention vs. engagement theater |
+| Page                                                            | Status | Description                                                                                                                                                                                                |
+| :-------------------------------------------------------------- | :----: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [UI Design Foundations](ui-design-foundations.md)               |   🟢    | Intentional UX, visual hierarchy, wall-of-text refactoring, typography, color, and context preservation                                                                                                    |
+| [Design Psychology](design-psychology.md)                       |   🟢    | Why pages feel premium: 50ms halo effect, cognitive fluency, mental models, three judgment systems, peak-end micro-interactions, and decision architecture (smart defaults, price anchoring, loss framing) |
+| [Dashboard Design Playbook](dashboard-design-playbook.md)       |   🟢    | 6-rule problem-driven redesign: layout, gray-first color, KPI context, chart clarity, control reduction, product polish                                                                                    |
+| [Landing Page Design](landing-page-design.md)                   |   🟢    | Six visual style families with signal matching, then the decisions-over-defaults execution method: six levers, specificity ladder, signature, craft                                                        |
+| [Motion Design](motion-design.md)                               |   🟢    | Motion with a job: fundamentals, easing, pattern catalog, technique decision flow, accessibility                                                                                                           |
+| [Platform-Native Elements](platform-native-elements.md)         |   🟢    | Native HTML/CSS capability map; when to go custom; platform-first scope strategy                                                                                                                           |
+| [User Interaction & Design](user-interaction-design.md)         |   🟢    | User considerations, use cases, wireframes, storyboards                                                                                                                                                    |
+| [Mobile UI Design Foundations](mobile-ui-design-foundations.md) |   🟢    | Layout constraints, navigation architectures, and gestural interactions                                                                                                                                    |
+| [Onboarding Patterns](onboarding-patterns.md)                   |   🟢    | 11 research-backed onboarding UX patterns with case studies                                                                                                                                                |
+| [Gamification Patterns](gamification-patterns.md)               |   🟢    | 7 gamification design patterns — sustainable retention vs. engagement theater                                                                                                                              |
 
 ---
 
@@ -100,6 +100,9 @@ graph TD
 - **1D Content Flow**: Structuring mobile views in one direction per section
 - **Aha Moment**: The precise instant a user experiences core product value
 - **Intrinsic vs. Extrinsic Motivation**: Why badges fail and mastery succeeds
+- **Decision Architecture**: Smart defaults, price anchoring, and loss framing to guide decisions without friction
+- **Endowed Progress Effect**: Never start onboarding at 0% — initial progress credit accelerates completion velocity
+- **Co-Creation / IKEA Effect**: Labor invested before registration converts users from visitors into invested owners
 - **Decisions Over Defaults**: Premium = every element chosen; generic = built entirely from defaults
 - **Specificity Ladder**: Claim → statement → proof; interchangeable copy communicates nothing
 - **Signature Centerpiece**: The hero must demonstrate the product, not illustrate it

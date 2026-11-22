@@ -7,7 +7,7 @@
 ## Table of Contents
 
 - [The Onboarding Framework](#the-onboarding-framework)
-- [The 9 Onboarding UX Patterns](#the-9-onboarding-ux-patterns)
+- [The 11 Onboarding UX Patterns](#the-11-onboarding-ux-patterns)
 - [The Onboarding Paradox: Long vs. Short Flows](#the-onboarding-paradox-long-vs-short-flows)
 - [Permissions & Flow Optimizations](#permissions--flow-optimizations)
 - [Onboarding Case Studies: Good vs. Bad Examples](#onboarding-case-studies-good-vs-bad-examples)
@@ -50,7 +50,7 @@ If the setup phase is dry, long, or confusing, users will churn before reaching 
 
 ---
 
-## The 9 Onboarding UX Patterns
+## The 11 Onboarding UX Patterns
 
 ### 1. Selling the Outcome (vs. Listing Features)
 * **The Concept**: Pitching the final result or benefit the user will achieve, rather than listing features or describing technical implementation.
@@ -62,7 +62,10 @@ If the setup phase is dry, long, or confusing, users will churn before reaching 
 
 ### 2. Try-Before-Buy (Pre-Registration Value Delivery)
 * **The Concept**: Allowing the user to engage with the core product loop and experience value *before* asking them to create an account or sign up.
-* **Why it Works**: By reducing the friction to zero, you build trust and let the product speak for itself. The signup prompt becomes a logical step to save progress rather than a barrier to entry.
+* **Why it Works**: By reducing friction to zero, you build trust and let the product speak for itself. The signup prompt becomes a logical step to save progress rather than a barrier to entry.
+* **The Reciprocity Norm ("Menu Before Bill")**:
+  * Demanding upfront registration before revealing any output resembles a restaurant demanding payment before letting patrons see a menu. It violates the universal norm of reciprocity (*Gouldner, 1960*; *Cialdini, 1984*).
+  * **The Partial-Utility Rule**: Never gate results behind a pure blur or generic login wall. Deliver a genuine, standalone piece of insight (e.g., diagnostic score, top 3 flagged issues, interactive sandbox). Delivering value upfront triggers an intrinsic urge to reciprocate, making users dramatically more willing to register to claim the full breakdown.
 * **Case Studies**:
   * **Alma**: Lets users try out the primary search and matching experience before creating an account.
   * **Duolingo**: Guides users through a complete interactive language lesson (taking them up to 60 screens deep) before prompting them to sign up. By the time they see the signup screen, they have already felt the satisfaction of winning a lesson.
@@ -127,6 +130,25 @@ If the setup phase is dry, long, or confusing, users will churn before reaching 
   * **Real Short**: When the app is opened, content immediately plays. The player eliminates the progress bar (watch linearly), rotates vertical-only (shot vertical), and has no visible episode list. Swipe up means "next episode," which is the only navigation.
   * **TikTok / YouTube Autoplay**: Remove the decision of "what to watch next" by immediately streaming content and enabling frictionless gestural navigation (swiping) to continue.
 
+### 10. The Endowed Progress Pattern (Goal Gradient Acceleration)
+* **The Concept**: Never starting an onboarding journey or multi-step setup at 0%. Pre-filling or endowing initial progress credit for the user's initial action of initiating setup.
+* **Why it Works**: Grounded in the **Goal Gradient Effect** (*Hull, 1932*) and the **Endowed Progress Effect** (*Nunes & Drèze, 2006*). In a landmark Columbia University car wash loyalty card experiment, customers given a 10-stamp card with 2 pre-stamped slots achieved a **34% completion rate**, compared to just **19%** for customers given a blank 8-stamp card — despite both groups needing exactly 8 purchases to earn the reward. Perceiving that progress is already underway dramatically accelerates completion velocity.
+* **Pacing Rules & The Expectation Debt Trap**:
+  * *Monotonic Pacing*: Progress must represent realistic, steady headway across stages.
+  * *Avoid Expectation Debt*: Never front-load progress artificially (e.g., jumping from 0% to 80% on step 1, only to drag through 15 tedious screens for the remaining 20%). Deceptive pacing breeds resentment, causing users to detect the manipulation and bounce.
+* **Case Studies**:
+  * **LinkedIn**: Greets new members with a profile meter pre-filled to 15–20% ("Beginner" rank unlocked), providing immediate momentum to complete subsequent sections.
+  * **Duolingo**: Awards initial XP and checks off "First Lesson Complete" before prompting for profile setup.
+
+### 11. The Co-Creation Pattern (IKEA Effect & Psychological Ownership)
+* **The Concept**: Involving the user in assembling, tailoring, or customizing their workspace, project, or avatar *before* prompting them for account creation or paywalls.
+* **Why it Works**: Grounded in the **IKEA Effect** (*Norton, Mochon, & Ariely, 2012*) and **Psychological Ownership** (*Pierce, Kostova, & Dirks, 2003*). Users place disproportionately high value on products they helped create. By investing effort upfront, the product shifts from "someone else's software" into "my workspace." The registration prompt ceases to be a tollbooth and becomes a way to **protect their own creation from being lost**.
+* **Labor Calibration**: Effort must feel easy and guarantee an early "win." If the task is frustrating or produces an incomplete result, the IKEA effect collapses and user frustration spikes.
+* **Case Studies**:
+  * **Notion**: Guides users to name their workspace, select team templates, and add building blocks before demanding email confirmation.
+  * **Spotify**: Invites new users to select 3+ favorite artists to generate their customized Daily Mix before prompting for registration.
+  * **Canva / Figma**: Lets users design or edit an initial canvas immediately, presenting the registration prompt only when the user clicks "Save" or "Export."
+
 ---
 
 ## The Onboarding Paradox: Long vs. Short Flows
@@ -170,10 +192,10 @@ graph TD
     style StrategyLong fill:#3b82f6,stroke:#1d4ed8,color:#fff
 ```
 
-| Strategy | Primary Goal | Ideal For | Onboarding Length | Core Value / Exception | Examples |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Frictionless Path** | Deliver instant gratification | Media, AI, Entertainment, Utilities | Zero / Ultra-Short (1-3 screens) | Surfacing tangible value instantly; onboarding does work *for* the user. | **Granola** (2 screens), **ChatGPT** (1 prompt) |
-| **Personalization Path** | Align expectations & qualify buyers | Finance, Health, Education, SaaS | Long (20-110+ screens) | Earning custom experiences & filtering for deep-pain buyers. | **Cali** (20+ quiz steps), **Noom** (113 screens) |
+| Strategy                 | Primary Goal                        | Ideal For                           | Onboarding Length                | Core Value / Exception                                                   | Examples                                          |
+| :----------------------- | :---------------------------------- | :---------------------------------- | :------------------------------- | :----------------------------------------------------------------------- | :------------------------------------------------ |
+| **Frictionless Path**    | Deliver instant gratification       | Media, AI, Entertainment, Utilities | Zero / Ultra-Short (1-3 screens) | Surfacing tangible value instantly; onboarding does work *for* the user. | **Granola** (2 screens), **ChatGPT** (1 prompt)   |
+| **Personalization Path** | Align expectations & qualify buyers | Finance, Health, Education, SaaS    | Long (20-110+ screens)           | Earning custom experiences & filtering for deep-pain buyers.             | **Cali** (20+ quiz steps), **Noom** (113 screens) |
 
 ---
 
@@ -204,23 +226,26 @@ graph TD
 
 ## Onboarding Case Studies: Good vs. Bad Examples
 
-| App / Product | Primary Onboarding Strategy | Classification | Impact & Metric | Why it Works / Fails |
-| :--- | :--- | :--- | :--- | :--- |
-| **Duolingo** | Try-before-buy / Long gamified lesson | 🟢 **Good (Value-First)** | 60+ screens prior to signup | Users experience the feeling of success (winning a lesson) before being forced to create an account. |
-| **Mural** | Persistent contextual dashboard checklists | 🟢 **Good (Contextual)** | 📈 **10% increase in 1-week retention** | Replaced annoying welcome pop-ups with an actionable, dismissible checklist. |
-| **Headspace** | Multi-intent selection quiz | 🟢 **Good (Flexible)** | 📈 **10% increase in free trial conversion** | Let users select multiple goals, matching their actual multi-dimensional mental wellness needs. |
-| **Grammarly** | Quiz-based tailored pricing packages | 🟢 **Good (Personalized)** | 📈 **~20% increase in premium upgrades** | Connected pricing options directly to the user's specific goals. |
-| **Houzz** | Multi-page form chunking | 🟢 **Good (Psychological)** | 📈 **15% increase in signups** | Split a single dense signup sheet into bite-sized single-question screens to build momentum. |
-| **Dollar Shave Club** | Conversational copy quiz | 🟢 **Good (Copywriting)** | 📈 **5% increase in subscriptions** | Rewrote standard quiz inputs into a friendly, conversational dialog. |
-| **Focus Flight** | Gamified/Haptic ticket paywall | 🟢 **Good (Delight)** | High checkout delight | Turn the transaction screen into a sensory experience (vibration, ticket print-out). |
-| **Granola** | Two-screen Google Sign-In & mic permission ask | 🟢 **Good (Value-First)** | 📈 Raised $125M in March 2026 ($1.5B valuation) | Surfaces value in the user's very next meeting; onboarding does work *for* the user. |
-| **AI Apps (e.g. Claude)** | Zero-friction entry / Prompt field | 🟢 **Good (Speed)** | Direct value delivery | Bypasses all setup to let the user get value in a single action. |
-| **Typical AI Apps (7%)** | Private/No-quiz entry | 🔴 **Bad (Missed Personalization)** | Lower personalization value | AI tools often fail to ask user context upfront, missing opportunities to customize the early workspace. |
-| **Cali / Calai** | 20+ step quiz before dashboard access | 🟢 **Good (Personalized Quiz)** | 📈 $35M revenue in its first year | Earns a highly custom first screen (avoiding generic template). Qualifies high-intent buyers in a deep-pain niche. |
-| **Noom** | 113-screen onboarding questionnaire | 🟢 **Good (Personalized Quiz)** | 📈 Valuation worth billions | Drives deep commitment and extensive personalization for high-ticket weight loss programs. |
-| **Fitness Apps** | Habit/Goal Custom Quiz | 🟢 **Good (Interactive Quiz)** | High setup retention | Personalizes workouts based on user inputs, keeping users engaged through customized roadmaps. |
-| **Shopping Apps** | Style/Preference Quiz | 🟢 **Good (E-commerce Quiz)** | 📈 Higher conversion rate | Conversational style matches users with products they want, driving immediate purchases. |
-| **Real Short** | Zero onboarding / Graduated Gates | 🟢 **Good (Frictionless)** | High Day-1 Retention | Open-to-play eliminates exit ramps; graduated friction converts attention to dollars. |
+| App / Product                  | Primary Onboarding Strategy                    | Classification                     | Impact & Metric                                | Why it Works / Fails                                                                                               |
+| :----------------------------- | :--------------------------------------------- | :--------------------------------- | :--------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
+| **Duolingo**                   | Try-before-buy / Long gamified lesson          | 🟢 **Good (Value-First)**           | 60+ screens prior to signup                    | Users experience the feeling of success (winning a lesson) before being forced to create an account.               |
+| **Mural**                      | Persistent contextual dashboard checklists     | 🟢 **Good (Contextual)**            | 📈 **10% increase in 1-week retention**         | Replaced annoying welcome pop-ups with an actionable, dismissible checklist.                                       |
+| **Headspace**                  | Multi-intent selection quiz                    | 🟢 **Good (Flexible)**              | 📈 **10% increase in free trial conversion**    | Let users select multiple goals, matching their actual multi-dimensional mental wellness needs.                    |
+| **Grammarly**                  | Quiz-based tailored pricing packages           | 🟢 **Good (Personalized)**          | 📈 **~20% increase in premium upgrades**        | Connected pricing options directly to the user's specific goals.                                                   |
+| **Houzz**                      | Multi-page form chunking                       | 🟢 **Good (Psychological)**         | 📈 **15% increase in signups**                  | Split a single dense signup sheet into bite-sized single-question screens to build momentum.                       |
+| **Dollar Shave Club**          | Conversational copy quiz                       | 🟢 **Good (Copywriting)**           | 📈 **5% increase in subscriptions**             | Rewrote standard quiz inputs into a friendly, conversational dialog.                                               |
+| **Focus Flight**               | Gamified/Haptic ticket paywall                 | 🟢 **Good (Delight)**               | High checkout delight                          | Turn the transaction screen into a sensory experience (vibration, ticket print-out).                               |
+| **Granola**                    | Two-screen Google Sign-In & mic permission ask | 🟢 **Good (Value-First)**           | 📈 Raised $125M in March 2026 ($1.5B valuation) | Surfaces value in the user's very next meeting; onboarding does work *for* the user.                               |
+| **AI Apps (e.g. Claude)**      | Zero-friction entry / Prompt field             | 🟢 **Good (Speed)**                 | Direct value delivery                          | Bypasses all setup to let the user get value in a single action.                                                   |
+| **Typical AI Apps (7%)**       | Private/No-quiz entry                          | 🔴 **Bad (Missed Personalization)** | Lower personalization value                    | AI tools often fail to ask user context upfront, missing opportunities to customize the early workspace.           |
+| **Cali / Calai**               | 20+ step quiz before dashboard access          | 🟢 **Good (Personalized Quiz)**     | 📈 $35M revenue in its first year               | Earns a highly custom first screen (avoiding generic template). Qualifies high-intent buyers in a deep-pain niche. |
+| **Noom**                       | 113-screen onboarding questionnaire            | 🟢 **Good (Personalized Quiz)**     | 📈 Valuation worth billions                     | Drives deep commitment and extensive personalization for high-ticket weight loss programs.                         |
+| **Fitness Apps**               | Habit/Goal Custom Quiz                         | 🟢 **Good (Interactive Quiz)**      | High setup retention                           | Personalizes workouts based on user inputs, keeping users engaged through customized roadmaps.                     |
+| **Shopping Apps**              | Style/Preference Quiz                          | 🟢 **Good (E-commerce Quiz)**       | 📈 Higher conversion rate                       | Conversational style matches users with products they want, driving immediate purchases.                           |
+| **Real Short**                 | Zero onboarding / Graduated Gates              | 🟢 **Good (Frictionless)**          | High Day-1 Retention                           | Open-to-play eliminates exit ramps; graduated friction converts attention to dollars.                              |
+| **LinkedIn**                   | Endowed progress profile meter                 | 🟢 **Good (Momentum)**              | 📈 Increased completion rate                    | Pre-fills meter to 15–20% on launch, leveraging the goal gradient effect.                                          |
+| **Notion**                     | Co-creation workspace assembly                 | 🟢 **Good (IKEA Effect)**           | High setup retention                           | Users assemble pages and templates prior to registration, building psychological ownership.                        |
+| **SEO & Audit SaaS (Generic)** | Hard blurred gate (No preview value)           | 🔴 **Bad (Broken Reciprocity)**     | High bounce rate (~65%)                        | Violates reciprocity by locking entire report without a free standalone score.                                     |
 
 ---
 
@@ -262,11 +287,21 @@ graph TD
 * Eliminate any options that can be automated or deferred to a later time (e.g., custom themes, profile details).
 * Build momentum by making the primary navigation gestural (swiping) and automatic.
 
+### 8. Endow Initial Progress on Multi-Step Setups
+* Never present a user with a progress meter showing 0% or Step 0/5.
+* Award initial progress credit for the action that brought them there (e.g., "Step 1: Account initialized — 20% complete").
+* Ensure subsequent steps progress with honest, monotonic increments to avoid expectation debt.
+
+### 9. Invite Pre-Registration Co-Creation (IKEA Effect)
+* Let users customize their dashboard, select content preferences, or create their first artifact prior to registration.
+* Frame the account creation step as saving and securing *their* creation, rather than registering for *your* service.
+
 ---
 
 ## Related Pages
 
 - ← [User Interaction & Design](user-interaction-design.md) — Foundational design principles
+- ← [Design Psychology](design-psychology.md) — Decision architecture, smart defaults, and loss framing
 - → [Mobile UI Design Foundations](mobile-ui-design-foundations.md) — Mobile interaction and layout patterns
 - → [Gamification Patterns](gamification-patterns.md) — Long-term engagement after onboarding
 - → [Retention Psychology](../06-metrics/retention-psychology.md) — Psychological retention architecture
@@ -279,6 +314,9 @@ graph TD
 - Full research document: `docs/research/onboarding_design_patterns.md`
 - Zoe (AppsFlyer) & Tim (SIPs App) product analysis case studies (2026)
 - Tim Gabe video analysis: *How To Solve The App Onboarding Paradox* (2026)
+- Video: *The UX Psychology Behind Apps People Can't Stop Using* — uxpeak ([YouTube](https://www.youtube.com/watch?v=2TlIg3VokY8), 2026) — endowed progress, IKEA effect in onboarding, and reciprocal gating
+- Paper: *The Endowed Progress Effect: How Artificial Advancement Increases Effort* — Joseph C. Nunes & Xavier Drèze (*Journal of Consumer Research*, 2006)
+- Paper: *The IKEA Effect: When Labor Leads to Love* — Michael I. Norton, Daniel Mochon, & Dan Ariely (*Journal of Consumer Psychology*, 2012)
 
 ---
 
