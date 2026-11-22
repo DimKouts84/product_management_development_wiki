@@ -65,7 +65,7 @@ graph TD
 |:-----|:------:|:------------|
 | [UI Design Foundations](ui-design-foundations.md) | 🟢 | Intentional UX, visual hierarchy, wall-of-text refactoring, typography, color, and context preservation |
 | [Design Psychology](design-psychology.md) | 🟢 | Why pages feel premium: 50ms halo effect, cognitive fluency, mental models, three judgment systems, peak-end micro-interactions, and decision architecture (smart defaults, price anchoring, loss framing) |
-| [Dashboard Design Playbook](dashboard-design-playbook.md) | 🟢 | The data-heavy UI playbook: strategic IA (4-stage flow), progressive disclosure & role systems, visual ergonomics, DOM virtualization, and real-time streaming architecture |
+| [Dashboard Design Playbook](dashboard-design-playbook.md) | 🟢 | The data-heavy UI playbook: two-tier architecture, strategic IA (4-stage flow), slide-over context drawers, agentic GenUI (A2UI & OpenUI), DOM virtualization, and real-time streaming |
 | [Landing Page Design](landing-page-design.md) | 🟢 | Six visual style families with signal matching, then the decisions-over-defaults execution method: six levers, specificity ladder, signature, craft |
 | [Motion Design](motion-design.md) | 🟢 | Motion with a job: fundamentals, easing, pattern catalog, technique decision flow, accessibility |
 | [Platform-Native Elements](platform-native-elements.md) | 🟢 | Native HTML/CSS capability map; when to go custom; platform-first scope strategy |

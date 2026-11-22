@@ -7,9 +7,12 @@
 ## Table of Contents
 
 - [The Core Philosophy: Beyond the Metric Buffet](#the-core-philosophy-beyond-the-metric-buffet)
+- [The Two-Tier Dashboard Architecture](#the-two-tier-dashboard-architecture)
 - [Strategic Information Architecture: The 4-Stage Flow](#strategic-information-architecture-the-4-stage-flow)
+- [Layout Primitives & Contextual Inspection](#layout-primitives--contextual-inspection)
 - [Managing Scale: Progressive Disclosure & Role-Based Systems](#managing-scale-progressive-disclosure--role-based-systems)
 - [Visual Ergonomics & Control Hygiene](#visual-ergonomics--control-hygiene)
+- [Tier 2 Custom Analytics: Agentic Generative UI (A2UI & OpenUI)](#tier-2-custom-analytics-agentic-generative-ui-a2ui--openui)
 - [Frontend Performance Architecture for Data UIs](#frontend-performance-architecture-for-data-uis)
 - [Real-Time Streams & Client-Side Computation](#real-time-streams--client-side-computation)
 - [The TPM Decision Framework & Trade-Off Matrix](#the-tpm-decision-framework--trade-off-matrix)
@@ -44,6 +47,43 @@ Instead of asking *"What data do we have available?"*, start with decision mecha
 
 > [!IMPORTANT]
 > Distrust in a dashboard's numbers is rarely caused by database inaccuracies. It is the **halo effect** applied to data products: when an interface lags, misaligns borders, or presents chaotic filters, the brain unconsciously re-attributes visual and performance flaws to the integrity of the data itself (see [Design Psychology](design-psychology.md#the-first-vote-first-impressions-and-the-halo-effect)).
+
+---
+
+## The Two-Tier Dashboard Architecture
+
+Enterprise users are never homogeneous in their analytical requirements. Attempting to satisfy both everyday operators and specialized data analysts with a single screen invariably produces an overcrowded, compromised interface. Modern data platforms resolve this tension using a **Two-Tier Reporting Model**:
+
+```mermaid
+graph TD
+    subgraph T1["Tier 1: Standard Operational Dashboard (80% of Users)"]
+        O1["Default Out-of-the-Box Views"]
+        O2["Curated KPI Worklists & Daily Status"]
+        O3["Zero Configuration Required · High Signal-to-Noise"]
+    end
+
+    subgraph T2["Tier 2: Custom / Power Analytics (20% of Users)"]
+        P1["Ad-hoc Multidimensional Slicing"]
+        P2["Bespoke Cohorts, Pivot Grids & Deep Dives"]
+        P3["Evolving from Manual BI Builders ➔ Agentic GenUI (A2UI)"]
+    end
+
+    T1 -->|Secondary Deep Dive / Needs Custom Metric| T2
+
+    style T1 fill:#0f766e,stroke:#0d9488,color:#fff
+    style T2 fill:#1e293b,stroke:#475569,color:#fff
+```
+
+### Tier 1 — Standard Out-of-the-Box Dashboards (80% Cohort)
+* **Audience**: Everyday operational users, executives, and routine stakeholders.
+* **Objective**: Rapid morning status check, anomaly detection, and standard operational workflows.
+* **Design Philosophy**: Zero configuration. Fully curated, pre-computed metrics, hardened against cognitive overload. The user never needs to drag a widget or write a query to perform their core job.
+
+### Tier 2 — Custom & Power Analytics (20% Cohort)
+* **Audience**: Power users, operations leads, data analysts, and department heads.
+* **Objective**: Hypotheses validation, ad-hoc cohort comparison, root-cause diagnostics, and bespoke report distribution.
+* **Historical Solution**: Legacy drag-and-drop report builders, custom SQL consoles, or exporting CSVs to external BI tools.
+* **Modern Evolution**: **Agentic Generative UI (GenUI)**, where autonomous conversational agents dynamically compose validated, native UI components on demand using protocols such as **A2UI** and **OpenUI Lang** (see [Tier 2 Custom Analytics](#tier-2-custom-analytics-agentic-generative-ui-a2ui--openui)).
 
 ---
 
@@ -88,6 +128,46 @@ graph TD
 * **Kill Filter Sprawl**: Avoid placing 10+ dropdown filters above the header. Promote **1–2 global, task-led filters** (e.g., Date Horizon, Organization/Environment) that persist system-wide.
 * **Smart Filter Defaults**: Align default time ranges to the user's role (e.g., 24 hours for DevOps; 30–90 days for Growth). Allow users to save named filter configurations.
 * **Centralized Metrics Dictionary**: Maintain a living internal standard enforcing consistent metric definitions, units, time windows, and question-style headings (e.g., *"How many active seats are unassigned?"* vs. *"Seat Allocation"*).
+
+---
+
+## Layout Primitives & Contextual Inspection
+
+The physical chrome and structural layout determine how efficiently users navigate data without disorientation.
+
+```mermaid
+graph LR
+    Nav["Collapsible Rail\n(64px ↔ 240px)"] --> Main["Main Data Canvas\n(KPIs · Charts · Grids)"]
+    Main -->|Row Click| Drawer["Slide-Over Sheet\n(35–45% Viewport Width)\nDeep Context · Zero Navigation Loss"]
+
+    style Nav fill:#1e293b,stroke:#475569,color:#fff
+    style Main fill:#0f766e,stroke:#0d9488,color:#fff
+    style Drawer fill:#334155,stroke:#0284c7,color:#fff
+```
+
+### 1. Collapsible Navigation Rails
+* **The Viewport Tax**: Fixed 250px sidebars waste critical horizontal real estate, forcing data tables into horizontal scroll bars.
+* **Collapsible Icon Rails**:
+  * Default to a compact icon-only rail (`64px` width) displaying primary section icons with hover tooltips.
+  * Allow expanding to full text (`240px` width) via keyboard shortcut (`⌘/` or `Ctrl+/`) or toggle button.
+  * Restores up to **20% horizontal viewport width** to multi-column data grids.
+
+### 2. Slide-Over Context Drawers (Sheets) vs. Disruptive Modals
+When a user clicks a row in a data table to inspect record metadata or audit history, traditional modal dialogues and full-page transitions introduce severe workflow friction:
+
+| Inspection Mechanism | Spatial Context | Workflow Continuity | Ideal Use Case |
+| :--- | :--- | :--- | :--- |
+| **Full Page Navigation** | ❌ Lost (Must re-filter and re-scroll upon back button) | ❌ Broken flow | Primary entity management (e.g., full customer account page) |
+| **Centered Modal Dialogue** | ⚠️ Severed (Blocks table rows; induces visual claustrophobia) | ⚠️ Interrupted | High-friction destructive confirmations (e.g., deleting a cluster) |
+| **Slide-Over Sheet (Drawer)** | ✅ Preserved (Slides from right, covering 35–45% of screen) | ✅ **Continuous inspection** (User clicks through rows in sequence) | **Data inspection, metadata editing, audit logs, and detail drill-downs** |
+
+### 3. Dark Mode vs. Light Mode Surface Treatment
+* **Light Mode (Subtle Fills & Soft Shadows)**:
+  * Contrast is established through delicate tonal variations (`#FFFFFF` cards over a `#F8FAFC` background) paired with soft ambient drop-shadows (`box-shadow: 0 1px 3px rgba(0,0,0,0.05)`).
+* **Dark Mode (1px Border Outlines over Shared Dark Fills)**:
+  * Elevating card surfaces with lighter grays in dark mode produces a muddy, low-contrast appearance. Drop shadows disappear against dark backdrops.
+  * **The Outline Discipline**: Keep card backgrounds dark (`#0F172A`) and establish visual boundaries using crisp, **subtle 1px border outlines** (`border: 1px solid rgba(255, 255, 255, 0.08)`).
+  * This technique maintains razor-sharp visual hierarchy without cluttering the screen with competing gray tones.
 
 ---
 
@@ -161,7 +241,7 @@ graph TD
 ### Rule 2 — Design in Gray First; Color Has a Job
 * Build the entire dashboard in tinted grays first (e.g., slate grays with a subtle blue tint).
 * **Color gets a functional job**: Reserve accent colors strictly for active data points, sparklines, and active toggle states. If buttons, tabs, borders, and charts all share the same bright blue, color ceases to communicate priority.
-* **Elevation over Shadows in Dark Mode**: Dark backgrounds render shadows invisible. Create depth by making cards one shade lighter than the page background.
+* **Elevation over Shadows in Dark Mode**: Dark backgrounds render shadows invisible. Create depth by making cards one shade lighter than the page background or applying clean 1px border outlines.
 
 ### Rule 3 — Contextual KPI Cards & Comparison Encoding
 * A raw number (`"24.8k"`) is meaningless. Every KPI card must feature:
@@ -189,6 +269,111 @@ graph TD
 * **Right-Align Numeric Columns**: In data tables, numbers must be right-aligned so decimal points align vertically, enabling rapid scanning.
 * **Command Bar Navigation**: Support keyboard power-users with a quick-switcher palette (`⌘K` / `Ctrl+K`).
 * **Theme Parity**: Ensure color scales are calibrated for both light and dark modes (e.g., high-contrast warm yellow lines on dark backgrounds shift to deep blue on light surfaces).
+
+---
+
+## Tier 2 Custom Analytics: Agentic Generative UI (A2UI & OpenUI)
+
+In Tier 2 analytics, users frequently demand custom views, cross-dimensional cohorts, and ad-hoc aggregations that no static dashboard can anticipate. Traditionally, products offered complex, high-friction drag-and-drop report builders (e.g., custom BI builders) that suffer from steep learning curves.
+
+Today, **Agentic Generative UI (GenUI)** allows conversational AI agents to dynamically generate custom UI dashboards tailored to the user's specific natural-language query.
+
+```mermaid
+graph TD
+    subgraph Client["Frontend Client (Web / React / Angular)"]
+        Catalog["Component Catalog\n(StatCard · TimeSeriesChart · DataTable · FilterBar)"]
+        Renderer["A2UI / OpenUI Parser & Renderer"]
+        Canvas["Custom Tier 2 Dashboard Canvas"]
+    end
+
+    subgraph Agent["Autonomous Analytical Agent"]
+        LLM["Agent Reasoning Engine"]
+        Planner["Layout & Query Planner"]
+    end
+
+    subgraph Backend["Analytical Engine"]
+        Duck["Vectorized Engine / Semantic Layer\n(DuckDB-Wasm or Cloud Warehouse)"]
+    end
+
+    UserPrompt["🗣️ 'Show me checkout churn by payment gateway vs mobile OS'"] --> LLM
+    LLM --> Planner
+    Planner -->|1. Executes Analytical Query| Duck
+    Duck -->|Returns Aggregated Result| Planner
+    Planner -->|2. Streams Declarative DSL / JSONL| Renderer
+    Renderer -->|3. Resolves Catalog Primitives| Catalog
+    Catalog --> Canvas
+    Canvas -->|4. User Adjusts Filter / Action Trigger| LLM
+
+    style Client fill:#0f766e,stroke:#0d9488,color:#fff
+    style Agent fill:#1e293b,stroke:#475569,color:#fff
+    style Backend fill:#334155,stroke:#1e293b,color:#fff
+```
+
+### The 3 Generative UI Architectural Paradigms
+
+When designing agent-generated interfaces, product teams must evaluate three distinct architectural patterns:
+
+| Pattern | Architectural Mechanism | Pros | Cons / TPM Risks | Verdict |
+| :--- | :--- | :--- | :--- | :--- |
+| **1. Controlled GenUI (Widget Selection)** | Agent calls a tool returning a pre-built widget ID (e.g., `renderRevenueCard`) with rigid JSON props. | 100% design system compliance; zero security risk. | Low flexibility; cannot assemble novel multi-widget layouts. | Too rigid for true ad-hoc custom analytics. |
+| **2. Declarative GenUI (A2UI / OpenUI Lang)** | Agent streams a declarative structure (DSL or JSONL) referencing a verified **Component Catalog**. Client renders native components. | **High compositional freedom; strict design parity; zero raw code execution; token-efficient streaming.** | Requires maintaining an explicit component catalog contract. | **★ Enterprise Sweet Spot for Tier 2 Analytics.** |
+| **3. Open-Ended GenUI (Sandboxed Execution)** | Agent generates arbitrary React/HTML/JS rendered inside a sandboxed iframe or Shadow DOM. | Infinite visual freedom; agent can code novel visualizations from scratch. | Extreme security risks (DOM XSS); breaks design consistency; poor accessibility; slow generation. | Restrict to untrusted third-party plugins (e.g., sandboxed MCP apps). |
+
+### Technical Standards: Google A2UI vs. OpenUI Lang
+
+Two prominent standards dominate declarative generative interfaces:
+
+#### 1. Google A2UI (Agent-to-User Interface)
+* **Specification**: An open, cross-platform standard (Apache 2.0) defining how autonomous agents stream declarative UI components to native client renderers (React, Angular, Flutter, Jetpack Compose).
+* **Wire Protocol**: Streaming JSON / JSONL fragments. Each component node specifies a component type (`Card`, `LineChart`, `DataGrid`), layout coordinates, data bindings, and action handlers.
+* **Bi-directional Action Protocol**: Interactive components (buttons, filter chips, date pickers) dispatch structured **action events** (`{ action: "filter_change", dimension: "region", value: "EMEA" }`) back to the agent session, allowing the agent to update specific widgets without re-rendering the full page.
+
+#### 2. OpenUI & OpenUI Lang (thesysdev / W3C Community)
+* **Specification**: A specialized, line-based streaming Domain-Specific Language (DSL) engineered explicitly for LLM UI generation.
+* **Token Efficiency**: While nested JSON schemas consume massive token counts in redundant quotes, braces, and keys, OpenUI Lang uses concise indentation-based declarations (saving **50% to 65% in token consumption**).
+* **Streaming Behavior**: Because OpenUI Lang is line-oriented, the frontend parser renders each UI primitive incrementally in real time as the agent streams tokens, achieving a **zero-spinner perceived load time**.
+
+### 5 TPM Non-Negotiables for Agentic Custom Dashboards
+
+When leading the engineering of an agent-driven custom analytics builder, enforce these 5 architectural principles:
+
+#### 1. "Host Owns the Palette, Agent Owns the Layout"
+Never permit the agent to invent custom HTML, inline CSS, or unverified libraries. The product team maintains a rigid **Component Catalog**:
+```typescript
+// Verified Catalog Contract
+export const Catalog = {
+  KpiCard: z.object({ title: z.string(), value: z.union([z.string(), z.number()]), delta: z.number().optional() }),
+  TimeSeriesChart: z.object({ series: z.array(z.object({ label: z.string(), data: z.array(z.number()) })) }),
+  DataTable: z.object({ columns: z.array(z.string()), rows: z.array(z.record(z.any())) }),
+  FilterPills: z.object({ options: z.array(z.string()), active: z.string() })
+};
+```
+If the agent outputs an unrecognized component or malformed schema, the parser catches it via Zod schema validation and gracefully falls back to a standard tabular view.
+
+#### 2. Decouple Data Fetching from UI Layout
+* **Never let the agent hallucinate synthetic metrics inline within the UI payload.**
+* The agent generates an analytical query (SQL, DuckDB query, or Semantic Metrics API call) alongside the A2UI layout structure.
+* The frontend client or analytical execution engine executes the query against verified data sources, populating the component's data props directly.
+
+#### 3. Zero-Spinner Streaming Progressive Rendering
+* Full JSON generation from frontier LLMs takes 5 to 15 seconds. Presenting a global loading spinner causes severe drop-off.
+* By streaming OpenUI Lang or A2UI JSONL chunks, widgets appear on screen progressively:
+  * *T = 0.5s*: Grid layout and KPI card frames emerge.
+  * *T = 1.2s*: Chart axes and labels render.
+  * *T = 2.0s*: Query data resolves, and trend curves animate into view.
+
+#### 4. Bi-Directional State Synchronization (AG-UI Actions)
+* A custom dashboard is not a static screenshot; it is an interactive workspace.
+* When a user toggles a date slider or clicks a bar in an agent-generated chart, the event dispatches an **action payload** back to the agent session or updates an atomic state atom (e.g., Jotai) locally. The agent receives the updated context and modifies only the dependent cards.
+
+#### 5. Failure Modes & Mitigations Matrix
+
+| Risk / Failure Mode | Cause | TPM Mitigation Strategy |
+| :--- | :--- | :--- |
+| **Layout Hallucination** | Model outputs non-existent widget types or invalid nested hierarchies. | Enforce client-side schema parsing (Zod); degrade gracefully to a standard data table on failure. |
+| **Token Burn & Latency** | Verbose JSON schemas exceeding context limits and driving up API costs. | Use **OpenUI Lang** or a compact DSL; implement semantic prompt caching for catalog definitions. |
+| **Metric Desynchronization** | Agent pairs adjacent charts with mismatched timeframes or currencies. | Enforce a Canvas-Root filter context: individual charts must inherit global time and currency bounds. |
+| **Theme & Contrast Breakdown** | Agent attempts to specify hardcoded hex color values. | Forbid raw colors; components accept only semantic design tokens (`colorScheme: "primary" \| "danger"`). |
 
 ---
 
@@ -281,9 +466,10 @@ When leading the design and development of a data-heavy tool, use this matrix to
 | User Goal | Optimal Product & IA Strategy | Required Technical Implementation | Cognitive Load Limit |
 | :--- | :--- | :--- | :--- |
 | **High-Level Executive Status** | 3–5 headline KPIs; clear baseline comparison deltas; minimal layout | Small static dataset; Server-Side Rendering (SSR) or edge-cached Jamstack | **Low Intrinsic Load**: Comparing against baselines offloads mental math |
-| **Drill-Down Diagnostics** | Progressive disclosure (tabs, contextual drawers, deep links); max 2–3 levels | DOM Virtualization (`react-window`); backend pagination & aggregation | **Gradual Complexity**: Revealing detail in measured doses controls intake pace |
+| **Drill-Down Diagnostics** | Progressive disclosure (tabs, contextual drawers, deep links); max 2–3 levels | DOM Virtualization (`react-window`); slide-over sheets; backend pagination | **Gradual Complexity**: Revealing detail in measured doses controls intake pace |
+| **Ad-Hoc Custom Exploration (Tier 2)** | Declarative Generative UI (A2UI / OpenUI); component catalog binding | Streaming JSONL / OpenUI DSL parser; DuckDB-Wasm or Semantic Metric Layer | **Bounded Flexibility**: Host maintains styling; agent composes structure |
 | **Real-Time Live Telemetry** | Aggregated/sampled display (e.g., 1-second rolling windows); last-updated badge | Decoupled buffer & flush via `requestAnimationFrame`; SSE transport | **Controlled Stimulus**: Aggregation prevents visual chaos and flickering |
-| **Massive Exploration (>100k Rows)** | Upfront scoped search/filter; role-based column hiding; saved views | Multi-tier: API pagination → TanStack Table state → TanStack Virtual; Web Workers / DuckDB-Wasm | **Mitigates Hick's Law**: Scoped filtering prevents option paralysis |
+| **Massive Exploration (>100k Rows)** | Upfront scoped search/filter; role-based column hiding; saved views | Multi-tier: API pagination → TanStack Table state → TanStack Virtual; Web Workers | **Mitigates Hick's Law**: Scoped filtering prevents option paralysis |
 
 ---
 
@@ -293,7 +479,7 @@ A systematic roadmap for product teams building a new data-heavy interface or re
 
 ```mermaid
 graph LR
-    W1["Week 1: Strategy\nOutcomes · Domain Model · Metrics Dictionary"] --> W2["Week 2: Structure\nConversational Layout · Role Archetypes · Virtualization PoC"]
+    W1["Week 1: Strategy\nOutcomes · Two-Tier Scope · Metrics Dictionary"] --> W2["Week 2: Structure\nConversational Layout · Role Archetypes · Virtualization PoC"]
     W2 --> W3["Week 3: Validation\nTree Testing · Usability Audit · 60 FPS Benchmark"]
     W3 --> W4["Week 4: Launch\nTelemetry Instrumentation · Action Wiring · Pilot Cohort"]
 
@@ -305,11 +491,11 @@ graph LR
 
 * **Week 1 · Strategic IA & Alignment**:
   * Inventory all proposed metrics and test each against the Decision Test (*"What decision changes?"*).
-  * Build the Domain Model (Core objects, states, time horizons).
+  * Establish Tier 1 scope (standard 80% operational flow) vs. Tier 2 scope (custom analytics).
   * Draft the Centralized Metrics Dictionary.
 * **Week 2 · IA Architecture & Performance Proof-of-Concept**:
   * Design the 4-stage conversational layout (Status ➔ Look Next ➔ Explain Why ➔ Take Action).
-  * Map role-based token variants for the primary archetypes.
+  * Implement collapsible rails (`64px` to `240px`) and slide-over context drawers for detail views.
   * Validate frontend virtualization library on maximum expected dataset sizes.
 * **Week 3 · Usability & Performance Validation**:
   * Conduct tree testing and card sorting on navigation structures.
@@ -329,8 +515,10 @@ Audit your product against these common architectural and design pitfalls:
 | Anti-Pattern | Root Cause | Impact | The Fix |
 | :--- | :--- | :--- | :--- |
 | **The Metric Buffet** | Treating data volume as product value | User cognitive overload; decision paralysis | Curate down to 3–5 headline KPIs; enforce the Decision Test |
+| **Disruptive Modal Inspection** | Opening blocking modals for simple row detail checks | Destroys spatial context; induces claustrophobia | Implement slide-over sheets (drawers) keeping the data table visible |
 | **Client Memory Bloat** | Loading entire raw datasets into the browser heap | Browser tab crashes; sluggish scrolling | Server-side pagination; DOM virtualization; DuckDB-Wasm |
 | **The UI Freeze / Render Storm** | Triggering `setState` on every streaming event | Main thread locked; stuttering animations | Decouple ingestion from rendering via `useRef` + `requestAnimationFrame` |
+| **Unsafe Agent Code Gen** | Allowing AI agents to emit raw HTML/JS for custom dashboards | High DOM XSS vulnerability; broken styles | Adopt Declarative GenUI (A2UI / OpenUI Lang) with strict Component Catalogs |
 | **The Feature Hiding Trap** | Misapplying progressive disclosure beyond 3 levels | High-frequency actions become undiscoverable | Surface primary actions on the top level; reserve disclosure for advanced filters |
 | **The Static Default** | Assuming a single layout satisfies all user types | 78% of users never change defaults; alienation | Implement role-based view resolution `(Role × Frequency × Scope)` |
 | **Ambiguous Red/Green Deltas** | Fixed color mapping ignoring metric valence | Direction confused with good/bad; inaccessible | Use arrows for direction, brightness/shade for valence |
@@ -352,10 +540,12 @@ Audit your product against these common architectural and design pitfalls:
 ## Sources & References
 
 - Research Synthesis: `docs/research/The Data-Heavy UI Playbook.md` (2026) — Comprehensive guide to balancing information architecture, progressive disclosure, virtualization, and streaming backends
-- Video Analysis: *The Easy Way to Design UIs* — Sajid ([YouTube](https://www.youtube.com/watch?v=H0hhK4wP7pU), 2026) — Live redesign of an analytics dashboard in six problem-driven steps
+- Video Analysis: *EVERYTHING you need to know to build a Dashboard UI in 8 minutes* — Kole Jain ([YouTube](https://www.youtube.com/watch?v=B7k5rOgmOGY), 2024/2026) — Dashboard primitives, collapsible icon rails, and dark mode outline styling
+- Video Analysis: *Data-Heavy UI Design: From Chaos to Clarity* — Eleken ([YouTube](https://www.youtube.com/watch?v=rP-I4Oihqc8), 2024/2026) — Two-tier dashboard architecture, progressive disclosure, and slide-over context drawers
+- Technical Standard: *A2UI (Agent-to-User Interface) Specification* — Google & CopilotKit (Apache 2.0, 2025/2026) — Declarative streaming protocols and bi-directional AG-UI action handling
+- Industry Benchmark: *OpenUI Lang: Token-Efficient Streaming DSL for Generative UI* — thesysdev & W3C Community (2025/2026) — Streaming component trees and token reduction for agentic canvas generation
 - Research Paper: *Cognitive Load Theory in Interface Design* — John Sweller (Educational Psychology Review)
 - Framework Documentation: *Progressive Disclosure Principles* — Jakob Nielsen (Nielsen Norman Group, nngroup.com)
-- Industry Benchmark: *Virtualization & Streaming Architecture in Modern Web UIs* — LogRocket & SitePoint Engineering (2024–2026)
 
 ---
 
