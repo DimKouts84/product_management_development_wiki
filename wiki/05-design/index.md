@@ -65,7 +65,7 @@ graph TD
 |:-----|:------:|:------------|
 | [UI Design Foundations](ui-design-foundations.md) | 🟢 | Intentional UX, visual hierarchy, wall-of-text refactoring, typography, color, and context preservation |
 | [Design Psychology](design-psychology.md) | 🟢 | Why pages feel premium: 50ms halo effect, cognitive fluency, mental models, three judgment systems, peak-end micro-interactions, and decision architecture (smart defaults, price anchoring, loss framing) |
-| [Dashboard Design Playbook](dashboard-design-playbook.md) | 🟢 | 6-rule problem-driven redesign: layout, gray-first color, KPI context, chart clarity, control reduction, product polish |
+| [Dashboard Design Playbook](dashboard-design-playbook.md) | 🟢 | The data-heavy UI playbook: strategic IA (4-stage flow), progressive disclosure & role systems, visual ergonomics, DOM virtualization, and real-time streaming architecture |
 | [Landing Page Design](landing-page-design.md) | 🟢 | Six visual style families with signal matching, then the decisions-over-defaults execution method: six levers, specificity ladder, signature, craft |
 | [Motion Design](motion-design.md) | 🟢 | Motion with a job: fundamentals, easing, pattern catalog, technique decision flow, accessibility |
 | [Platform-Native Elements](platform-native-elements.md) | 🟢 | Native HTML/CSS capability map; when to go custom; platform-first scope strategy |
@@ -101,6 +101,9 @@ graph TD
 - **Aha Moment**: The precise instant a user experiences core product value
 - **Intrinsic vs. Extrinsic Motivation**: Why badges fail and mastery succeeds
 - **Decision Architecture**: Smart defaults, price anchoring, and loss framing to guide decisions without friction
+- **Conversational Dashboard Flow**: Status at a Glance ➔ Where to Look Next ➔ Explain the Why ➔ Take Action
+- **DOM Virtualization**: Viewport-only rendering recycling nodes for 100k+ row tables
+- **Decoupled Buffer-and-Flush**: Synchronizing streaming data to 60Hz display frames to prevent render storms
 - **Endowed Progress Effect**: Never start onboarding at 0% — initial progress credit accelerates completion velocity
 - **Co-Creation / IKEA Effect**: Labor invested before registration converts users from visitors into invested owners
 - **Decisions Over Defaults**: Premium = every element chosen; generic = built entirely from defaults
